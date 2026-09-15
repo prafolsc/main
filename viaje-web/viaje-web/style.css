@@ -1,0 +1,264 @@
+
+  :root{
+    --paper:#EDEBE3;
+    --ink:#1B1A17;
+    --ink-soft:#585349;
+    --line: rgba(27,26,23,0.16);
+
+    /* acentos por etapa, inspirados en las banderas de cada tramo */
+    --se-blue:#1B4B6B;
+    --se-yellow:#E8B33D;
+    --dk-red:#C1272D;
+    --dk-cream:#F4EFE3;
+    --road-green:#33684B;
+    --fo-teal:#3E5C58;
+    --fo-storm:#20302E;
+  }
+
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter',sans-serif;
+    font-size:17px;
+    line-height:1.55;
+  }
+
+  .wrap{ max-width:1080px; margin:0 auto; padding:0 28px; }
+
+  h1,h2,h3{ font-family:'Bricolage Grotesque', sans-serif; margin:0; letter-spacing:-0.01em; }
+
+  .mono{ font-family:'JetBrains Mono', monospace; }
+
+  /* ---------- HERO: billete de embarque ---------- */
+  .hero{ padding:64px 0 40px; }
+  .ticket{
+    background:var(--ink);
+    color:var(--paper);
+    border-radius:2px;
+    padding:38px 34px 30px;
+    position:relative;
+    overflow:hidden;
+  }
+  .ticket::before{
+    content:"";
+    position:absolute; inset:0;
+    background-image: repeating-linear-gradient(
+      -45deg, rgba(237,235,227,0.035) 0 2px, transparent 2px 14px
+    );
+    pointer-events:none;
+  }
+  .ticket-row{
+    display:flex; justify-content:space-between; align-items:baseline;
+    font-family:'JetBrains Mono', monospace; font-size:12px;
+    letter-spacing:0.04em; color:var(--se-yellow);
+    margin-bottom:22px;
+  }
+  .ticket h1{
+    font-size:clamp(2.4rem, 6vw, 4.2rem);
+    font-weight:700;
+    line-height:1.02;
+  }
+  .ticket .dates{
+    margin-top:10px;
+    font-family:'JetBrains Mono', monospace;
+    font-size:14px;
+    color:rgba(237,235,227,0.7);
+  }
+  .route{
+    margin-top:30px;
+    display:flex; flex-wrap:wrap; gap:0;
+    font-family:'JetBrains Mono', monospace;
+    font-size:13px;
+  }
+  .route span{
+    padding:6px 14px 6px 0;
+    color:rgba(237,235,227,0.55);
+  }
+  .route span.done{ color:var(--se-yellow); }
+  .route span:not(:last-child)::after{ content:"  →  "; color:rgba(237,235,227,0.3); }
+
+  .intro{
+    padding:26px 0 10px;
+    font-size:19px;
+    color:var(--ink-soft);
+    max-width:640px;
+  }
+
+  /* ---------- SECCIÓN ---------- */
+  section.leg{ padding:70px 0 90px; border-top:1px solid var(--line); }
+
+  .leg-head{ display:flex; align-items:flex-end; gap:18px; margin-bottom:6px; flex-wrap:wrap; }
+  .leg-stamp{
+    font-family:'JetBrains Mono', monospace;
+    font-size:12px;
+    border:1.5px solid var(--stamp, var(--se-blue));
+    color:var(--stamp, var(--se-blue));
+    padding:3px 9px;
+    border-radius:20px;
+    transform:rotate(-2deg);
+    white-space:nowrap;
+  }
+  .leg h2{
+    font-size:clamp(2rem, 5vw, 3.1rem);
+    color:var(--stamp, var(--se-blue));
+  }
+  .leg-sub{
+    margin:14px 0 42px;
+    max-width:600px;
+    color:var(--ink-soft);
+    font-size:18px;
+  }
+
+  /* grid editorial asimétrico */
+  .gallery{
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap:20px;
+    align-items:start;
+  }
+  figure{ margin:0; }
+  figure img{
+    width:100%;
+    object-fit:cover;
+    display:block;
+    border-radius:1px;
+    filter:brightness(1.08) saturate(1.05);
+  }
+  figcaption{
+    font-size:15px;
+    font-weight:600;
+    color:var(--ink);
+    margin-top:10px;
+    padding-left:2px;
+    border-left:2px solid var(--stamp, var(--se-blue));
+    padding-left:10px;
+    line-height:1.4;
+  }
+
+  .g-wide{ grid-column: span 6; }
+  .g-half{ grid-column: span 3; }
+  .g-third{ grid-column: span 2; }
+  .g-two{ grid-column: span 4; }
+  .g-tall{ grid-column: span 2; }
+
+  .g-wide img{ aspect-ratio: 16/8.5; }
+  .g-half img{ aspect-ratio: 4/5; }
+  .g-third img{ aspect-ratio: 3/4; }
+  .g-two img{ aspect-ratio: 4/3.3; }
+  .g-tall img{ aspect-ratio: 9/16; }
+
+  @media (max-width: 760px){
+    .gallery{ grid-template-columns: repeat(2,1fr); gap:16px; }
+    .g-wide, .g-half, .g-third, .g-two, .g-tall{ grid-column: span 2; }
+    .g-wide img{ aspect-ratio:4/3.6; }
+    .g-tall img{ aspect-ratio: 3/4; }
+  }
+
+  .subhead{
+    font-family:'JetBrains Mono', monospace;
+    font-size:13px;
+    letter-spacing:0.03em;
+    color:var(--stamp, var(--road-green));
+    margin:48px 0 18px;
+    padding-bottom:6px;
+    border-bottom:1px solid var(--line);
+  }
+  .subhead:first-of-type{ margin-top:0; }
+
+  .pending{
+    padding:50px 0;
+    border-top:1px solid var(--line);
+    color:var(--ink-soft);
+    font-family:'JetBrains Mono', monospace;
+    font-size:14px;
+  }
+  .pending ul{ list-style:none; padding:0; margin:14px 0 0; display:flex; gap:22px; flex-wrap:wrap;}
+  .pending li{ opacity:0.55; }
+
+  footer{ padding:40px 0 70px; color:var(--ink-soft); font-size:13px; }
+
+
+  /* ---------- FOTO DE PORTADA ---------- */
+  .cover-photo{
+    margin:36px 0 10px;
+    border-radius:2px;
+    overflow:hidden;
+    position:relative;
+  }
+  .cover-photo img{
+    width:100%;
+    display:block;
+    aspect-ratio:16/9;
+    object-fit:cover;
+    filter:brightness(1.05) saturate(1.05);
+  }
+  .cover-photo figcaption{
+    position:absolute;
+    left:0; right:0; bottom:0;
+    padding:26px 24px 16px;
+    background:linear-gradient(to top, rgba(20,24,22,0.75), transparent);
+    color:#EDEBE3;
+    border-left:none;
+    font-size:14px;
+    font-weight:600;
+  }
+
+  /* ---------- NAV multipágina ---------- */
+  .topnav{
+    display:flex; justify-content:space-between; align-items:center;
+    padding:22px 0;
+    font-family:'JetBrains Mono', monospace;
+    font-size:13px;
+  }
+  .topnav a{ color:var(--ink-soft); text-decoration:none; }
+  .topnav a:hover{ color:var(--ink); }
+  .topnav .stage-name{ color:var(--stamp, var(--ink)); font-weight:600; }
+
+  .pagernav{
+    display:flex; justify-content:space-between;
+    padding:40px 0 10px;
+    border-top:1px solid var(--line);
+    margin-top:20px;
+    font-family:'JetBrains Mono', monospace;
+    font-size:14px;
+  }
+  .pagernav a{ color:var(--ink); text-decoration:none; }
+  .pagernav a:hover{ text-decoration:underline; }
+  .pagernav .prev::before{ content:"← "; }
+  .pagernav .next::after{ content:" →"; }
+  .pagernav .placeholder{ visibility:hidden; }
+
+  /* ---------- ÍNDICE (portada) ---------- */
+  .index-list{
+    margin-top:20px;
+    border-top:1px solid var(--line);
+  }
+  .index-item{
+    display:flex; align-items:baseline; gap:22px;
+    padding:26px 0;
+    border-bottom:1px solid var(--line);
+    text-decoration:none;
+    color:var(--ink);
+  }
+  .index-item:hover .index-item-title{ text-decoration:underline; }
+  .index-num{
+    font-family:'JetBrains Mono', monospace;
+    font-size:13px;
+    color:var(--ink-soft);
+    min-width:26px;
+  }
+  .index-item-title{
+    font-family:'Bricolage Grotesque', sans-serif;
+    font-size:clamp(1.5rem, 4vw, 2.2rem);
+    font-weight:700;
+  }
+  .index-item-dates{
+    font-family:'JetBrains Mono', monospace;
+    font-size:12px;
+    color:var(--ink-soft);
+    margin-left:auto;
+    white-space:nowrap;
+  }
