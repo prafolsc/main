@@ -128,12 +128,14 @@
     filter:brightness(1.08) saturate(1.05);
   }
   figcaption{
-    font-size:14.5px;
-    color:var(--ink-soft);
+    font-size:15px;
+    font-weight:600;
+    color:var(--ink);
     margin-top:10px;
     padding-left:2px;
     border-left:2px solid var(--stamp, var(--se-blue));
     padding-left:10px;
+    line-height:1.4;
   }
 
   .g-wide{ grid-column: span 6; }
@@ -178,6 +180,31 @@
 
   footer{ padding:40px 0 70px; color:var(--ink-soft); font-size:13px; }
 
+
+  /* ---------- FOTO DE PORTADA ---------- */
+  .cover-photo{
+    margin:36px 0 10px;
+    border-radius:2px;
+    overflow:hidden;
+    position:relative;
+  }
+  .cover-photo img{
+    width:100%;
+    display:block;
+    aspect-ratio:16/9;
+    object-fit:cover;
+    filter:brightness(1.05) saturate(1.05);
+  }
+  .cover-photo figcaption{
+    position:absolute;
+    left:0; right:0; bottom:0;
+    padding:26px 24px 16px;
+    background:linear-gradient(to top, rgba(20,24,22,0.75), transparent);
+    color:#EDEBE3;
+    border-left:none;
+    font-size:14px;
+    font-weight:600;
+  }
 
   /* ---------- NAV multipágina ---------- */
   .topnav{
