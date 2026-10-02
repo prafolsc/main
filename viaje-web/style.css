@@ -206,6 +206,21 @@
     font-weight:600;
   }
 
+  /* ---------- SELECTOR D'IDIOMA ---------- */
+  .langswitch{
+    font-family:'JetBrains Mono', monospace;
+    font-size:12px;
+    color:var(--ink-soft);
+    letter-spacing:0.03em;
+  }
+  .langswitch a{ color:var(--ink-soft); text-decoration:none; }
+  .langswitch a:hover{ color:var(--ink); text-decoration:underline; }
+  .langswitch .active{ color:var(--ink); font-weight:600; }
+  .hero .langswitch{
+    display:flex; justify-content:flex-end;
+    margin-bottom:10px;
+  }
+
   /* ---------- NAV multipágina ---------- */
   .topnav{
     display:flex; justify-content:space-between; align-items:center;
