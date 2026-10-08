@@ -7,6 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/leaflet.css">
 <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -55,8 +56,54 @@
     </a>
   </div>
 
+
+  <section class="leg trip-map-section" aria-labelledby="trip-map-title">
+    <div class="leg-head">
+      <span class="leg-stamp">12–26 de agosto · 2026</span>
+      <h2 id="trip-map-title">El mapa del viaje</h2>
+    </div>
+    <p class="leg-sub">De Copenhague a Malmö, por carretera hasta Hirtshals y en ferry a las islas Faroe.</p>
+    <div id="trip-map-controls" class="trip-map-controls" role="group" aria-label="Vista del mapa" hidden>
+      <button type="button" data-map-view="all" aria-pressed="true">Todo el viaje</button>
+      <button type="button" data-map-view="dk" aria-pressed="false">Dinamarca y Malmö</button>
+      <button type="button" data-map-view="fo" aria-pressed="false">Islas Faroe</button>
+    </div>
+    <div id="trip-map" class="trip-map" role="region" aria-label="El mapa del viaje" aria-describedby="trip-map-note"></div>
+    <p id="trip-map-status" class="trip-map-status" role="status" hidden></p>
+    <div class="trip-map-legend">
+      <span><i aria-hidden="true"></i>Etapas por carretera</span>
+      <span><i class="sea" aria-hidden="true"></i>Ferry</span>
+      <span><i class="island" aria-hidden="true"></i>Lugares de Faroe</span>
+    </div>
+    <p id="trip-map-note" class="trip-map-note">Las líneas unen las etapas de forma orientativa; no representan el trazado exacto por carretera ni la navegación. Los lugares de Faroe se muestran sin asignar un orden de visita.</p>
+    <ul id="trip-map-stops" class="trip-map-stops" aria-label="Paradas del viaje">
+      <li><a href="copenhague.html">Copenhague</a></li>
+      <li><a href="malmo.html">Malmö</a></li>
+      <li><a href="jutlandia.html">Odense</a></li>
+      <li><a href="jutlandia.html">Ribe</a></li>
+      <li><a href="jutlandia.html">Billund</a></li>
+      <li><a href="jutlandia.html">Aarhus</a></li>
+      <li><a href="jutlandia.html">Aalborg</a></li>
+      <li><a href="jutlandia.html">Råbjerg Mile</a></li>
+      <li><a href="jutlandia.html">Hirtshals</a></li>
+      <li><a href="feroe.html">Tórshavn</a></li>
+      <li><a href="feroe.html">Kirkjubøur</a></li>
+      <li><a href="feroe.html">Trøllkonufingur</a></li>
+      <li><a href="feroe.html">Trælanípa · Leitisvatn</a></li>
+      <li><a href="feroe.html">Gásadalur · Múlafossur</a></li>
+      <li><a href="feroe.html">Vestmanna</a></li>
+      <li><a href="feroe.html">Eiði</a></li>
+      <li><a href="feroe.html">Gjógv</a></li>
+      <li><a href="feroe.html">Fossá</a></li>
+      <li><a href="feroe.html">Tjørnuvík</a></li>
+      <li><a href="feroe.html">Drangarnir</a></li>
+    </ul>
+  </section>
+
   <footer>Dinamarca &amp; Faroe, 12–26 de agosto — un diario de viaje sin pretensiones de guía.</footer>
 
 </div>
+<script src="../assets/leaflet.js" defer></script>
+<script src="../trip-map.js" defer></script>
 </body>
 </html>

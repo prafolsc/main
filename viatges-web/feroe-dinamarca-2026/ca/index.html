@@ -7,6 +7,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Inter:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/leaflet.css">
 <link rel="stylesheet" href="../style.css">
 </head>
 <body>
@@ -55,8 +56,54 @@
     </a>
   </div>
 
+
+  <section class="leg trip-map-section" aria-labelledby="trip-map-title">
+    <div class="leg-head">
+      <span class="leg-stamp">12–26 d’agost · 2026</span>
+      <h2 id="trip-map-title">El mapa del viatge</h2>
+    </div>
+    <p class="leg-sub">De Copenhaguen a Malmö, per carretera fins a Hirtshals i en ferri a les illes Fèroe.</p>
+    <div id="trip-map-controls" class="trip-map-controls" role="group" aria-label="Vista del mapa" hidden>
+      <button type="button" data-map-view="all" aria-pressed="true">Tot el viatge</button>
+      <button type="button" data-map-view="dk" aria-pressed="false">Dinamarca i Malmö</button>
+      <button type="button" data-map-view="fo" aria-pressed="false">Illes Fèroe</button>
+    </div>
+    <div id="trip-map" class="trip-map" role="region" aria-label="El mapa del viatge" aria-describedby="trip-map-note"></div>
+    <p id="trip-map-status" class="trip-map-status" role="status" hidden></p>
+    <div class="trip-map-legend">
+      <span><i aria-hidden="true"></i>Etapes per carretera</span>
+      <span><i class="sea" aria-hidden="true"></i>Ferri</span>
+      <span><i class="island" aria-hidden="true"></i>Llocs de Fèroe</span>
+    </div>
+    <p id="trip-map-note" class="trip-map-note">Les línies uneixen les etapes de manera orientativa; no representen el traçat exacte per carretera ni la navegació. Els llocs de Fèroe es mostren sense assignar un ordre de visita.</p>
+    <ul id="trip-map-stops" class="trip-map-stops" aria-label="Parades del viatge">
+      <li><a href="copenhague.html">Copenhaguen</a></li>
+      <li><a href="malmo.html">Malmö</a></li>
+      <li><a href="jutlandia.html">Odense</a></li>
+      <li><a href="jutlandia.html">Ribe</a></li>
+      <li><a href="jutlandia.html">Billund</a></li>
+      <li><a href="jutlandia.html">Aarhus</a></li>
+      <li><a href="jutlandia.html">Aalborg</a></li>
+      <li><a href="jutlandia.html">Råbjerg Mile</a></li>
+      <li><a href="jutlandia.html">Hirtshals</a></li>
+      <li><a href="feroe.html">Tórshavn</a></li>
+      <li><a href="feroe.html">Kirkjubøur</a></li>
+      <li><a href="feroe.html">Trøllkonufingur</a></li>
+      <li><a href="feroe.html">Trælanípa · Leitisvatn</a></li>
+      <li><a href="feroe.html">Gásadalur · Múlafossur</a></li>
+      <li><a href="feroe.html">Vestmanna</a></li>
+      <li><a href="feroe.html">Eiði</a></li>
+      <li><a href="feroe.html">Gjógv</a></li>
+      <li><a href="feroe.html">Fossá</a></li>
+      <li><a href="feroe.html">Tjørnuvík</a></li>
+      <li><a href="feroe.html">Drangarnir</a></li>
+    </ul>
+  </section>
+
   <footer>Dinamarca i Fèroe, 12–26 d'agost — un dietari de viatge sense pretensions de guia.</footer>
 
 </div>
+<script src="../assets/leaflet.js" defer></script>
+<script src="../trip-map.js" defer></script>
 </body>
 </html>

@@ -277,3 +277,40 @@
     margin-left:auto;
     white-space:nowrap;
   }
+
+/* Mapa del viatge: mateix paper, tipografia i colors de les etapes. */
+.trip-map-section{--stamp:var(--fo-teal);}
+.trip-map-section .leg-sub{margin-bottom:24px;max-width:720px;}
+.trip-map-controls{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 16px;}
+.trip-map-controls[hidden]{display:none;}
+.trip-map-controls button{
+  font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.5;
+  padding:8px 13px;border:1px solid var(--line);border-radius:2px;
+  background:transparent;color:var(--ink-soft);cursor:pointer;
+}
+.trip-map-controls button[aria-pressed="true"]{background:var(--fo-teal);color:var(--paper);border-color:var(--fo-teal);}
+.trip-map-controls button:focus-visible,.trip-map-stops a:focus-visible{outline:2px solid var(--se-blue);outline-offset:4px;}
+.trip-map{height:470px;width:100%;border:1px solid var(--line);border-radius:2px;background:var(--paper);font-family:'Inter',sans-serif;}
+.trip-map-note,.trip-map-status{font-size:13px;color:var(--ink-soft);margin:14px 0 0;max-width:720px;}
+.trip-map-legend{display:flex;gap:20px;flex-wrap:wrap;font-family:'JetBrains Mono',monospace;font-size:11px;color:var(--ink-soft);margin-top:18px;}
+.trip-map-legend span{display:inline-flex;align-items:center;gap:8px;}
+.trip-map-legend i{width:23px;border-top:3px solid var(--road-green);}
+.trip-map-legend .sea{border-top:2px dashed var(--fo-teal);}
+.trip-map-legend .island{width:8px;height:8px;border:0;border-radius:50%;background:var(--fo-teal);}
+.trip-map-stops{list-style:none;padding:0;margin:24px 0 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0 24px;}
+.trip-map-stops li{padding:9px 0;border-bottom:1px solid var(--line);}
+.trip-map-stops a{font-family:'JetBrains Mono',monospace;font-size:12px;line-height:1.5;color:var(--ink);text-decoration:none;display:block;}
+.trip-map-stops a:hover{text-decoration:underline;}
+.trip-map-marker span{display:block;width:16px;height:16px;border:2px solid var(--paper);border-radius:50%;box-shadow:0 0 0 1px var(--ink-soft);}
+.trip-map .leaflet-popup-content-wrapper,.trip-map .leaflet-popup-tip{background:var(--paper);color:var(--ink);border-radius:2px;}
+.trip-map .leaflet-tooltip{font-family:'Inter',sans-serif;background:var(--paper);border:1px solid var(--line);color:var(--ink);}
+.trip-map-popup h3{font-size:19px;line-height:1.2;margin:0 0 10px;}
+.trip-map-popup p{font-family:'JetBrains Mono',monospace;font-size:11px;margin:0 0 14px;}
+.trip-map-popup a{display:block;color:var(--fo-teal);font-size:13px;margin-top:8px;}
+.trip-map .leaflet-control-attribution{font-size:9px;background:rgba(237,235,227,.9);}
+@media(max-width:760px){
+  .trip-map{height:390px;}
+  .trip-map-stops{grid-template-columns:repeat(2,minmax(0,1fr));gap:0 16px;}
+  section.trip-map-section{padding:50px 0;}
+}
+@media(max-width:420px){.trip-map-stops{grid-template-columns:1fr;}.trip-map-controls button{padding:8px 10px;}}
