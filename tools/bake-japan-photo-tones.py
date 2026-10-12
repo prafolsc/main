@@ -116,6 +116,11 @@ def main():
     assert "applyPhotoTone" not in cleaned_app and "japan-photo-tone" not in cleaned_app
     for item in files:
         (staging / item["path"]).replace(root / item["path"])
+    for item in files:
+        final = root / item["path"]
+        assert sha(final) == item["sha256"], "Final asset checksum mismatch"
+        with Image.open(final) as check:
+            check.load()
     import shutil
     shutil.rmtree(staging)
     app_path.write_text(cleaned_app)
