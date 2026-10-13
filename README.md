@@ -7,16 +7,18 @@ Webs estàtiques dels nostres viatges, agrupades en una sola carpeta.
 - `viatges-web/japo-2026/`: Japó, 27 de febrer–11 d'abril de 2026.
 - `viatges-web/feroe-dinamarca-2026/`: Dinamarca i Fèroe, 12–26 d'agost de 2026.
 
-## Publicació a Cloudflare Pages
+- `viatges-web/peru-equador-2025/`: Perú i Equador, juny–juliol de 2025.
 
-Connecta aquest repositori i configura:
+## Publicació a Cloudflare Workers
 
+La web existent està publicada a Cloudflare Workers amb els dominis `prafols.com` i `www.prafols.com`.
+
+- Repositori: `prafolsc/main`.
 - Branca de producció: `main`.
-- Framework: cap (None).
-- Ordre de compilació: buida.
-- Directori de sortida: `viatges-web`.
+- Directori dels fitxers estàtics: `viatges-web/`.
+- Es conserva la configuració de publicació existent a Cloudflare.
 
-La portada serà a `/`, el Japó a `/japo-2026/` i Dinamarca–Fèroe a `/feroe-dinamarca-2026/`.
+La portada és a `/`, el Japó a `/japo-2026/`, Dinamarca–Fèroe a `/feroe-dinamarca-2026/` i Perú–Equador a `/peru-equador-2025/`.
 
 ## Afegir un viatge
 
