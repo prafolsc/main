@@ -1,0 +1,3001 @@
+{
+  "version": 1,
+  "method": "Approved Japan sRGB transfer tables and saturation baked into JPEGs",
+  "jpeg_quality": 95,
+  "profiles": {
+    "snow": {
+      "table": "0.000000 0.033865 0.068287 0.103158 0.138379 0.173853 0.209488 0.245200 0.280908 0.316537 0.352014 0.387273 0.422252 0.456891 0.491140 0.524944 0.558260 0.591044 0.623259 0.654865 0.685835 0.716137 0.745747 0.774639 0.802796 0.830199 0.856834 0.882689 0.907754 0.932021 0.955487 0.978147 1.000000",
+      "saturation": 1.12
+    },
+    "temple": {
+      "table": "0.000000 0.039727 0.078906 0.117539 0.155625 0.193164 0.230156 0.266602 0.302500 0.337852 0.372656 0.406914 0.440625 0.473789 0.506406 0.538477 0.570000 0.600977 0.631406 0.661289 0.690625 0.719414 0.747656 0.775352 0.802500 0.829102 0.855156 0.880664 0.905625 0.930039 0.953906 0.977227 1.000000",
+      "saturation": 1.045
+    },
+    "interior": {
+      "table": "0.000000 0.033317 0.067198 0.101542 0.136256 0.171247 0.206431 0.241725 0.277053 0.312342 0.347522 0.382528 0.417302 0.451784 0.485923 0.519667 0.552970 0.585790 0.618087 0.649824 0.680969 0.711489 0.741359 0.770552 0.799047 0.826824 0.853865 0.880156 0.905685 0.930440 0.954416 0.977604 1.000000",
+      "saturation": 1.12
+    },
+    "landscape": {
+      "table": "0.000000 0.034963 0.070469 0.106397 0.142634 0.179072 0.215613 0.252162 0.288631 0.324939 0.361008 0.396769 0.432156 0.467110 0.501573 0.535497 0.568834 0.601543 0.633587 0.664934 0.695550 0.725414 0.754502 0.782795 0.810276 0.836934 0.862758 0.887743 0.911885 0.935179 0.957627 0.979233 1.000000",
+      "saturation": 1.12
+    },
+    "beach": {
+      "table": "0.000000 0.032220 0.065021 0.098314 0.132016 0.166046 0.200328 0.234788 0.269356 0.303964 0.338549 0.373051 0.407411 0.441575 0.475490 0.509109 0.542385 0.575273 0.607734 0.639728 0.671220 0.702177 0.732566 0.762360 0.791532 0.820057 0.847912 0.875079 0.901538 0.927273 0.952270 0.976516 1.000000",
+      "saturation": 1.12
+    },
+    "diving": {
+      "table": "0.000000 0.042148 0.083594 0.124336 0.164375 0.203711 0.242344 0.280273 0.317500 0.354023 0.389844 0.424961 0.459375 0.493086 0.526094 0.558398 0.590000 0.620898 0.651094 0.680586 0.709375 0.737461 0.764844 0.791523 0.817500 0.842773 0.867344 0.891211 0.914375 0.936836 0.958594 0.979648 1.000000",
+      "saturation": 1.025
+    }
+  },
+  "files": [
+    {
+      "path": "fotos/24129b4451dbe7cfd4ed5efe.jpg",
+      "filename": "IMG_5636.HEIC",
+      "profile": "interior",
+      "source_sha256": "e87de5e4f6e6c624b95ac04b61bad5766dc47c5a38782542a2d007c6622a4b32",
+      "sha256": "b7defccfcc1fe85d42e790bedc957a937bcbc851b5be4fe406524fecdca790f1",
+      "bytes": 619403
+    },
+    {
+      "path": "fotos/fce97c03f6ef5822ef86d25f.jpg",
+      "filename": "IMG_20250620_164155.jpg",
+      "profile": "interior",
+      "source_sha256": "f03f1a2d88d8984cc53fa91e0f7462486420217b262fb74c411952ce25b90ed1",
+      "sha256": "e7e3132e9c59c2d8286471dff2efc89805c4813fa1a08a629535f0d96aedfa83",
+      "bytes": 324984
+    },
+    {
+      "path": "fotos/a7ad621cb91314e81fba4d50.jpg",
+      "filename": "IMG_5640.HEIC",
+      "profile": "landscape",
+      "source_sha256": "9f967fc29fb15449b58dc542f302e6bd3fb54af1d84ba59c635fcd258dbc928c",
+      "sha256": "aec2d0f21873c83c35ac73f11cf74701a388a0f786b3ebc5a5ec4570f3f77f83",
+      "bytes": 735453
+    },
+    {
+      "path": "fotos/8b0dd9d69348b0e3566d35d8.jpg",
+      "filename": "IMG_5641.HEIC",
+      "profile": "landscape",
+      "source_sha256": "f7d12692ef419e7634b9f04ca91928eccde052675b681cab1b581544f75861c8",
+      "sha256": "128d6965133e173f7f3d34b3116d72485ec0888625cd36706e3f735d08f35fbf",
+      "bytes": 697893
+    },
+    {
+      "path": "fotos/f905c4f66d41f96a1e75632a.jpg",
+      "filename": "IMG_5645.HEIC",
+      "profile": "temple",
+      "source_sha256": "9a3009736c93397ebe7a847db03fa2384bd22dd7b651f03818952f092561ea2c",
+      "sha256": "6e99f68999d969110bf9e21d723484e25ce24a7158416314d736f858f56f74b1",
+      "bytes": 568367
+    },
+    {
+      "path": "fotos/2fb4b4d39cd9840cb0aaafd4.jpg",
+      "filename": "IMG_5646.HEIC",
+      "profile": "landscape",
+      "source_sha256": "67bcc68a5d50adf23c8ecd6dc85b161ef296624bdabce00bdc0451426533baf6",
+      "sha256": "cc634a4ebef2c4d396fb404f5ec7bf6936c8fe0569e65ee5769ccd86624bfad4",
+      "bytes": 537256
+    },
+    {
+      "path": "fotos/b964a6bfa920a298a0ad5844.jpg",
+      "filename": "IMG_5649.HEIC",
+      "profile": "interior",
+      "source_sha256": "b1abad2b4a8bc8a736c4a788ff7e0f572e858372795274434f5c29e7bb58551c",
+      "sha256": "efef6203783f5cefe8f476102509c9445151c68dc88195627ba2ea7bc62797da",
+      "bytes": 784543
+    },
+    {
+      "path": "fotos/9654338cca5136baaff0154e.jpg",
+      "filename": "IMG_5654.HEIC",
+      "profile": "interior",
+      "source_sha256": "6be4ddc3f80ddf78f8bc06e2d775b9f024e4c6331dfcff33013b2c6d0f1bd6b2",
+      "sha256": "e87346c041d4f9be15127276740f906112e1ac0f797ff5c869aa2a522c98cd42",
+      "bytes": 691884
+    },
+    {
+      "path": "fotos/c98deb045e2f66d644e23426.jpg",
+      "filename": "IMG_5655.HEIC",
+      "profile": "interior",
+      "source_sha256": "84671fb4b6acb2fa9225b4447e4f66e81f6f1cab4d87a88002bfaa0cc6f64983",
+      "sha256": "f4d05178b8e7ee52f84a8f8a623a75c51b0116701cc3f83cbd27a660bb7dfdb9",
+      "bytes": 654654
+    },
+    {
+      "path": "fotos/3a0b1dd95d275d903ff92b52.jpg",
+      "filename": "IMG_5355.jpeg",
+      "profile": "interior",
+      "source_sha256": "65952bc1bce0e48352bd28f6f6bef7c554c96a9bfe4b4e835738bb59e8126e77",
+      "sha256": "fe5c99f0ba139e5b591026d6d5d56954ed6f2eeea64430182f93a51112f08221",
+      "bytes": 583256
+    },
+    {
+      "path": "fotos/5a2095bf46fe4c7c4c3d9528.jpg",
+      "filename": "IMG_5663.HEIC",
+      "profile": "temple",
+      "source_sha256": "06d4dfb639fbbc40955d716fa004520a07cf1b22232f7419542b5538e9d94a6e",
+      "sha256": "b7128854febabd8c67bc1c03080e0c598c8a9bd09bd927149dc61a7713c71d61",
+      "bytes": 692328
+    },
+    {
+      "path": "fotos/671836840fdb1bc8cd7f230e.jpg",
+      "filename": "IMG_5664.HEIC",
+      "profile": "temple",
+      "source_sha256": "7effb7253dce019710eca8e31ecdcb80165d2a524e1c622730c99a6f044e4c97",
+      "sha256": "61f8a003cd9a27e535a49428594f9b7179a6ae9ff53302a6f8efb169861ef39d",
+      "bytes": 1013808
+    },
+    {
+      "path": "fotos/bb19c2e2b59cde5ff2ae4bb0.jpg",
+      "filename": "IMG_5358.jpeg",
+      "profile": "interior",
+      "source_sha256": "c7bcbdbd61aae7063530fba8026406c595c41d7de589cdb35b70a99a34253cdd",
+      "sha256": "93eec3c91ee4ed8ec3d17bdb4726cab5313ef6a118bd4f3968a51ee24f23394a",
+      "bytes": 574650
+    },
+    {
+      "path": "fotos/8a52d7fab55cbc9b7ad6c195.jpg",
+      "filename": "IMG_5359.jpeg",
+      "profile": "temple",
+      "source_sha256": "e65d5ce4866a5636eb54698ac3f91a3009c83e26834413ab8c4e8a5b92d3590f",
+      "sha256": "7e0bdb1f93990d59977ea67aed7f130a4e443a0afbc113b2b47885a5d028eaad",
+      "bytes": 785171
+    },
+    {
+      "path": "fotos/f28aa42fefdb1078f8041321.jpg",
+      "filename": "IMG_5666.HEIC",
+      "profile": "temple",
+      "source_sha256": "1bd14a7fad4000270fa2a979fea6d666e419e6aefb6cd28348a3e68749585f63",
+      "sha256": "2840e763e13d809f9bba618a37a5a2eeab0eb5e2a7514e4001472a5fc751ad6c",
+      "bytes": 1033301
+    },
+    {
+      "path": "fotos/c375e94bb20855d0e0bfd937.jpg",
+      "filename": "IMG_5668.HEIC",
+      "profile": "landscape",
+      "source_sha256": "da2bbd59f1e53d59ced27ef5d9ef0279c364c5493a57ac97f415980047b2c59d",
+      "sha256": "7e71b6779a28e6be13b0eabd9fb1626af79405d9e88274581470546153138585",
+      "bytes": 685481
+    },
+    {
+      "path": "fotos/d6da1c34975f03124a4ecbb2.jpg",
+      "filename": "IMG_5674.HEIC",
+      "profile": "landscape",
+      "source_sha256": "9de875d081d1eee274672e04fca8b16f40397d52fce95e49d4662857d280d6dc",
+      "sha256": "5f2cd6b2e475ea5e73725c1d1c6ba02d6c553f7518840add0fc223af7129bdb0",
+      "bytes": 479835
+    },
+    {
+      "path": "fotos/2df57bd3087ee49a19ec5d33.jpg",
+      "filename": "IMG_5367.jpeg",
+      "profile": "landscape",
+      "source_sha256": "c490076286e9c5f61b67c2b3db77cc9c2052fa7c3cda351aa61df4d061e82e8d",
+      "sha256": "539fc23a37e8efb887549071569a50f7dd70f328fbd37f51e317a9b6884ef7b2",
+      "bytes": 662325
+    },
+    {
+      "path": "fotos/5381933921dcdc9f763d87f7.jpg",
+      "filename": "IMG_20250621_115145.jpg",
+      "profile": "interior",
+      "source_sha256": "dad67f52708a928e10f4db678cebb55e96c0caa36a918ec6856c1cf21e3b7218",
+      "sha256": "a4414b8610d58616cf603b0612dc4b3cfc059762d68b49bcabda78962751b298",
+      "bytes": 638947
+    },
+    {
+      "path": "fotos/8172ad3730dcb0fd466dcead.jpg",
+      "filename": "IMG_5685.HEIC",
+      "profile": "temple",
+      "source_sha256": "9b35bd9274c8d137b553b1c1c5c1ffda5aac1d3f8dda283b08e613a69832c849",
+      "sha256": "51f4e21085deb80ec40d03573ab991a91bb7f2964fba4adabb33717219952a34",
+      "bytes": 893778
+    },
+    {
+      "path": "fotos/0f317eff1f431e31f40a8e08.jpg",
+      "filename": "20250621_120129.jpg",
+      "profile": "interior",
+      "source_sha256": "14a186fc762e3a3e75330b9f0dec4e64c2e34ff180e119eaa334332d45bd7e11",
+      "sha256": "d1b283fe472c8ca2fd9b4ad72c0af2cdc460932635c1b428b6d910ae2d0d8a6a",
+      "bytes": 640011
+    },
+    {
+      "path": "fotos/916813ad882f9396fe8b82e4.jpg",
+      "filename": "IMG_5693.HEIC",
+      "profile": "landscape",
+      "source_sha256": "0a05d058bd1ef6cb08017c8316c7da15ea081d06534c82cb37104e95e80f48cb",
+      "sha256": "a75159c9d0b6976584de76e007cbbe2ee18bc70af08b31e928c6213e21df10ce",
+      "bytes": 883727
+    },
+    {
+      "path": "fotos/2b2a7a14233cdf6383b44052.jpg",
+      "filename": "IMG_5698.HEIC",
+      "profile": "landscape",
+      "source_sha256": "703ac9c3093d2c2af8b000868e5b5c644695c70794e51a8cdb0114f93105616c",
+      "sha256": "e6444a6402dbb454c144e68d622ed6495d3e65fbc74b31c7add6b2c795c6039b",
+      "bytes": 833028
+    },
+    {
+      "path": "fotos/1225849d325844d3e415fc7e.jpg",
+      "filename": "IMG_5701.HEIC",
+      "profile": "interior",
+      "source_sha256": "0929a1f610f7c54fa5adfefaa73ed7ddaf23e7993aa22f1b0af83f66e8d00ca9",
+      "sha256": "ec7788a408cc1a872a317985c963061d9f9155df9d92c5706d56c21333bd299a",
+      "bytes": 835871
+    },
+    {
+      "path": "fotos/b93dcb3a96e86e574f8cc93a.jpg",
+      "filename": "IMG_5704.HEIC",
+      "profile": "landscape",
+      "source_sha256": "41c5ec9cb4adbbdfef388480a3d6232ccfbcf023dbf7c771bcc3aa5dc6905c66",
+      "sha256": "a3f2b31aadc5ca8adac90b9fab56de2dedf49e6f244bf13c78caf36c07c819cd",
+      "bytes": 393506
+    },
+    {
+      "path": "fotos/f91efe5b3517d1123c45141e.jpg",
+      "filename": "IMG_20250621_160358.jpg",
+      "profile": "interior",
+      "source_sha256": "9f0060dd00c28c78840be4f79532212240984b29c822ee9e0854d729f56ef035",
+      "sha256": "ecaefaf3cc023d5a657fa9a663bb0508802bf4ed1d45d7eca216485ba444b37d",
+      "bytes": 580466
+    },
+    {
+      "path": "fotos/2640b03d0b3b32ba83520fd9.jpg",
+      "filename": "IMG_20250621_160637.jpg",
+      "profile": "interior",
+      "source_sha256": "155dff282f34a22bd4f05c35ae04b092a2be7f6d5d2d435acc9b61a8758365a1",
+      "sha256": "d5a52b4ec23c8c61b8d9562643d2ac4d0ad1085cfdbfbdeca3af552251c67717",
+      "bytes": 253365
+    },
+    {
+      "path": "fotos/91496a53491179154a5da460.jpg",
+      "filename": "IMG_5706.HEIC",
+      "profile": "landscape",
+      "source_sha256": "107e7634b31001ed144d6b74ae61fc0b95eaea0bb1f805829970d77af84beb46",
+      "sha256": "62c55c303f683672cff1678598cc9d4ee31329342e22e64662f6074fade67167",
+      "bytes": 572444
+    },
+    {
+      "path": "fotos/78c613c39887d2b866191a75.jpg",
+      "filename": "20250621_204649.jpg",
+      "profile": "interior",
+      "source_sha256": "e633c2b8d5c1b90b87db37fdc7083053f61edf7237cd2055961b2f1ac1780c51",
+      "sha256": "70ec8816934624aa4330034e8779bb41f19001b3fa1e845c250479e22900db9a",
+      "bytes": 331859
+    },
+    {
+      "path": "fotos/92e0fba64921a844e39c6e3c.jpg",
+      "filename": "IMG_6844.HEIC",
+      "profile": "interior",
+      "source_sha256": "7adfa0ff11d0c090d89f147033d9322c401695e03cc88b0f99c900faaeefbfe6",
+      "sha256": "555c1accfaf3f63622457c5c59bce5a9a7a7512bb4085d1c4c3451c42fe82878",
+      "bytes": 339675
+    },
+    {
+      "path": "fotos/3c357bdbecfdba678009b3ab.jpg",
+      "filename": "20250622_100558.jpg",
+      "profile": "interior",
+      "source_sha256": "653829de5c3183429ef2492ed09172ba0f2bea1c8d531ed59b2c3f01b89abf3f",
+      "sha256": "ec824d66d56fa1ed9c2566f4496e5b691fb1d3fa8bdc778ea6684575c20049cb",
+      "bytes": 477333
+    },
+    {
+      "path": "fotos/242f330e236b393331159c5a.jpg",
+      "filename": "IMG_6852.HEIC",
+      "profile": "landscape",
+      "source_sha256": "53e2c82529762675d943dd34f598269fcf00e2fe612a1f63413963a472f03554",
+      "sha256": "0a2024cef4ade2333ed522a497b19221047a4092e7cd0800e0a4478641b1c37d",
+      "bytes": 580501
+    },
+    {
+      "path": "fotos/de8c8c1a4ff06592fa357e2d.jpg",
+      "filename": "IMG_5709.HEIC",
+      "profile": "landscape",
+      "source_sha256": "34458b845af76ee31aa727a01def26e83d5c771a23cba39113e91a3b0288cc96",
+      "sha256": "a271fc7d4ffa30740dddd8722cf36c40cd1e4635935f4e18f43146141d611ee0",
+      "bytes": 565000
+    },
+    {
+      "path": "fotos/1f51c542c19872da2cc13b99.jpg",
+      "filename": "IMG_6853.HEIC",
+      "profile": "landscape",
+      "source_sha256": "63ad72eeb126dcf076ad6ae9ff5afd2c10c0853dbc21e8c731ad46ce854e4b6b",
+      "sha256": "30bb41130bb73269195bf6190f047842680ac8ef1892609f1d6b431676761b9b",
+      "bytes": 103690
+    },
+    {
+      "path": "fotos/ea98e04bb09e624569b830b9.jpg",
+      "filename": "IMG_6856.HEIC",
+      "profile": "landscape",
+      "source_sha256": "abceb037d39a7c13a5d3a8cdfd3e20a0c88f4ab38a0c12cf5a3f83e97a5bf541",
+      "sha256": "71c48e9aeec21511e8d6d38bdde0e56989ce8558402a720bb46cbad5f2d6c31b",
+      "bytes": 180750
+    },
+    {
+      "path": "fotos/871ee6e179b6dd3bff1d80e1.jpg",
+      "filename": "IMG_6862.HEIC",
+      "profile": "interior",
+      "source_sha256": "b8b66d01194e221c51a09e67af602a42f7fe99f31e1f4d4c63a9512cc2517bd5",
+      "sha256": "91b76532e7562a6d98608c19b83b03deba7d33b5dc73146ac03fbad4a3de0e7b",
+      "bytes": 190320
+    },
+    {
+      "path": "fotos/eec4220e8edf60124c8b702a.jpg",
+      "filename": "IMG_6863.HEIC",
+      "profile": "interior",
+      "source_sha256": "58220c685e3b652aeced11cec5747efa80bc902617acaea61081edda4a35a920",
+      "sha256": "7c24977e29839fdc4e994962a7a04f3dfc4ff6f2418b601e2d214555ca81c21a",
+      "bytes": 603721
+    },
+    {
+      "path": "fotos/b0a6660f03ad4f0d7572e412.jpg",
+      "filename": "IMG_6866.HEIC",
+      "profile": "interior",
+      "source_sha256": "dab9c3507e19cc8f6502242dfef05eba34b04fec7b3586161d7b4bda8787fc89",
+      "sha256": "50448a39b0c424f1a599658fcbdce5b2322f8e00efadfbab31126b991c8cf539",
+      "bytes": 700675
+    },
+    {
+      "path": "fotos/cf5a2acbf4acdb1a1ec79507.jpg",
+      "filename": "IMG_5372.jpeg",
+      "profile": "landscape",
+      "source_sha256": "f55b094b3d43d773c60df90a282b93614a414d26a8a8a10619ae65c901509c34",
+      "sha256": "e7740e9222f44e28668aab19277763b5ffb3216d5bc3702f966d2ecf658edc67",
+      "bytes": 665486
+    },
+    {
+      "path": "fotos/b4734b3c872dc2f29ed4f166.jpg",
+      "filename": "IMG_5712.HEIC",
+      "profile": "landscape",
+      "source_sha256": "8d26aa6edf09e697e28cad4cc5a80c3641eb38603b539c6cf1ee4321b4a75c96",
+      "sha256": "88d526e8757f3b1669ceb28b92fae1d13b9b7bda7aeb864978d7c95904f831a5",
+      "bytes": 456988
+    },
+    {
+      "path": "fotos/5eacc36c33cda7156b31a4a3.jpg",
+      "filename": "20250622_104612.jpg",
+      "profile": "interior",
+      "source_sha256": "d1f8a0dd573ab686ffccc5c1065bff80916b7c4f86e1cfe8df2be1a29ebe18a6",
+      "sha256": "5137b6ad8e6692654ab0f0679056fec887894c3aeef9587299988a1118edf724",
+      "bytes": 480897
+    },
+    {
+      "path": "fotos/dce4185c86dcfc44e0c829b5.jpg",
+      "filename": "20250622_104638.jpg",
+      "profile": "interior",
+      "source_sha256": "9c75e99709cf8f40dd8a818a03036afe4d7e278c42e4272be7d803fc222b4950",
+      "sha256": "cab37912d79f80dbc1995375a978325c2244d2ca45a51a18da5d4417177be7e1",
+      "bytes": 527996
+    },
+    {
+      "path": "fotos/7a68145798e8997bf5a610b0.jpg",
+      "filename": "IMG_5718.HEIC",
+      "profile": "interior",
+      "source_sha256": "620a33ca80d89a2308b570545bff1ec3a415eaa795cf240d986cc3baceadb563",
+      "sha256": "f138556e94d1f5e2066161bd4a641dddf309d050d539d66d28ab7770ff325473",
+      "bytes": 589989
+    },
+    {
+      "path": "fotos/099d5c86a7ca202f039005c2.jpg",
+      "filename": "IMG_5721.HEIC",
+      "profile": "interior",
+      "source_sha256": "8ef937c118372018424b677bf40c5d9df0a63043cab493b324922b138fa7a85f",
+      "sha256": "cb4a9e8870a11fceb65cbc619a73a238feb54930695225988a0916f5932964d1",
+      "bytes": 548955
+    },
+    {
+      "path": "fotos/6dc1f12cb6a457493cc6b9d6.jpg",
+      "filename": "IMG_6871.HEIC",
+      "profile": "landscape",
+      "source_sha256": "9eed49b08f50c4fb9c3e2917be5ab31c09f58ddcb893fd70a260e08f73862fdd",
+      "sha256": "94f697837b6414ed73fc5d9b2106d14c0e70f9c658a406886ac046fa73dfa6bd",
+      "bytes": 118248
+    },
+    {
+      "path": "fotos/32d98f8a22575d6c063ed15f.jpg",
+      "filename": "20250622_112420.jpg",
+      "profile": "interior",
+      "source_sha256": "19f06f9b45c640920bb2b1eb914bd927c262eb1030b9fbbdc6edf0f189e5d00e",
+      "sha256": "2c5176307cd9a23ebdb7ddb15eda7fab9381e87fa21515d38d169bc7ae929e2c",
+      "bytes": 465587
+    },
+    {
+      "path": "fotos/84530523a7f0583e23fe44e5.jpg",
+      "filename": "IMG_5739.HEIC",
+      "profile": "landscape",
+      "source_sha256": "c51d74d268c53880269527facadc9640b1a5f663d5b48d70c5ca8a8a64bd0ce0",
+      "sha256": "569950275bef43d7d03c8aa0325a465439d36d66b5bcee5021a2a447953d0592",
+      "bytes": 340093
+    },
+    {
+      "path": "fotos/2b9f9e56a0ac91abcd03b76c.jpg",
+      "filename": "IMG_5747.HEIC",
+      "profile": "interior",
+      "source_sha256": "8e518f764e1a1e134fbecf806854c915d7212aeeef79257b2eab2d36a8d6de43",
+      "sha256": "f42650ae592dd3ae1a0dff9d5b9ddf4b8227888920019639b9b87112563ddd04",
+      "bytes": 754244
+    },
+    {
+      "path": "fotos/942db285a6cd0c09e7316d71.jpg",
+      "filename": "IMG_5752.HEIC",
+      "profile": "interior",
+      "source_sha256": "ebd2618a38305b01ebce41d5f96bf417b847b0f3e917cfd45ad1587def0a0807",
+      "sha256": "f46ba47666fdeb6da0224b299d478a1bb22c8807df5b51a7928ec40370c7ca01",
+      "bytes": 683022
+    },
+    {
+      "path": "fotos/5504193fa41aa260d6d73dc0.jpg",
+      "filename": "IMG_5761.HEIC",
+      "profile": "temple",
+      "source_sha256": "69f9e02e7bf66d2018c4a7fd78ed3c09c451c3e266c377d4a08c2122b2a8856c",
+      "sha256": "da2936aac99ec0311239e633693a615ac1b4dfd1089a2076dcd186f1eaa4226c",
+      "bytes": 697370
+    },
+    {
+      "path": "fotos/65f4a02fb1d8b7a33879823d.jpg",
+      "filename": "IMG_5764.HEIC",
+      "profile": "temple",
+      "source_sha256": "14631ef2ba35a18d6a5da98d7c942321fe9bd3c15a0d9e94af4a7cd1500b3e35",
+      "sha256": "6830b4a3a109b6128eef4d8c5e7e614bd7909ccf3c15a783b0ca8dcac2d46e33",
+      "bytes": 610830
+    },
+    {
+      "path": "fotos/aaa7b3cb74fbbae89d28fa0b.jpg",
+      "filename": "IMG_5765.HEIC",
+      "profile": "temple",
+      "source_sha256": "14beb9bf605ef86bcc4c481b392deb5875fbc10147f53026f7f72fb752dafd86",
+      "sha256": "35e8fb88079ea72943ed54daa6b2584ee3474e621bfba5afabbd3715522ec0d4",
+      "bytes": 536672
+    },
+    {
+      "path": "fotos/f9c7e09ddc6543dfe5a0328f.jpg",
+      "filename": "IMG_5383.jpeg",
+      "profile": "temple",
+      "source_sha256": "e08ff04003d251a2cf7a8a90d1df11b01b8c821f7a0e8211950e892cc3252ca2",
+      "sha256": "05f0da171e077072aa7ae820f7fdaa895ae939eebb1311e666f5cdfcff748336",
+      "bytes": 693187
+    },
+    {
+      "path": "fotos/027dd27fdb22dced91e361ba.jpg",
+      "filename": "IMG_5771.HEIC",
+      "profile": "temple",
+      "source_sha256": "227db18729b4ac1106388b47aca6e5fd343bc2d6115e931b7e5e7911f8aa3bcb",
+      "sha256": "0f5de40620dc0f9d7c0057cf9726b84e7b50f6ffa9162cb60d91593b0f1213e9",
+      "bytes": 855708
+    },
+    {
+      "path": "fotos/74427c410d4307f4c3437687.jpg",
+      "filename": "IMG_5386.jpeg",
+      "profile": "interior",
+      "source_sha256": "c7e570f300ab909c3204eae951fe4a39c77429414ae85d247949a47bcb7abc01",
+      "sha256": "fadd4366b6afd58f4e4ccc669beefe97af1f149322058908512f51b9cca4c3fc",
+      "bytes": 584768
+    },
+    {
+      "path": "fotos/51d2eeb56bb96ad6af2d07f1.jpg",
+      "filename": "IMG_5777.HEIC",
+      "profile": "temple",
+      "source_sha256": "70022d32a5b37948a4b912953811fdfbd902bcc7e6eec288c84cf240562e1015",
+      "sha256": "9975ad02afc63eeb15d8608659ea02166da0b3980793db5a71f5cb6ab40c3808",
+      "bytes": 572132
+    },
+    {
+      "path": "fotos/3381e9986188d01f3524df5e.jpg",
+      "filename": "IMG_5782.HEIC",
+      "profile": "temple",
+      "source_sha256": "31dd4034bcde6f7cb1cfc7cd633aeef9d536956d8a77315b2010986a598351e5",
+      "sha256": "a277eb4e741efe4f4e4e43ee4e25963617725d6fbb6066fd1b691d42e82d9ac8",
+      "bytes": 603715
+    },
+    {
+      "path": "fotos/590689e5972a5b204920df32.jpg",
+      "filename": "IMG_5784.HEIC",
+      "profile": "landscape",
+      "source_sha256": "acc48496822a8814659930d715e19b417f147706cb4a1edef6ec0ec6add72c9f",
+      "sha256": "8de053f769d21c54a4b3d84791174a8402bb08b636bf57a776781c2ab0f0d812",
+      "bytes": 1288549
+    },
+    {
+      "path": "fotos/f8b341c2d4c1058ef04e48c8.jpg",
+      "filename": "IMG_5786.HEIC",
+      "profile": "landscape",
+      "source_sha256": "a5c62cfbb505e4779fdf6be60ee5074299a531a610ea0a2dc2be0e88f7e5c1fa",
+      "sha256": "51ff0824276ef63dbfc88fb2510acc83315686e5ce6910d2b601a39088200370",
+      "bytes": 1044657
+    },
+    {
+      "path": "fotos/2167852c60331539a9f9ecf4.jpg",
+      "filename": "IMG_5789.HEIC",
+      "profile": "temple",
+      "source_sha256": "302624830046187ac6d7bf2c6dd2fe2ec090847d4124813661daadf6a0284431",
+      "sha256": "4a54ac155e5e50268ceafe7836f7f4f1925a93b81c17a44d7a359779f95c5194",
+      "bytes": 731421
+    },
+    {
+      "path": "fotos/4e75ae2d3397de489ee3e8b5.jpg",
+      "filename": "IMG_5390.jpeg",
+      "profile": "landscape",
+      "source_sha256": "cade116f56d569b2a75a574e6bc724763b6643b0456db0dbfba8f343d55c02bd",
+      "sha256": "49928010cb275c150f8c70e336c41e0fc45bc8c4b8b0a807eb652d53faea5c10",
+      "bytes": 636458
+    },
+    {
+      "path": "fotos/cb30712790b6ddb2ecc8cbc4.jpg",
+      "filename": "IMG_5793.HEIC",
+      "profile": "landscape",
+      "source_sha256": "b5a2ce062b9447ee9fb173defa6fb660b4f35211b1a32a19d5ccb5f3e9c1265f",
+      "sha256": "bd02d18860e91624e24c75049be220dbaa7a6b70faeaebca8a4ec01d0330e586",
+      "bytes": 1012041
+    },
+    {
+      "path": "fotos/5254e48c8437012fa81b7dfd.jpg",
+      "filename": "IMG_5794.HEIC",
+      "profile": "landscape",
+      "source_sha256": "8660dfe016ab32b86dd02e2d5654c56c2a08a9319a3dd05d3974df911ffa81c9",
+      "sha256": "ab5558888a898ab9046247d6e47e07948814837e8dc8c7b716298c777215a5f9",
+      "bytes": 1195198
+    },
+    {
+      "path": "fotos/34a06929129bac4d9c730a03.jpg",
+      "filename": "IMG_5795.HEIC",
+      "profile": "beach",
+      "source_sha256": "e632a9ec6efd39bdb9bc1c411fc1f8adaa4879a9cdcffd5523455d277c6e20b2",
+      "sha256": "a59a608043a0f534bfe0e25560aaf8efc55f4bc933681d819b18bf193d817142",
+      "bytes": 602574
+    },
+    {
+      "path": "fotos/dc26a820100ecf5b59a012cd.jpg",
+      "filename": "IMG_5798.HEIC",
+      "profile": "beach",
+      "source_sha256": "b871acc9d3fd9d23069620cbdd87904083cdbd028fefc394951fd6f2f82e8cda",
+      "sha256": "0a5dfc1f974c0e2260bc94ee325be9ea92b0ec8bb11cfde1ee65471e9077454a",
+      "bytes": 443401
+    },
+    {
+      "path": "fotos/84199fc25cefb81b580295f1.jpg",
+      "filename": "IMG_5392.jpeg",
+      "profile": "beach",
+      "source_sha256": "bc4087d4be3236c43fc0f7f978b15e507ebd4efd5f929ea6c1b7ee3cfebc0c4b",
+      "sha256": "d773e80a3785d76aa9528d31ebdcc772ae3b3a23a7356df9c5d4088742409611",
+      "bytes": 354504
+    },
+    {
+      "path": "fotos/db3102bc29e77835e321255e.jpg",
+      "filename": "IMG_5803.HEIC",
+      "profile": "beach",
+      "source_sha256": "d3e3c291abcc89f2e03e3d68052c7beef6b7fa616dbc3424d535493753d037cf",
+      "sha256": "9ffc1c1dfb88b8a2f8ec808886e6d4a853be0c8a855bd192a70b57df9ab7bdd0",
+      "bytes": 595871
+    },
+    {
+      "path": "fotos/74e566e9c14bb0d6292655b8.jpg",
+      "filename": "IMG_5807.HEIC",
+      "profile": "interior",
+      "source_sha256": "31915f129e8d20300499ef1e1dd881c0b38c57e2a5968e9981bffb4726305c05",
+      "sha256": "d05f6389f32ad344266024d07ebf66c2106361c6ccd96f684a1d35646663d539",
+      "bytes": 626938
+    },
+    {
+      "path": "fotos/b3da44c8e334215286559592.jpg",
+      "filename": "IMG_5393.jpeg",
+      "profile": "interior",
+      "source_sha256": "12bd3dd0e86b3b23032e4951792126f3b808c337befd962a3ce73128c72befbc",
+      "sha256": "32e4f872e135c986619b261890f59e602d63874b0d056c938969e1d5d8265940",
+      "bytes": 642495
+    },
+    {
+      "path": "fotos/60c4261cf7c426b291113b11.jpg",
+      "filename": "IMG_5811.HEIC",
+      "profile": "interior",
+      "source_sha256": "f397efd2fa239139e9473bc652213bbca71e1ae3507cfb72e3cbd7a8a0439ca3",
+      "sha256": "eae5b2a8ddbdb878473de24ea4c8e52b9d376184b28d84ad7852d58cf4c6e4ba",
+      "bytes": 713559
+    },
+    {
+      "path": "fotos/e222cbd3f7c857069f213355.jpg",
+      "filename": "IMG_5812.HEIC",
+      "profile": "landscape",
+      "source_sha256": "f31ed78d794651fae177c24f9f9ed5ecee828a78435edb9f1db94606a53d814b",
+      "sha256": "65c2f581676e8a952f6b32cc31cc703c4239fb8977878cfc21aac06c7271d49e",
+      "bytes": 451551
+    },
+    {
+      "path": "fotos/9f013db9953c7e7e2e21101c.jpg",
+      "filename": "IMG_5813.HEIC",
+      "profile": "landscape",
+      "source_sha256": "c29286474d95109daa6d116ba15e0df66d8e527fdd3bc820ee4467f278f35053",
+      "sha256": "6e9fa1f32fe3b7861d26465a0d3cfc8b822a31f111536383e8c4d54d87f58395",
+      "bytes": 401742
+    },
+    {
+      "path": "fotos/f4e67e193df7fd715f3344a0.jpg",
+      "filename": "IMG_5818.HEIC",
+      "profile": "beach",
+      "source_sha256": "b216acfbf44a694cbffb9f3a40277b7638d1183b3dad3762bb0a372bad1ea463",
+      "sha256": "d777ec9e9578b31276a7a18ec558e9f5ea24d02e992c98628f81db983eb7f678",
+      "bytes": 578455
+    },
+    {
+      "path": "fotos/e4a00c081a32fc3d10c9c573.jpg",
+      "filename": "IMG_5821.HEIC",
+      "profile": "beach",
+      "source_sha256": "16af908e07b321c573ed0c51cbc96daefb65898d449e1a17fe667c79286a14d4",
+      "sha256": "9e803ddc7e414265b4e6f92fbc573be1cfc5d9377c826ac060d330992f42f6c9",
+      "bytes": 613631
+    },
+    {
+      "path": "fotos/abf8d4ffb46843340a9cf8d1.jpg",
+      "filename": "IMG_5824.HEIC",
+      "profile": "beach",
+      "source_sha256": "23d4f9c555268225b9f354d47f71eb208f2f5ece8fcfb60188309f74ff16177e",
+      "sha256": "6aaebf0cc36f503f30cca2b20d8d4cc3bd3cdc33dab17223c799d5fe6c250be8",
+      "bytes": 467654
+    },
+    {
+      "path": "fotos/2e028338302ee3bbde3062b3.jpg",
+      "filename": "IMG_5827.HEIC",
+      "profile": "beach",
+      "source_sha256": "10a1ffdc92c3093bb75417b54cbeef5249bbe24925a69a3dce86d3daed7d53d8",
+      "sha256": "15660abd3a21a945b799b145e51c090b5fe6e6a3e1aaa677cdd81202208b00b4",
+      "bytes": 435356
+    },
+    {
+      "path": "fotos/5b88f2d2dd4973977e7c018d.jpg",
+      "filename": "IMG_5834.HEIC",
+      "profile": "beach",
+      "source_sha256": "9d06383196abaa7c4f82992542f082fba5db8698bd1f9c3a177d79d0a84100e0",
+      "sha256": "6d7b1ed963efbbee2273482f1ed929374b6d7d00bf5d0678656d98b81a5f82d7",
+      "bytes": 437514
+    },
+    {
+      "path": "fotos/12d0369aad6cce06ad15d4c0.jpg",
+      "filename": "IMG_5835.HEIC",
+      "profile": "beach",
+      "source_sha256": "374f22b28c423eec08798d0f0416b8917d63946b77da0d2206aa85b905520363",
+      "sha256": "2470e8d223a6372e516cc8ff8cb7762e2d82c85279d95824980af7f4b6da2e30",
+      "bytes": 657277
+    },
+    {
+      "path": "fotos/3c901e54e47b27b43384af3f.jpg",
+      "filename": "IMG_5839.HEIC",
+      "profile": "beach",
+      "source_sha256": "4ec7b5ea107fa81df52d25f78abdb5abc8ffc73a5d585b4856a2e079e432c5ac",
+      "sha256": "c464b87727a37893434acb6435bfdf67085a2d1df298bce25757ede16556649d",
+      "bytes": 649107
+    },
+    {
+      "path": "fotos/ab8c893b48d086f4aade2132.jpg",
+      "filename": "IMG_5841.HEIC",
+      "profile": "beach",
+      "source_sha256": "62d3771abb6cb3ccc6cccd9f8fad38f5344b027123b06cb720cb91f71a95e10a",
+      "sha256": "aa7b1025d6e8fc609ba7d4eb7e8bd31553a63bcfe6dae52412c13e04eba78e38",
+      "bytes": 455419
+    },
+    {
+      "path": "fotos/f03fae3b2f63e747dc75cead.jpg",
+      "filename": "IMG_5845.HEIC",
+      "profile": "beach",
+      "source_sha256": "b21914dc461f9541e0ef2bffb1bfe09ed6baaf87623635b670bb2293b173c108",
+      "sha256": "adf7f71772981ac883f122ebe53beec903d95df25f6b0c7cf0f3c8e8eb8f51c5",
+      "bytes": 529139
+    },
+    {
+      "path": "fotos/4369d41d017c61a64f5bf1eb.jpg",
+      "filename": "IMG_5848.HEIC",
+      "profile": "beach",
+      "source_sha256": "2088c35bd3935bb3b28d3ca90dd287701b66286dc538cdadca5bc8d578d1bd98",
+      "sha256": "d376e8fb72dea42568d16fb24efd15d46f46544440da33ed0a166222ee9e4b27",
+      "bytes": 637505
+    },
+    {
+      "path": "fotos/84d6d2770f15c07873db174c.jpg",
+      "filename": "IMG_5853.HEIC",
+      "profile": "beach",
+      "source_sha256": "10d03c6a713907dcdecff5bf4dee6734cc95c70e733ffc1ce6ae02cc368678f9",
+      "sha256": "1a96647607cea2f34444acf3347a02129039155aba95000ad2397d037f8bb953",
+      "bytes": 796304
+    },
+    {
+      "path": "fotos/4d865937877cf43744ac46f5.jpg",
+      "filename": "IMG_5856.HEIC",
+      "profile": "beach",
+      "source_sha256": "f091280ce828e3cce0d946cfcff69647858921e7b237fdf768274bbcb6cc64b4",
+      "sha256": "632876cb36dc40d84963a924bde24d8562ace65b29d4b24a69ccf81698136572",
+      "bytes": 814616
+    },
+    {
+      "path": "fotos/8f41fe436975d3e477e86d8a.jpg",
+      "filename": "IMG_5861.HEIC",
+      "profile": "beach",
+      "source_sha256": "73c9a95f5f82bc1b36dc87b785c9549172a4cab737f9dd944120a1d75f2c3997",
+      "sha256": "df267764c5cafee635a6189271b99fe3d7174faee5b3e0893e013801e4617904",
+      "bytes": 484527
+    },
+    {
+      "path": "fotos/13f7cae77496fa9447a3c590.jpg",
+      "filename": "IMG_5862.HEIC",
+      "profile": "beach",
+      "source_sha256": "55475f0950ff29bc55c407bccb43e92a714c2b08f3bb7b4ffbad7373a4a1c737",
+      "sha256": "2117e1f278f8534d77598c00be0a36219fbd0ef8ced292738b1e400cc9c66751",
+      "bytes": 506066
+    },
+    {
+      "path": "fotos/64780433c412f2dec6d70ad0.jpg",
+      "filename": "IMG_5865.HEIC",
+      "profile": "beach",
+      "source_sha256": "72d4e254b2d915283e31d031d884cee05c7135bab66c6f61aae604815ae041ef",
+      "sha256": "dfbad890007b938b614ea28fafaa4e5a9bdca49d38aa3fa5cd886a47d7e0d19a",
+      "bytes": 691019
+    },
+    {
+      "path": "fotos/d5a135c593a352b813af1fd5.jpg",
+      "filename": "IMG_5872.HEIC",
+      "profile": "interior",
+      "source_sha256": "4eb9523a2198d613141c3bf4958a81db17871166ce313a4325a32c3bed9facf7",
+      "sha256": "2ec41f3c246c7960738d1bb26addff49dcb519e2b71341a7ec16bccdd8d6142f",
+      "bytes": 523247
+    },
+    {
+      "path": "fotos/c54c6ff28f97b3d9a3b0ee60.jpg",
+      "filename": "IMG_5876.JPG",
+      "profile": "beach",
+      "source_sha256": "1197988cec7b7cd45770b9fd8486dc409bce5210ae3f1c036e77bcff06e847d6",
+      "sha256": "aa93941132fd4b1ae5fee292a13e7ba4dd8b7081e30602ca8432a8b9e7c7b0da",
+      "bytes": 700229
+    },
+    {
+      "path": "fotos/92bb3eb48f6e58526785d16c.jpg",
+      "filename": "IMG_5904.HEIC",
+      "profile": "interior",
+      "source_sha256": "7211ebf9fe373227fd10f92ee485f724767d7079bee1ee0ac443a71bd67baae0",
+      "sha256": "4d1ce632c2ff4a296be4716802ea7c16cb5bfdfa1fc9889c04e505812e26be97",
+      "bytes": 660397
+    },
+    {
+      "path": "fotos/2c832d7250c8de6028005fb8.jpg",
+      "filename": "IMG_5915.HEIC",
+      "profile": "interior",
+      "source_sha256": "e472bcf66fe29a841a0af8a1afab867c2167955d24d6a2d71724e6ad7d19315a",
+      "sha256": "f636aeed8295ec2d9ce75a2708ff53f09a35bf6cdc0200b035520f49e0a71e19",
+      "bytes": 667309
+    },
+    {
+      "path": "fotos/0bbfc200a02236b062afd871.jpg",
+      "filename": "IMG_5926.HEIC",
+      "profile": "interior",
+      "source_sha256": "f906596b9c63a6b9c73e0443eb8476f73104d51ed40dc9dd9794bd01b29d49fc",
+      "sha256": "00c602bd4f8891c72cc85781afea44e984e5dddc8092f86873ffc21701bcaa4e",
+      "bytes": 683832
+    },
+    {
+      "path": "fotos/3fd6092cf59f43f68542af81.jpg",
+      "filename": "IMG_5928.HEIC",
+      "profile": "landscape",
+      "source_sha256": "9c97396efe50b090189e4169b34d929db5775586ee57a93c24c63d28b771cf96",
+      "sha256": "72351830c86a9cba63f159a94503ca9670786d7e9d53140342addb823b827db0",
+      "bytes": 646874
+    },
+    {
+      "path": "fotos/fdeb1881c87fcd3c80531ef0.jpg",
+      "filename": "IMG_5932.HEIC",
+      "profile": "landscape",
+      "source_sha256": "bd5bc6cf9e57eff7f699ca08d29083f5cc300f7b1f4025ec0cfc36fd05b94565",
+      "sha256": "c4ff3e53b2bd95ec44211d638bcd9063153705ecf082d17f2ea2daf6deb4b50d",
+      "bytes": 730055
+    },
+    {
+      "path": "fotos/bebb0c19b9e079a446e9efbb.jpg",
+      "filename": "IMG_5935.HEIC",
+      "profile": "landscape",
+      "source_sha256": "6a949710ec14cb6a0458c9ef2b975fe86cf723e51c1b516395e253ed42ff5e4c",
+      "sha256": "f58137a5032e968429c32d53977fd88fc2ab9cb881ceac69fe8ea1c822d76484",
+      "bytes": 678346
+    },
+    {
+      "path": "fotos/96ba3c68213081398856ef01.jpg",
+      "filename": "IMG_5938.HEIC",
+      "profile": "interior",
+      "source_sha256": "d9a029a6d0a89a39249a5d2685cdea39d52f411d61eb0a55da440f59f56f9dea",
+      "sha256": "4c97bad4eb269a1a30fb5298cfb0b1add7e283ee348b47a401be2f945bb71d11",
+      "bytes": 724430
+    },
+    {
+      "path": "fotos/f8238eed976e4e01e72dca97.jpg",
+      "filename": "IMG_5941.HEIC",
+      "profile": "interior",
+      "source_sha256": "ae6ad012c5fefe450e709b5231629dca9725b95d62399e7cbb0393b415d36867",
+      "sha256": "c608a2756eae3b528f7adff56bcdceec9d15ed50fae950e8db7ba0546bf9f68b",
+      "bytes": 433688
+    },
+    {
+      "path": "fotos/dfb13ee3f5b74e7b186b4004.jpg",
+      "filename": "IMG_5946.HEIC",
+      "profile": "landscape",
+      "source_sha256": "dbdb6bd07d42bbef57747887fd69c360377b1f82da5257535e9de74f23d9f95c",
+      "sha256": "4f54c48e0ce765a6413e0263ea5964700f7e0574731c8ac1f8dec9f9291a95fa",
+      "bytes": 554313
+    },
+    {
+      "path": "fotos/4bbf382ea2f0cb29ead1f391.jpg",
+      "filename": "IMG_5949.HEIC",
+      "profile": "landscape",
+      "source_sha256": "d4c964149da716c188055052cb6a3b876ac25c21e10808abb83ae6a83f475ea1",
+      "sha256": "cd352afd951ece01c6060dad7a88c8d2c8176e0c0d3986ff895cbba7fc4bf921",
+      "bytes": 319978
+    },
+    {
+      "path": "fotos/2fdb753bda30a5d90eb2dba8.jpg",
+      "filename": "IMG_5952.HEIC",
+      "profile": "landscape",
+      "source_sha256": "8cf475e8cce06b0d1f82e6315c5eaef189ce2c0ebd37a3e5a1c18343cf330f9c",
+      "sha256": "f79d963c0d7b5ac20aff37f33f4c5cd1aa143ddcb6964c2c32aea11d201eaff8",
+      "bytes": 273330
+    },
+    {
+      "path": "fotos/940807c1f04af48570eafb46.jpg",
+      "filename": "IMG_5957.HEIC",
+      "profile": "landscape",
+      "source_sha256": "d90d73aefdcb24067dedb9776e56bd7e6253295d43df76187d1a6cc25831071a",
+      "sha256": "a48fc1b2283b6a455285a580e3d8f73bd24fe656f75443094ba8fe10640b9541",
+      "bytes": 428009
+    },
+    {
+      "path": "fotos/922a786644c2997969f0831e.jpg",
+      "filename": "IMG_5964.HEIC",
+      "profile": "landscape",
+      "source_sha256": "16007bb409bf1c96b0d7a7cd2b4f8d6587daa6be65864439c4c8a3694550bcfa",
+      "sha256": "f7fdbe625ad03487ca4e4bfd62dad489e9349aaf8937bb5ee5fbf0d15a31b484",
+      "bytes": 610728
+    },
+    {
+      "path": "fotos/6a291a8e805b1895f801c95e.jpg",
+      "filename": "IMG_5967.HEIC",
+      "profile": "temple",
+      "source_sha256": "9e61205b36160e59eff50231d8cba0ebd26b130a1167fa629f8711c7fb736b3d",
+      "sha256": "b34efba84d4c3b3586d68c6a1e6ff980f0df3fb1a4d8666ee7549bac6fd52b3f",
+      "bytes": 433793
+    },
+    {
+      "path": "fotos/77aa40cc5729cc66b6570328.jpg",
+      "filename": "IMG_5968.HEIC",
+      "profile": "temple",
+      "source_sha256": "0f86db9cce1f89dea6b1fc554b93053e60821cb5a806dffbe1caa7c36e7c525e",
+      "sha256": "2555a66c48c22b54b38f168e3f10ca951321692d0fd854f2c54343b312c0e633",
+      "bytes": 837261
+    },
+    {
+      "path": "fotos/82acb7a7c1af14963005fc8c.jpg",
+      "filename": "IMG_5970.HEIC",
+      "profile": "temple",
+      "source_sha256": "80b70f86bf2553fdf4b6c2c977862f0182539346a03808acf0295310ee8224eb",
+      "sha256": "e0057219fce1496cf7d46758c553cd65282bfa33e8a5ed2daf6e8f0292e533c2",
+      "bytes": 620631
+    },
+    {
+      "path": "fotos/37e0e6ed51e572b691deb6f2.jpg",
+      "filename": "IMG_5971.HEIC",
+      "profile": "temple",
+      "source_sha256": "1920357205950cf8ea23419f6496dedea3c3d2438293aefb8dae9e72ac2c78be",
+      "sha256": "4b0eea93be5c3767d34855698ec6b5a8999313b295a4446f8d53389447ab49c4",
+      "bytes": 642596
+    },
+    {
+      "path": "fotos/d990f395241ff96a435c7f24.jpg",
+      "filename": "IMG_5973.HEIC",
+      "profile": "temple",
+      "source_sha256": "79beec8147c3a4b2521f475f60a6e2c0d96f1c62fc2c2cf63742d530071627f9",
+      "sha256": "2b31554ddd318dcb4dc08b04491171dfed6c1961e7555943dc8d1dc6d184a188",
+      "bytes": 760932
+    },
+    {
+      "path": "fotos/c04eab92812d9c0dd13269a1.jpg",
+      "filename": "IMG_5974.HEIC",
+      "profile": "temple",
+      "source_sha256": "85ac49835a1771b631b1da14f05e5d90222ed81233780d0abde5b55e02190b3a",
+      "sha256": "0cfb27500fcb6c1eedc2de10e0e621ba2d0a9c549c6612228a36b1a55f4e6844",
+      "bytes": 783669
+    },
+    {
+      "path": "fotos/7579e62500c5653230a57131.jpg",
+      "filename": "IMG_5976.HEIC",
+      "profile": "temple",
+      "source_sha256": "b634bd021287ff23315ef50da2e97e82e9715b7133859a7b58d7e0c83df3f6f5",
+      "sha256": "6b3e6ed694395312a830645b1a7600aef74c34e44c76c70e72a280639a7d20b9",
+      "bytes": 670193
+    },
+    {
+      "path": "fotos/c8e7222c30fa3209b883473a.jpg",
+      "filename": "IMG_5978.HEIC",
+      "profile": "temple",
+      "source_sha256": "f773f284013e4cc4c172a69417cdeb71c6139b5123b42ee90c82f6a791721ef5",
+      "sha256": "c5c9d85b162c26846fc4fcb004ba70d4460beb3d7876bfc381c73dfc78553ab6",
+      "bytes": 589272
+    },
+    {
+      "path": "fotos/6ad4144a4eeee03e48d1d184.jpg",
+      "filename": "IMG_5982.HEIC",
+      "profile": "temple",
+      "source_sha256": "95f3c2af750405864e1c3ad1ed45d0dbcb2030ea3657cdfb2ec9c2cbc5e87338",
+      "sha256": "d2610d66282214d5d4e8e08b84f71b49cd03e565a558b6e4e8771d95fdfdd424",
+      "bytes": 628258
+    },
+    {
+      "path": "fotos/0c9151c8168f718268ed61e8.jpg",
+      "filename": "IMG_5983.HEIC",
+      "profile": "temple",
+      "source_sha256": "54c97e8cf567306e0222ea81ea3051c3e909f8d354f1ad0a944061acfe5c9d24",
+      "sha256": "7ae418d8a9b7d8bd579f834cc8abd619eb7e4ef862b274deef177429d0f357a7",
+      "bytes": 887178
+    },
+    {
+      "path": "fotos/4fb1e6f3d3ecc40b92e0c381.jpg",
+      "filename": "IMG_5985.HEIC",
+      "profile": "temple",
+      "source_sha256": "c29e228bebc3a702717d370f4bae3b764347d97db4ffa84dd7d9686664d5bd0c",
+      "sha256": "e9638380676ca839ea1e154305e2143791f87c79bccec354e508f882788b9e7f",
+      "bytes": 662917
+    },
+    {
+      "path": "fotos/f98ff797a0a5120251ee0e59.jpg",
+      "filename": "IMG_5993.HEIC",
+      "profile": "interior",
+      "source_sha256": "27bfe4a201da02e61e6b580861c3cd91d97ab697e5d90921a03ed758436ebfa1",
+      "sha256": "fa544952ae1c9ee44d16c16332d0865d52b8bbd230fbe872361aa5049b8d6da8",
+      "bytes": 741908
+    },
+    {
+      "path": "fotos/1d91f6a4be3fa26c26dfcc15.jpg",
+      "filename": "IMG_5995.HEIC",
+      "profile": "interior",
+      "source_sha256": "e8a2bef552dec2b5071646ffd921393a20872f766015fd667befc13ba1454032",
+      "sha256": "de0f525871d65f8cb9eaa0674a357d5e4a00449f24d9de1743a6795048b1dad1",
+      "bytes": 1029713
+    },
+    {
+      "path": "fotos/aecb32f02fce22a9a7a30c8b.jpg",
+      "filename": "IMG_5998.HEIC",
+      "profile": "landscape",
+      "source_sha256": "31520893f0cc7fbbe323b5a4768210c69f89326062d93af3f183f747baeb49f8",
+      "sha256": "78171bcdb173fda23bbb28abbdbee2aa83f1fa8649b3695c46ea659234c421b1",
+      "bytes": 715397
+    },
+    {
+      "path": "fotos/27a3524ca2485e8e2383872b.jpg",
+      "filename": "IMG_6004.HEIC",
+      "profile": "landscape",
+      "source_sha256": "c8d61966b93085ba8c129f6b7ad98611f50eb0ea55548a18b576200f88961739",
+      "sha256": "678ccd79d526c5e63850f9198a119b3b4bcde6f928fdfd327223cb6934fc896a",
+      "bytes": 925250
+    },
+    {
+      "path": "fotos/06cd48d7fcebb927031ea3f6.jpg",
+      "filename": "IMG_6010.HEIC",
+      "profile": "landscape",
+      "source_sha256": "8268582f77d5fa867370252a450ea8ece6d56af1491e1599e3a85b5cac4b1e4e",
+      "sha256": "9bcca4ab97747a1f38bac045fc64645a7c3140f7427b2d9f8bde9348d7afd243",
+      "bytes": 519806
+    },
+    {
+      "path": "fotos/cb227ea9f9d19880b7ecd0ed.jpg",
+      "filename": "IMG_6015.HEIC",
+      "profile": "landscape",
+      "source_sha256": "f51ea7d0048248418a47732da68e3aad9833c217aab7dc18efd1d786e66e7c61",
+      "sha256": "898293844bb76dfb550f2471c991cb8a5d5e390741d8c6aa6d7119d5e2ac020d",
+      "bytes": 892216
+    },
+    {
+      "path": "fotos/10d91d5465de7c978da0dc31.jpg",
+      "filename": "IMG_6019.HEIC",
+      "profile": "landscape",
+      "source_sha256": "8e19e1e0d3957c2fd954fdbbedd6981e2aad3c1b43c92ed7f0f0d8e72064893b",
+      "sha256": "4f85b71f0707bef2340d123a402c1912ad09281ddda23b12c93610d28828eb35",
+      "bytes": 760083
+    },
+    {
+      "path": "fotos/39489da0bc299624293c61d2.jpg",
+      "filename": "IMG_6020.HEIC",
+      "profile": "landscape",
+      "source_sha256": "184d5996b26b286676863caccfa580f92b209535f399c8cb506d933c1a5f0fb2",
+      "sha256": "5ffd3fd6b953ae3724b0b0314ab99fcb8ea911d815288d5f0d0cdc6baac62fac",
+      "bytes": 688847
+    },
+    {
+      "path": "fotos/9183cac003c90de4c5aff50c.jpg",
+      "filename": "IMG_6023.HEIC",
+      "profile": "landscape",
+      "source_sha256": "35f87bec39bd729e8d4e15c6a71d343f331231397d396278dbdf23355d48bb81",
+      "sha256": "2e7df00ef3d5d8bde6025f04f78ec7215afe4cc3f5fee7613869d7f364bf4705",
+      "bytes": 668353
+    },
+    {
+      "path": "fotos/e88f20dec791a9e587705f73.jpg",
+      "filename": "IMG_6026.HEIC",
+      "profile": "interior",
+      "source_sha256": "04897a86a3eef411634330b716f8df2259c5b5190afe646d8a9007f7cb3cc851",
+      "sha256": "4442171a20831a8838d89c7246fa537c0a31d7359795cf2f61b136ff8f7ccc0e",
+      "bytes": 671403
+    },
+    {
+      "path": "fotos/778d9be91dd9e16bc20ddb32.jpg",
+      "filename": "IMG_6030.HEIC",
+      "profile": "landscape",
+      "source_sha256": "9032c2a194d4d4eaefb1757781e06a437d5e1cf5b02f8037120f9b7085924ba2",
+      "sha256": "1c8240c1dafc8673a7b7bf12c0c021581405555391c318b31e41ef1b70239207",
+      "bytes": 730895
+    },
+    {
+      "path": "fotos/1a3bbd1fd906ddb09651a6e3.jpg",
+      "filename": "IMG_6032.HEIC",
+      "profile": "landscape",
+      "source_sha256": "74cb7910a07da0ccd9dd9facebf1f77530a9e062a358bbc75ac4bdf26df38e86",
+      "sha256": "66468ad7e98a8cc6a761db4cad4f04369e490747f0197bf3d1d64cf3c2b52b50",
+      "bytes": 690448
+    },
+    {
+      "path": "fotos/d7dd2eea8fdf5bdd6971271a.jpg",
+      "filename": "IMG_6033.HEIC",
+      "profile": "landscape",
+      "source_sha256": "ace9afae1e2123ebad758183a6bc785c2d21c743a9e3c08f8a32adf95919357c",
+      "sha256": "2819e4f228860d7d6f167228fd64a01cd3ef5fa45f10952851452b2f507f9dbd",
+      "bytes": 739382
+    },
+    {
+      "path": "fotos/9fcd63b61d748a50f31036da.jpg",
+      "filename": "IMG_6038.HEIC",
+      "profile": "temple",
+      "source_sha256": "522eb4b7316bcd72c2ce3407f88736e97d104e2cb6239ba015b686d7deb5000a",
+      "sha256": "6d65bc24645a66d8fdc50233a7a3bce0aacd8cba724a2410042bc3ab723c1dbe",
+      "bytes": 693525
+    },
+    {
+      "path": "fotos/1007047deb84dc0c42a92681.jpg",
+      "filename": "IMG_6039.HEIC",
+      "profile": "temple",
+      "source_sha256": "ae04dd1ec4aefd636bc3ae55088c0d873f30e2fe8b40aa214e0011c9bebaff15",
+      "sha256": "a3a8cca02745f9893a54b1a4a7bae9fc3ba6aa018bd22860afdf026676e77e86",
+      "bytes": 654608
+    },
+    {
+      "path": "fotos/434edf945a7e2fd7081d5322.jpg",
+      "filename": "IMG_6041.HEIC",
+      "profile": "landscape",
+      "source_sha256": "3de94438dfe16145ba209809712249d304e3a61f8e8d9c43929ecd0f895c60c9",
+      "sha256": "5b5dbae2674bda54855c17df51cf6353aaa4ba56efb619edfa5aad1b1b562ce9",
+      "bytes": 638605
+    },
+    {
+      "path": "fotos/051aa0833ce3a5ab4af344e6.jpg",
+      "filename": "IMG_6044.HEIC",
+      "profile": "landscape",
+      "source_sha256": "5399b1c26fd8b2d9409ab7d2a3fd2381b710df24bac9092abaf85627a65de825",
+      "sha256": "238dc45d16304f6abc102ebe5e481a371d0e23eea7e97cb98de4dbb8ecf0899e",
+      "bytes": 930851
+    },
+    {
+      "path": "fotos/0ded2aca574a6f1464777968.jpg",
+      "filename": "IMG_6045.HEIC",
+      "profile": "landscape",
+      "source_sha256": "21936b3e65fe7bb49ac56015973db98ed671a46a0e2cdb0310b8d265553ab234",
+      "sha256": "534031abc3cb78987c1ccc60a7bbf25e8b2dab5c06e5570d946751b267bf0a83",
+      "bytes": 913881
+    },
+    {
+      "path": "fotos/e82b8aac20bd7469e08e2013.jpg",
+      "filename": "IMG_6051.HEIC",
+      "profile": "landscape",
+      "source_sha256": "7c41d964464dac7486f22ad4e81e2caf84bae39236d7ba7d5aa89e0dcb3899fe",
+      "sha256": "8ad6750d74b7b09cac36bea2bba4cf8763886ac581bafc660eac6a21bc419dfd",
+      "bytes": 781725
+    },
+    {
+      "path": "fotos/6a36e29000c63db5cb87b6a9.jpg",
+      "filename": "IMG_6054.HEIC",
+      "profile": "landscape",
+      "source_sha256": "c2a4d2addb0efbf91a6c4bb8cb12e94cf411b4d8dc9bfae666fdcadcee752e53",
+      "sha256": "aed25c60b1c005c4056eb6330c048c1b92395869b7d90cc7879eda9861586292",
+      "bytes": 453716
+    },
+    {
+      "path": "fotos/031f9f2844293a42556c05a2.jpg",
+      "filename": "IMG_6055.HEIC",
+      "profile": "landscape",
+      "source_sha256": "6f659039036862bb4423ac38adbc69f7bff6616fdf763ec50393ee6e16bdf352",
+      "sha256": "2cf0306eadcc973b152327a31fa10874cda96528d4336ce52356c0e03173f162",
+      "bytes": 773158
+    },
+    {
+      "path": "fotos/64178a6253e95530fe899f10.jpg",
+      "filename": "IMG_6074.HEIC",
+      "profile": "landscape",
+      "source_sha256": "2899d001e4602dc2419e43baa8582f243d9bdd7ae08abcc46a81231390eb5302",
+      "sha256": "2e5005729bf32b26825d8327fb62bd30ee3bad587c87b2ebd71485e10721b036",
+      "bytes": 788376
+    },
+    {
+      "path": "fotos/10379c98a6b6992d31b16f13.jpg",
+      "filename": "IMG_6075.HEIC",
+      "profile": "temple",
+      "source_sha256": "94c023eedd5c13525eb41add9dc6ef16530c93416bb7ffc6710fa6489aab0916",
+      "sha256": "8c63765a96d2c3739776a3bbe59f5f05971bc6667da36ac00abeb0b0781c752f",
+      "bytes": 632760
+    },
+    {
+      "path": "fotos/ede93420b90bd1ee7a16512c.jpg",
+      "filename": "IMG_6082.HEIC",
+      "profile": "landscape",
+      "source_sha256": "7e3e8948e19840b95a906da9a72d73a9f4c5b2c7b776db5be3d8a3ff36cd457f",
+      "sha256": "f2d09c66d2b32f788bd68b7135e985accc755c7aac7aedab540476fff213bc39",
+      "bytes": 471862
+    },
+    {
+      "path": "fotos/dd6ddf7df994bedfbdb757e6.jpg",
+      "filename": "IMG_6087.HEIC",
+      "profile": "landscape",
+      "source_sha256": "e90b19eba95d9a74cdee752147237eb466c3377838beaea6e19d045b73f7da4d",
+      "sha256": "dc3551334aad660d8ca9268fcd79af08fdbfabb2802175a8f8757932916df21d",
+      "bytes": 514818
+    },
+    {
+      "path": "fotos/09dc9aca8254a09cdc5df66e.jpg",
+      "filename": "IMG_6090.HEIC",
+      "profile": "landscape",
+      "source_sha256": "dd7e389666497236a86b83f09a14d09eca5f58a0c9858d02432b09dd62743b77",
+      "sha256": "a99d343a25a6f6817250f1e1eaba4e3444014e281f2fa07e936a60677172ff19",
+      "bytes": 514610
+    },
+    {
+      "path": "fotos/c2fcce57bc861d2ce3803ad7.jpg",
+      "filename": "IMG_6094.HEIC",
+      "profile": "landscape",
+      "source_sha256": "6bfa585c2542120a0a0ea79921ea5bab39a285f15e3ee9a5d04fc00378870491",
+      "sha256": "8543773543d8ed70b6eb3e2a5a5aaa8d783f23dc35ebf24d6efd54bfd93e4a6e",
+      "bytes": 837604
+    },
+    {
+      "path": "fotos/f635a95604e75f14b91c3dce.jpg",
+      "filename": "IMG_6100.HEIC",
+      "profile": "interior",
+      "source_sha256": "b8b3b3c9ca27f9e648593772a0179a11ba30af8995c6690320659e84f39750d2",
+      "sha256": "e72e4fd3229092f1422c12388aaa5fd98a84261f3957beb9a9b57055665dee9e",
+      "bytes": 1246211
+    },
+    {
+      "path": "fotos/07f336e89bae657fb62056ff.jpg",
+      "filename": "IMG_6103.HEIC",
+      "profile": "interior",
+      "source_sha256": "5645eeb56a56c0b9e7b7aaddbf9ec55df1d2cd7ee0de38b6400f0c519a5d228d",
+      "sha256": "ad46c19c576b684996826668a02d9b93d6b4fe149243776fd61cc1da0c8843da",
+      "bytes": 915921
+    },
+    {
+      "path": "fotos/b6344c1fd812ac6392a39340.jpg",
+      "filename": "IMG_6104.HEIC",
+      "profile": "interior",
+      "source_sha256": "49499c24c7a72d73f138f113d4c91beaef3ab8fc9dc2108f63ff843ba4edc9d3",
+      "sha256": "c20e835bebee0a825e21aed4bdb8bf624ed9168138ae2d03327d04135e50adbd",
+      "bytes": 828405
+    },
+    {
+      "path": "fotos/db3d458a557db41c534d62ce.jpg",
+      "filename": "IMG_6109.HEIC",
+      "profile": "landscape",
+      "source_sha256": "e9985e4c33a2a9a1fb3aa9d285760086137fcef498ebb39133809c273ea33207",
+      "sha256": "b4c6affcce49e902258540601bb021a9621fc04fd3eaac8dc747f81f0e239e05",
+      "bytes": 252290
+    },
+    {
+      "path": "fotos/fa3d77dec453bb43788770c7.jpg",
+      "filename": "IMG_6110.HEIC",
+      "profile": "interior",
+      "source_sha256": "7c43d09a62ac353bf70a154bf4fe5bb83d500241c952bf09cd0165af42b4c337",
+      "sha256": "9152352aa557d609b8118d6bdf23234456051144f798472f5485ab8b851f7f45",
+      "bytes": 489187
+    },
+    {
+      "path": "fotos/5f74213df39e7eeb1687d990.jpg",
+      "filename": "IMG_6115.HEIC",
+      "profile": "interior",
+      "source_sha256": "18b36efe242d76b8ff8bbf148989d037e2f008c952d5934726b9d1df431033e9",
+      "sha256": "94149bb0859217dd47b71c0f2333f34237b659874690735433ca51404b12bcac",
+      "bytes": 709446
+    },
+    {
+      "path": "fotos/3d2b81ce1960ee5774eae11d.jpg",
+      "filename": "IMG_6121.HEIC",
+      "profile": "landscape",
+      "source_sha256": "eb21e288b26409014538c72a891474d05aef369d01deab3dc77dbe7942bf09a5",
+      "sha256": "9c5b14f924d80f39494f7ab11a906580a8c6f06d771af85e73eb2ddb24634817",
+      "bytes": 781078
+    },
+    {
+      "path": "fotos/9f579ab20868bea4c53c5444.jpg",
+      "filename": "IMG_6123.HEIC",
+      "profile": "landscape",
+      "source_sha256": "3618e1bcbc0d03b76afc226143c51c54c5158876161b65ff3ce315a21e020e7a",
+      "sha256": "0a3f5cf93619c9b7907ac96eee2d82b49126229cf6669197c39b830e8dd51f3d",
+      "bytes": 638073
+    },
+    {
+      "path": "fotos/8d3e0576686290912264b03e.jpg",
+      "filename": "IMG_6124.HEIC",
+      "profile": "temple",
+      "source_sha256": "89d895f674e9668e3db0c5816f783fc6d6531390671881037ade0eb262150b86",
+      "sha256": "d0f507889fd563824305ffd7bcdeebf69876031d81d6c748e23e4b8aada76767",
+      "bytes": 750041
+    },
+    {
+      "path": "fotos/f5470b9be2a22ccbb7c8a0c1.jpg",
+      "filename": "IMG_6127.HEIC",
+      "profile": "interior",
+      "source_sha256": "4a251e9db97457379c0912d15563bfb4dbc0a25b98bca21b327e37eb306a217a",
+      "sha256": "6e67d655237fd5443b873b60dc2c9a9bbe7cf933459bd202fd0e69b83adfddfb",
+      "bytes": 808836
+    },
+    {
+      "path": "fotos/df9e01be5b9ece58f1683672.jpg",
+      "filename": "IMG_6132.HEIC",
+      "profile": "interior",
+      "source_sha256": "b655f71bc943ffe4a6aed947a38664d3a5d3ffc9b45c4fc4210eb866dd3cc9e7",
+      "sha256": "3ea487987098f7d6cd38c44d85e8d5c158560910b623948ee7e69dc8a188bc93",
+      "bytes": 619490
+    },
+    {
+      "path": "fotos/55f36852feaa0c92684325a3.jpg",
+      "filename": "IMG_6133.HEIC",
+      "profile": "temple",
+      "source_sha256": "044ac271623d42c7dc992456e0237094639dac9a2a5ed2991dd6226a8bcee05e",
+      "sha256": "57ee9c842bb42876f091b1029c5fe7364d53df55165e45387416f2be5286f44b",
+      "bytes": 513906
+    },
+    {
+      "path": "fotos/a1ebc9ce9fe916f81c08627c.jpg",
+      "filename": "IMG_6134.HEIC",
+      "profile": "temple",
+      "source_sha256": "d5588586500fb0b1a23ab25ac6610dec01a5ba3ac36c90211106427d99bb7819",
+      "sha256": "45afd9cd31508ceee4cfa0d64b08797ea39c13db6302fee3f44e10dd5b348818",
+      "bytes": 747490
+    },
+    {
+      "path": "fotos/eccabe78474e7c56efc5e6e4.jpg",
+      "filename": "IMG_6150.HEIC",
+      "profile": "interior",
+      "source_sha256": "8fd004de219f333a0115c3945e31feadcaa2ff1b4205afc54bf88b2c3f69d94a",
+      "sha256": "6990fb9932ac0c46ed2446ebe930abfc925a51b5f968688962730121dc6d91c9",
+      "bytes": 601129
+    },
+    {
+      "path": "fotos/2d61130cb9279a6862ba0751.jpg",
+      "filename": "IMG_6153.HEIC",
+      "profile": "landscape",
+      "source_sha256": "781522832f8776459420eea3db52ca96e43c4f759865cb3d2a41a0253f2fe7c4",
+      "sha256": "7489a09c133b97c659b3e5b9a9e22b1810c193d8b48ac1912c76cb9bda324f49",
+      "bytes": 841532
+    },
+    {
+      "path": "fotos/589b76a56ffc8a6e57c461de.jpg",
+      "filename": "IMG_6158.HEIC",
+      "profile": "landscape",
+      "source_sha256": "9640b273399820f11f0bb381285d87c889f64ed2c607eaa36ec44a2a3954c3de",
+      "sha256": "48bf5178326e3276171ec1a352db20e3d69558ca19a7dac0a4763f6f0734df62",
+      "bytes": 697276
+    },
+    {
+      "path": "fotos/78d26f86de59503808ef9332.jpg",
+      "filename": "IMG_6159.HEIC",
+      "profile": "temple",
+      "source_sha256": "f11d3fb4df5202625a91b3d8c1ec4afa2768e164f31a56b88238be92e5f87a98",
+      "sha256": "a228ed1aa3dc34c76fbea915c8be23a55ad193068f90fa9328d87c928ecd1400",
+      "bytes": 859786
+    },
+    {
+      "path": "fotos/121858a415eea3b7f5979be4.jpg",
+      "filename": "IMG_6160.HEIC",
+      "profile": "temple",
+      "source_sha256": "491da695ddd6a210ca36a2429b721fa7a2e6d12a1f09f285c3a106307f97e98e",
+      "sha256": "4f79937b1333d14ba6feacdd2f27be1700736eb34c3da869f9f45389b09b4b79",
+      "bytes": 782549
+    },
+    {
+      "path": "fotos/4e91319c5c391ff969285c83.jpg",
+      "filename": "IMG_6167.HEIC",
+      "profile": "temple",
+      "source_sha256": "bead714fb69e5be0bc530f4d3b6fef8fb6b1355ef5424416ecbfacefe39acdc1",
+      "sha256": "8cb85d5fbf8d43244e051166c058450e8be64167c37ea7625b562a2884771098",
+      "bytes": 775160
+    },
+    {
+      "path": "fotos/25d28ff47b828f3a1b76f4c0.jpg",
+      "filename": "IMG_6169.HEIC",
+      "profile": "temple",
+      "source_sha256": "6296e3dc5ad3413e4fe60b04684c3ee921100e04be1b872fb16fda2665d492d7",
+      "sha256": "d12fd03f63bf9e45d239c58b039cf8c92493d01178c7b2efb4deeedec69cca37",
+      "bytes": 735352
+    },
+    {
+      "path": "fotos/b8453212a258b94a6785e329.jpg",
+      "filename": "IMG_6171.HEIC",
+      "profile": "temple",
+      "source_sha256": "219d225cf37fbc8b5692530a57a30623f0d91eb5ff58192dd3705ea32bbed153",
+      "sha256": "01937ef31385fe28b62d627cabf8490476026f2d62fa009457205ef4f4dfe0bc",
+      "bytes": 675637
+    },
+    {
+      "path": "fotos/a63d5289a6fd67ca5ed06fa1.jpg",
+      "filename": "IMG_6173.HEIC",
+      "profile": "temple",
+      "source_sha256": "62ff8f3cc0eee644e9c2e9fc5c91a2f65225467964b2e6bf09dd867da3b39fd1",
+      "sha256": "83dffb196e0455ac20d949f4e362d41ec36c06786df15a73e30cc91c86671126",
+      "bytes": 639621
+    },
+    {
+      "path": "fotos/e91eb796beb9fa4f14f09921.jpg",
+      "filename": "IMG_6175.HEIC",
+      "profile": "interior",
+      "source_sha256": "aa149db19be706b1229db8acdadf699fcff233eaa3b3b696e2698a0d0abcce59",
+      "sha256": "1b58b1b7a14e34f0697b6980e86d79a71f98220d7c538441da257be838819aab",
+      "bytes": 675979
+    },
+    {
+      "path": "fotos/73b4c891d9deeb4edba9e801.jpg",
+      "filename": "IMG_6177.HEIC",
+      "profile": "temple",
+      "source_sha256": "15336845f0d1399deef1b73a9b625e324a7d8800b81131f6e836763df4323ee4",
+      "sha256": "2c02105b876a5e39914251387dd98647447f5131915277d008e7e260f132e0f2",
+      "bytes": 684639
+    },
+    {
+      "path": "fotos/253d0b499c7db8abb2ecd7e2.jpg",
+      "filename": "IMG_6183.HEIC",
+      "profile": "temple",
+      "source_sha256": "33f428893be82be01891f3619c7ccee8fc787eeb91e075aa6c713677b3b0ed1d",
+      "sha256": "4a0ffc59d4684fe4cf188081760d7444517224bc4fa06026a79955632134667c",
+      "bytes": 792775
+    },
+    {
+      "path": "fotos/67bc9b7fcf7b1888d6a11885.jpg",
+      "filename": "IMG_6185.HEIC",
+      "profile": "temple",
+      "source_sha256": "1f8d986344f23443315a05de29abc90997400d76faf4dd0f04b7e484d45955f0",
+      "sha256": "85e29bea19724a7afde1c91e7c79cb04896472f47d12a698eb9a913f52826ce8",
+      "bytes": 1004020
+    },
+    {
+      "path": "fotos/acfa03e63f6baa4af20f05b4.jpg",
+      "filename": "IMG_6191.HEIC",
+      "profile": "temple",
+      "source_sha256": "693f676dad2c159d4c51a200fcfd90babd5d49d121551cab858fe22aed051f13",
+      "sha256": "b8b1fa5c514b86d508c5b8f235893be1daad3d23a547e0d557de78fa21c15ebf",
+      "bytes": 932360
+    },
+    {
+      "path": "fotos/0452974c413d8ff4833da3fa.jpg",
+      "filename": "IMG_6192.HEIC",
+      "profile": "interior",
+      "source_sha256": "a79f7add355973a4df90ff28625018d18fc6e01dbdff58b9792d06499768a73b",
+      "sha256": "174e32325eedf75183d7ab381c950cc95b5e10f15a423e2d86ed7ec7e14ff995",
+      "bytes": 1223144
+    },
+    {
+      "path": "fotos/db95967c0148b978b57b3d6d.jpg",
+      "filename": "IMG_6194.HEIC",
+      "profile": "temple",
+      "source_sha256": "d93655a7e665e149039c77e7d9e217c51b7531a18f8f88b6811219d3002e5e3f",
+      "sha256": "13091736ad06dcd1ac94e14b599fdbc996e76bf289ce2ff13a1f9ed5ecab6843",
+      "bytes": 769653
+    },
+    {
+      "path": "fotos/793dd40c7083c6e0a482fe35.jpg",
+      "filename": "IMG_6195.HEIC",
+      "profile": "temple",
+      "source_sha256": "d1198f38ab7b390db5ccbe72acc5d308a9df77d761d8a770d4a699776bddb5d2",
+      "sha256": "c9fe4f3a2b8389b2efc1555a9037282fdfbe15215df49e7bcdf4781cfee74ff7",
+      "bytes": 1013834
+    },
+    {
+      "path": "fotos/9f72157fcc458919ee9a4e7c.jpg",
+      "filename": "IMG_6196.HEIC",
+      "profile": "temple",
+      "source_sha256": "361246ba095a25a9f49e9c5e0f65d5fc262d6c574edd76f7db6af3556fd64f43",
+      "sha256": "50469ca9ccaa905529b8e8eaa01cecdbc5110beeaeee31a926440cd674f9c60f",
+      "bytes": 754882
+    },
+    {
+      "path": "fotos/5b3ef8d13183e4c6fcc34b8e.jpg",
+      "filename": "IMG_6197.HEIC",
+      "profile": "interior",
+      "source_sha256": "f160d52f0a6145f55f014377e5e567b5411d033c150975df178534fed4a6bcd5",
+      "sha256": "6c14ff66bcbe713d516b46e7089e390caccfaf2aa4df7653ee2c8f56314fb42e",
+      "bytes": 720054
+    },
+    {
+      "path": "fotos/46cc129dc4d29c614d9fc964.jpg",
+      "filename": "IMG_6198.HEIC",
+      "profile": "interior",
+      "source_sha256": "613c26478327f891809f7369e99194257c89356631ab01cc4330298fbfc2f643",
+      "sha256": "4277bc9c6f1dc38d1ea813838f52d8ec98c541700d656a22de2308347e5dd34b",
+      "bytes": 740810
+    },
+    {
+      "path": "fotos/e10f3face6e857ff4be2249c.jpg",
+      "filename": "IMG_6200.HEIC",
+      "profile": "temple",
+      "source_sha256": "b48ad88a0c2166bd1c36e456c3713b75f3b8fb01611606dc2fcd741470d912eb",
+      "sha256": "38ea82674d05a156a2901bde7d37529fb1527b8502b6590be8d8a1110a0c5235",
+      "bytes": 851813
+    },
+    {
+      "path": "fotos/933ab87fbdec82c7cd7e52dd.jpg",
+      "filename": "IMG_6203.HEIC",
+      "profile": "landscape",
+      "source_sha256": "4a885c2c851a2459d75f8609dca805ccf5d9576f79246aefe5fdf93278024664",
+      "sha256": "fa937fb941cce6f726df882e993aac9cfe2d5f1c1a7ae7af61baaa1da9e99848",
+      "bytes": 858344
+    },
+    {
+      "path": "fotos/a2b3246bff1b5c41e2f23112.jpg",
+      "filename": "IMG_6206.HEIC",
+      "profile": "temple",
+      "source_sha256": "7ecbf14c8ea6c66cfc2f2fd1054e0f30f7a2d0ead86f6f2f79b89fe21ec8dd41",
+      "sha256": "93f6bd3475257812a6c8bcd791b6f7911d3a9ff669f51d867e38e339fd2373ef",
+      "bytes": 711834
+    },
+    {
+      "path": "fotos/bbdc5d55d9208f8454f3e786.jpg",
+      "filename": "IMG_6207.HEIC",
+      "profile": "interior",
+      "source_sha256": "f46101e73c5580e79cb7ae5f651f1ccad31436a7ce96bdfefcfd0e9f79c78eb0",
+      "sha256": "ea0176610d8268631b25af773ae1848c66c2db5d0d8a7916309439297a456d65",
+      "bytes": 760214
+    },
+    {
+      "path": "fotos/cd3959522eefebae55827399.jpg",
+      "filename": "IMG_6212.HEIC",
+      "profile": "temple",
+      "source_sha256": "b22335614afa747cf99bc5b9af52c3c74aca9ba6824b8d7cb4b240a32ddf9f57",
+      "sha256": "cedf9deb158c7bd7f62cf76b72028950cba58cc5636e0a685d4256567e5e3ae6",
+      "bytes": 962934
+    },
+    {
+      "path": "fotos/8dc104bffb258724143347d5.jpg",
+      "filename": "IMG_6214.HEIC",
+      "profile": "temple",
+      "source_sha256": "d06346b17eee92a59d53af679b975251064f1759c22792984c45c2e8ba3a8c98",
+      "sha256": "8a598a70d1f6c45c96f6cf042ee304a099ac02cb650fe6763ab77861c916be6d",
+      "bytes": 581717
+    },
+    {
+      "path": "fotos/d9c807b48291760f554f6e56.jpg",
+      "filename": "IMG_6216.HEIC",
+      "profile": "temple",
+      "source_sha256": "d29119745709e014b84806dbcfe16c84fd5435c7b21bcd35b3608198e7987df5",
+      "sha256": "29bda0cc252f27450bb53751635eae8606f20f7192a9f27486bcc16695a90267",
+      "bytes": 833771
+    },
+    {
+      "path": "fotos/f960f99f573ffef2a0874aa9.jpg",
+      "filename": "IMG_6219.HEIC",
+      "profile": "temple",
+      "source_sha256": "ced93acc3581025352318aa404aef54a5b03f6e3f042654471f5f1c155635ec7",
+      "sha256": "e756857cecaeeadb8cfdce915f65b3bfdef6b3a54694f4f6de459acfa10e1595",
+      "bytes": 609134
+    },
+    {
+      "path": "fotos/e87fcabca492950e3f978859.jpg",
+      "filename": "IMG_6220.HEIC",
+      "profile": "temple",
+      "source_sha256": "f6c5d925922ed80eb370c5c4f5dc497d4b9c123b6c7efd0576651909eb86d8da",
+      "sha256": "4dd56d922007f376087b27342cbb579a162aed54144dfbbb01874befafb2ac71",
+      "bytes": 749199
+    },
+    {
+      "path": "fotos/1ae4bc26c1348f6981c87cc3.jpg",
+      "filename": "IMG_6222.HEIC",
+      "profile": "temple",
+      "source_sha256": "5bb005b40319b443dcb08dc546acd41d70477b979b960f4cd1cdc1c71956e07c",
+      "sha256": "f74fca58cfc711ad1037bef5cbde83ebb50b159a679c1d4c649e04a7ea9e4bae",
+      "bytes": 642672
+    },
+    {
+      "path": "fotos/39e086009616339aad4a80a7.jpg",
+      "filename": "IMG_6224.HEIC",
+      "profile": "temple",
+      "source_sha256": "8ba3b077faa0874ce44ecbc01803710e7bcffcbd4f0b47b6bf0c671738ede5e0",
+      "sha256": "63bf21f3f6e6d9c9a66e9407efe7fdf86dbbe8f326af0e07c1f7a9c9c192390b",
+      "bytes": 679789
+    },
+    {
+      "path": "fotos/a6bebd03b98735b4fadb41f7.jpg",
+      "filename": "IMG_6228.HEIC",
+      "profile": "temple",
+      "source_sha256": "3cc9fdfee288384929b9853377ad5ce18bfab8f15354bd8c136df0e13c968174",
+      "sha256": "b20cebf70df9a0f6dbefb06756e0d68861c67f2783756281e34389863167dc69",
+      "bytes": 864405
+    },
+    {
+      "path": "fotos/5cad39c96c0e5787676779f5.jpg",
+      "filename": "IMG_6230.HEIC",
+      "profile": "temple",
+      "source_sha256": "b0257444344bd77fefee5ff1789f4718528f6b714aef88659fd38f15018a8a0d",
+      "sha256": "78e22cd0195b2ab69a285e55006a37529260f7719c6e5efda2976ea0756d1e52",
+      "bytes": 882744
+    },
+    {
+      "path": "fotos/e7c66361705b50a0de9040e0.jpg",
+      "filename": "IMG_6234.HEIC",
+      "profile": "interior",
+      "source_sha256": "cb8619eaa75016c214bf876594a109f1c6fa1f1ee154bd4674c0512b90562827",
+      "sha256": "87c5563e41156a7fb09d1ef5bb20e98959b1babd0364c35d9ac4197d024c5231",
+      "bytes": 513225
+    },
+    {
+      "path": "fotos/6c9e1a6a1c0aaeb3514c9e0e.jpg",
+      "filename": "FullSizeRender.heic",
+      "profile": "interior",
+      "source_sha256": "b02b7f5096de05abc06b8e410af2b5a7fd9869e49ef47ff95397cd7457953059",
+      "sha256": "9a8bf2385328463202eaf08ae8a170aa93ec1c0f794055a1514b54508407e446",
+      "bytes": 769262
+    },
+    {
+      "path": "fotos/151c6b5860fbf06636c61db3.jpg",
+      "filename": "IMG_6263.HEIC",
+      "profile": "landscape",
+      "source_sha256": "10a3ba6590993434d0e9f28e3d8f597d7ff63ab8b39d77486b02100d3432a865",
+      "sha256": "e0128d28c3c66daeb2bee362e3469e8437c8cfcde201c502611f5466512e6317",
+      "bytes": 797435
+    },
+    {
+      "path": "fotos/ee974f373b691056a891483f.jpg",
+      "filename": "IMG_6264.HEIC",
+      "profile": "landscape",
+      "source_sha256": "c450bc7e7a4574565298aa98b35515906147d1dd21f5397ff23f90fc988c7293",
+      "sha256": "e7a1cd2698220bc2ae15083d356a763f6e93e183b030d370c7b8246abee84a34",
+      "bytes": 323727
+    },
+    {
+      "path": "fotos/20f5390a309978838a890edb.jpg",
+      "filename": "IMG_6265.HEIC",
+      "profile": "landscape",
+      "source_sha256": "8913e7a3928ea1fb8c690ad89a34e9937a7abbea6ab86aab17c5b93431aead0d",
+      "sha256": "237569c41fc42c193e94093384093f3f3bd81405cfc8309313a37be104984a96",
+      "bytes": 675485
+    },
+    {
+      "path": "fotos/e9353daa8b07fc5bed5a6134.jpg",
+      "filename": "IMG_6270.HEIC",
+      "profile": "landscape",
+      "source_sha256": "b27a0ac152d11a3524527ec287632fe9f7c7d47f117a1ab4d52f1d9f21db527a",
+      "sha256": "495d0a8d2fd113e67dc8fa02f4102613bb871a4c9c5b41b60f8e198c820622a5",
+      "bytes": 847471
+    },
+    {
+      "path": "fotos/95497ac1dffaeff04a7daff8.jpg",
+      "filename": "IMG_6272.HEIC",
+      "profile": "landscape",
+      "source_sha256": "86b0c93f0364d70303403df6d260a008b03e4dfe4e525a896527d054242131a7",
+      "sha256": "4a8541749709a317881e55db7347fa93541a34d5a2696668ac2d3c06eb286ae6",
+      "bytes": 858457
+    },
+    {
+      "path": "fotos/fd875b97d8f53d0a0faa1c1e.jpg",
+      "filename": "IMG_6273.HEIC",
+      "profile": "landscape",
+      "source_sha256": "2a306ae74deac67d1126556abc0a11c1445633b313603cc41cd1a45b10a1f87c",
+      "sha256": "bfdb7a1e0bd9e3afdb562c53bc668c0e6834d79bd8b33937c0ee8d3a6357a326",
+      "bytes": 749952
+    },
+    {
+      "path": "fotos/16b0f5e593ff39c2396da055.jpg",
+      "filename": "IMG_6275.HEIC",
+      "profile": "landscape",
+      "source_sha256": "cd0be288dc8d845cb4addc68b4c8e14bf0a3bc13531263cf00d6d819725c5191",
+      "sha256": "43e6d707117214b8f176edf17096c465c4935e3a602300c54ffb26a654b652d4",
+      "bytes": 938611
+    },
+    {
+      "path": "fotos/32b7d2533d96a92bf35da9a5.jpg",
+      "filename": "IMG_6276.HEIC",
+      "profile": "landscape",
+      "source_sha256": "596342f9e0805677e5c26c5b509f36cae3ea34fb07c94936ca0b244a71930c2f",
+      "sha256": "8a1f0d3af86a2996b04d38e713e2dc9b2e90837d1f04a5b7fe58f130e3da4253",
+      "bytes": 639512
+    },
+    {
+      "path": "fotos/8775079b309cd89315635426.jpg",
+      "filename": "IMG_6281.HEIC",
+      "profile": "landscape",
+      "source_sha256": "2c0c09c4101948148563c344028f63a61622a51a4c35c1737492648fa3f3a691",
+      "sha256": "95c05115c745a357df4834bc75990cb62d1e693f9d7580f342edf9ee218b5d24",
+      "bytes": 770343
+    },
+    {
+      "path": "fotos/61f01eb2ea6f41f3a79b13a1.jpg",
+      "filename": "IMG_6284.HEIC",
+      "profile": "landscape",
+      "source_sha256": "b8a872a031ba5c3f98d32f1ddcb5062818556f27b4aadd77c993eaef101e1ec0",
+      "sha256": "9c570dd237aacf267cb72329761785b009f9718b509a3c074ad6354a6e3d0b2c",
+      "bytes": 705997
+    },
+    {
+      "path": "fotos/34d6e5d9302728c1714ea804.jpg",
+      "filename": "IMG_6287.HEIC",
+      "profile": "landscape",
+      "source_sha256": "00d66fc4365375866617c2fc82e4e5bf79dc59e84b04429f654f20627ca234e5",
+      "sha256": "ade7e1d04927c2759f76ae075d8ad5950186d461ba205d77d9161c3736239d55",
+      "bytes": 628089
+    },
+    {
+      "path": "fotos/db4249c8fc4d73a2a4ab7229.jpg",
+      "filename": "IMG_6289.HEIC",
+      "profile": "landscape",
+      "source_sha256": "ed4ef1ca4df1d3c9ef1dbf8f88008a0eb766aa3c1441b57a82171637cf402ac3",
+      "sha256": "ac2ca5b82a3266371f18ddf739f97e8da5f65b6301cf99b151ba753c85d5694c",
+      "bytes": 940653
+    },
+    {
+      "path": "fotos/b67a656062f55b57ea766516.jpg",
+      "filename": "IMG_6290.HEIC",
+      "profile": "landscape",
+      "source_sha256": "ffeaa57e09e86ab284a8a654373be29d54d7dcc6eef7661842d4078d584d7a1b",
+      "sha256": "dfdbafca3a8c9c38c2af952ea18d6acd47d0214484355acc4d9740445f2cafd4",
+      "bytes": 873951
+    },
+    {
+      "path": "fotos/68b5da8f17d2aaf7626d4b5e.jpg",
+      "filename": "IMG_6292.HEIC",
+      "profile": "landscape",
+      "source_sha256": "e4597bb11b2dd134c1c77d8404f67322947006b9cbceb6ebe968c4a059a69dc0",
+      "sha256": "ae1df72681523f8a688b727d57e802c74b0080032e3c3e308c56bea4ca250cec",
+      "bytes": 762818
+    },
+    {
+      "path": "fotos/cf040e3d943c4091f8e1c963.jpg",
+      "filename": "IMG_6293.HEIC",
+      "profile": "landscape",
+      "source_sha256": "e8561d864d6e79d379f7f9cda68205d055f026cd664243cd59ff557489651408",
+      "sha256": "2e5c25478dc52ea8f2995c442d8fe9305433d19a8e32c86f59e5e13827eac21a",
+      "bytes": 626043
+    },
+    {
+      "path": "fotos/546605c0ce406430279b7c46.jpg",
+      "filename": "IMG_6296.HEIC",
+      "profile": "temple",
+      "source_sha256": "9cc0bdc36d05ebb38651c0023059273bd45179a21ec7550771b4346a13217d9e",
+      "sha256": "910dad500a746c602ef762a259fb88b4da94af7f409f04eb34e3e0b5f9631fc1",
+      "bytes": 1062921
+    },
+    {
+      "path": "fotos/d9017edc7d42b3d237af134f.jpg",
+      "filename": "IMG_7938.HEIC",
+      "profile": "landscape",
+      "source_sha256": "98ebeaffbbb5542bb608cef60f5dddd16359a3cbafb00cfa0cf75494a3851246",
+      "sha256": "50fe6c234316cdf43188fbfbc698c760d8302b23dde45034a0bcb913c1d1a917",
+      "bytes": 202474
+    },
+    {
+      "path": "fotos/7d053f7e573c51d0c4257f9c.jpg",
+      "filename": "IMG_7943.HEIC",
+      "profile": "landscape",
+      "source_sha256": "056130c926a2f50ae64629c1654f434fef8257c56e4913cc99f200a276af3b84",
+      "sha256": "ad5a371180f6748d9c5d49a1ce2b51066b796b619078e01380738ff90cf342d5",
+      "bytes": 194396
+    },
+    {
+      "path": "fotos/459439969b8136e34352b8ab.jpg",
+      "filename": "IMG_6303.HEIC",
+      "profile": "landscape",
+      "source_sha256": "675e045e9d8def74ff27c93af4afef728d552a8e838e6840733797a7f84a4bd1",
+      "sha256": "adfdd6eaaa120a90b0ce1da9fad54fbba03decebba1533cb844dd8a7fc4c5fb7",
+      "bytes": 831378
+    },
+    {
+      "path": "fotos/8e631aaae1df902fbb7fcb48.jpg",
+      "filename": "IMG_6305.HEIC",
+      "profile": "landscape",
+      "source_sha256": "5a4ef868aed31abe17308f0cce51300c700079e27e0bde6a34a15ba29a62ea96",
+      "sha256": "3f971022d227e232541517837b5b604cb23e45e05f0a22c1344fb6bda2f59445",
+      "bytes": 1049979
+    },
+    {
+      "path": "fotos/39fc204dbf69942eedbfac4d.jpg",
+      "filename": "IMG_6306.HEIC",
+      "profile": "temple",
+      "source_sha256": "f0942d2da90b6db22ca539b9820757c53bf7be741f85f7fe133f5b2eb9310411",
+      "sha256": "87eaa0265829304c175a9c88e38cfe8529e5d268c12596889e3ef1407df9ac1f",
+      "bytes": 1013126
+    },
+    {
+      "path": "fotos/3e6d9cc197d31ba02177d81d.jpg",
+      "filename": "IMG_7946.HEIC",
+      "profile": "temple",
+      "source_sha256": "452b6fe5eb5f45fc342a5bf4012add97570f87f7cd4e7421cc5371c2d2d45095",
+      "sha256": "f0b3325b1a98d8b5124790af42df1dd5ffcba94a7175bed5633b68fb21b7d0a3",
+      "bytes": 329003
+    },
+    {
+      "path": "fotos/05e056856a2e33047615fedc.jpg",
+      "filename": "IMG_7949.HEIC",
+      "profile": "temple",
+      "source_sha256": "9f400a4a54dd13edbe280cab520d7f8a7b9c4b352fc665d50a7388226a09bf6c",
+      "sha256": "4bd2baf18799a2871889b9b231a95fb7c580a89579201202fb6d0ab5e8880f6a",
+      "bytes": 298941
+    },
+    {
+      "path": "fotos/4cb97381e9b4f1de6d232858.jpg",
+      "filename": "IMG_7954.HEIC",
+      "profile": "interior",
+      "source_sha256": "564a36cd7ef5cf917d205a696571469bd4bd92c369d629031ba8c50909ef0fdd",
+      "sha256": "037e0b55f44aafca0bad4c5049b2fd9b33064d934158abb40a709d6259fb5466",
+      "bytes": 234685
+    },
+    {
+      "path": "fotos/fa95f879a651719f896ede84.jpg",
+      "filename": "IMG_7960.HEIC",
+      "profile": "interior",
+      "source_sha256": "40ae4e72e1f89ed217814186fe2204af3d47fab29a55ebb06fa5e053c43d55cd",
+      "sha256": "1c8c87df89eb53922834898f7c35f4a060037ae486d9adee3f1c6a31b2182129",
+      "bytes": 190909
+    },
+    {
+      "path": "fotos/d1bb7275cb4f74a16fa0a2ee.jpg",
+      "filename": "IMG_7966.HEIC",
+      "profile": "interior",
+      "source_sha256": "295b132f4e46531853018db33a358a2b0c89705d9ffc860173c5b0680176318e",
+      "sha256": "a0631faa0bd846bc289a82b2d8c4c6023713e3f76fd23a3edb1c39209c0e23ea",
+      "bytes": 224356
+    },
+    {
+      "path": "fotos/fa068880e27d04ca0c5b8791.jpg",
+      "filename": "FullSizeRender (1).heic",
+      "profile": "interior",
+      "source_sha256": "ed9b32c298a0b30dfb2fbe4128f72d48108055550a8d37e49302a1008e12b0b6",
+      "sha256": "7debb1afeb48ce9cfaca250608a22a72b20860a3d8578ac90d2ecd1a1afa05cf",
+      "bytes": 535200
+    },
+    {
+      "path": "fotos/1436da87f0fde3bcd66bc1d8.jpg",
+      "filename": "IMG_6310.HEIC",
+      "profile": "interior",
+      "source_sha256": "4abd495c882d62946807ef2dc69f39cd5e39fd30f1e5041778ba5d02b72c46d8",
+      "sha256": "85192d0b761798d34f4dcecf6e9de1f2799d0739c5fca2ade063c84eb49185ed",
+      "bytes": 743946
+    },
+    {
+      "path": "fotos/2fa942050a11d551d3101709.jpg",
+      "filename": "IMG_6317.HEIC",
+      "profile": "temple",
+      "source_sha256": "a15c989c05257e23071f81214b17eb52189a57440b2baea6a2615ea245c49c59",
+      "sha256": "acc0b300995685d9f595ae4fa0b0df8776f53743cfafad6f67aff0cbffcbe96a",
+      "bytes": 705504
+    },
+    {
+      "path": "fotos/c3187236a3a2f35da4e6a5b0.jpg",
+      "filename": "IMG_7985.HEIC",
+      "profile": "interior",
+      "source_sha256": "ba9c4fdb9e153379077ab2eb4c7000d7cd20c24dfa92384e899f56eeee120408",
+      "sha256": "e86abe85d04b5b7fa8aa4250ffc3eb416dbec418b5c02480304bea945e74fb58",
+      "bytes": 200435
+    },
+    {
+      "path": "fotos/f83de7d65769500025b021a2.jpg",
+      "filename": "FullSizeRender (2).heic",
+      "profile": "interior",
+      "source_sha256": "bb9a0fb575d00c93c5b80f5fae18a6cb66666f96004be0739a2f4adbcde1dbf9",
+      "sha256": "8e549f8f9c1b41950c4b7083db5d8500571d58b1704dc57d40dc197301da86dd",
+      "bytes": 615292
+    },
+    {
+      "path": "fotos/40aff144a5518a5c16362365.jpg",
+      "filename": "IMG_8020.HEIC",
+      "profile": "interior",
+      "source_sha256": "1bf7e4913bef298191478f3836d8bef169ccca3f79cc952da9b5d4fd49b7aa46",
+      "sha256": "38202cd070002a9bc3a2d262dd3310ac12da0df7b486da2484ddc1bd97caa791",
+      "bytes": 197113
+    },
+    {
+      "path": "fotos/e9a1cef77131b03a2c9592aa.jpg",
+      "filename": "IMG_6323.HEIC",
+      "profile": "landscape",
+      "source_sha256": "b9989970fab4170f32fdc79d207a7458ee7a8d2315add17f081ab170fda89dcf",
+      "sha256": "9cfce2d3145ca9a9e4c1591f289cb705aa5cb7a2225d5013eeb432d01d1593a5",
+      "bytes": 858027
+    },
+    {
+      "path": "fotos/b170313de45d4fa3c1ab7943.jpg",
+      "filename": "IMG_6330.HEIC",
+      "profile": "interior",
+      "source_sha256": "4b52c7c1c85625bdccf6a0af9fe692f802e1ca34ac8272eb4f23219d4ac39df5",
+      "sha256": "d20fc748edf122fa05f0cff81cf09fff93018c9c75e8cbf1725915f92f196568",
+      "bytes": 959796
+    },
+    {
+      "path": "fotos/79b8a318355a9ad9034a0de6.jpg",
+      "filename": "IMG_6334.HEIC",
+      "profile": "interior",
+      "source_sha256": "9f6ffa77d5b3697c66276ba414def0f90d64b504b89ddbe3430e73c11b542d2b",
+      "sha256": "2600dd04e24a1c879a87e03f6b6588c2a7f59cdbd47fa77469afbd006360e6c4",
+      "bytes": 744954
+    },
+    {
+      "path": "fotos/b4ca33c3461715efcf8e7015.jpg",
+      "filename": "IMG_6336.HEIC",
+      "profile": "landscape",
+      "source_sha256": "360e54c9f413f7cb63aa0a8b249936b26d04af8a74c09f00cf9fbb5c8fdf7148",
+      "sha256": "16a65e872d4563b81e47954640c50c7bf64521d6a7497aa294ee9ec15120b3c7",
+      "bytes": 1015869
+    },
+    {
+      "path": "fotos/8ea9e0525f5bfd22fa81a482.jpg",
+      "filename": "IMG_6338.HEIC",
+      "profile": "landscape",
+      "source_sha256": "ab8b1508ef4c8ca44c117ba293fe3e8a2d1ffedbf38defe25c9a0da636a47b5b",
+      "sha256": "70b3880ca3ef6f43d47c1475355a082286ad9ec6843b77f66a15c501f7df2ed0",
+      "bytes": 917605
+    },
+    {
+      "path": "fotos/59c4eede1076209374429430.jpg",
+      "filename": "IMG_6341.HEIC",
+      "profile": "landscape",
+      "source_sha256": "f03ecf85b5a2b7b1333a96ef561a7f585ff8692e56de1d12023450300572edfa",
+      "sha256": "ef4b2a99628e933f255a0b6e0210aa29347e80f2eb7237e909d0bb5602e3c156",
+      "bytes": 766275
+    },
+    {
+      "path": "fotos/46ddb8f88b977fc0718ca73e.jpg",
+      "filename": "IMG_6342.HEIC",
+      "profile": "temple",
+      "source_sha256": "9ca3da37e141cdb1d48de2f1dbca63b09b20bcb86222f43de545f26c8f00cdd4",
+      "sha256": "38203afeda31da7328363c7123694e8c97aee74b82d7cc4faa9c3c961d8e02b1",
+      "bytes": 619879
+    },
+    {
+      "path": "fotos/38aed977b2f567866c28fabd.jpg",
+      "filename": "IMG_6345.HEIC",
+      "profile": "temple",
+      "source_sha256": "17dcc12a113e4090adb8bc590c7499047d0736b5e75904f4b9589e09e51404ff",
+      "sha256": "9f33e64016cb5dd52f6cab1c2518b7d19f218f3660b1875c59f7058b7b1bd2f4",
+      "bytes": 904942
+    },
+    {
+      "path": "fotos/996b60e0f936e6b5518d7da0.jpg",
+      "filename": "IMG_6346.HEIC",
+      "profile": "landscape",
+      "source_sha256": "2767fb8b6f9f647f53f4e8574ac2160923f6957f7f8e221ae50d3b587233dd51",
+      "sha256": "fd6cbd820584e88377e25883128a2faed5735020a4023782f93d69b31c37c600",
+      "bytes": 774364
+    },
+    {
+      "path": "fotos/291df763d3145e07dfec69a7.jpg",
+      "filename": "IMG_20250702_130708.jpg",
+      "profile": "interior",
+      "source_sha256": "5297b285f6ad0ca8f8c41ba838f1b073bf84391a97fb7c22ff27497b918b8f51",
+      "sha256": "403b9ac3798fa9d6394547050d8d0df7790df4e0d43f5e5ad1a05baa4c14cdde",
+      "bytes": 479344
+    },
+    {
+      "path": "fotos/a801657cfaac7f49291a2bdc.jpg",
+      "filename": "IMG_6349.HEIC",
+      "profile": "temple",
+      "source_sha256": "21970d304237ad0024ecbc0e858f2e1f358543bc438e7e2e4b095e82ecb50a2d",
+      "sha256": "1a3a1b3731084b8ffc49c3d54e992eeeec78c116de23decc23735a40be52c622",
+      "bytes": 913812
+    },
+    {
+      "path": "fotos/fc27a5190e354e9e060e37c5.jpg",
+      "filename": "IMG_6352.HEIC",
+      "profile": "temple",
+      "source_sha256": "7f5c99068be98ebed62b62d220799eeef35e5587a65f5d5a86387b97bd7a6603",
+      "sha256": "f8ca53966b44725406f0e64d34893169ed280177266cc2b8f7c595f5e91255bd",
+      "bytes": 639129
+    },
+    {
+      "path": "fotos/cebe081b667070d31b491639.jpg",
+      "filename": "IMG_6355.HEIC",
+      "profile": "landscape",
+      "source_sha256": "fd6fab361fb8dd1e6244d64580dca8046bac23c24313e892bf4508a8816d1fe4",
+      "sha256": "1f8431482638360132f97ee23a736449e0863f78bcd4320ba608de1927b5ddb6",
+      "bytes": 551680
+    },
+    {
+      "path": "fotos/65226c4df1bcf375c037e619.jpg",
+      "filename": "IMG_8049.HEIC",
+      "profile": "temple",
+      "source_sha256": "1d9d0ee0389cee4d03d753f1606486eb2dcdb936492bc25538724874a29911fa",
+      "sha256": "f7ce99ad99f3d49c81b5e8b382f4ca976924c6f21fb79fe7f1009c441b414324",
+      "bytes": 266671
+    },
+    {
+      "path": "fotos/26d783dd20dfaf0b282c4c23.jpg",
+      "filename": "IMG_6363.HEIC",
+      "profile": "temple",
+      "source_sha256": "2fc3be56731416be468354c10e8e78d9d7e89238cf2ff1652c1a428556b11e03",
+      "sha256": "5ae6bfad6a9842ba7b550aa1804b125dc770214dbb4e4e6ec90ebf4e062693a5",
+      "bytes": 1080653
+    },
+    {
+      "path": "fotos/8dc3a2f99ec284389c11af82.jpg",
+      "filename": "IMG_6366.HEIC",
+      "profile": "temple",
+      "source_sha256": "c6094b412e88a54d78ff2a12f451359c6ee7dbf3c7c82827545eadd52776a99e",
+      "sha256": "1798de97bcff001c6ce77b830d2f2236e74fb01d3a723d06f97e39273cebe438",
+      "bytes": 784547
+    },
+    {
+      "path": "fotos/d3a021a9827a6fec7403b71c.jpg",
+      "filename": "IMG_6368.HEIC",
+      "profile": "landscape",
+      "source_sha256": "e7773ea90a9f8f0b236b08da212d7bf9238f7dd6c8479cc16b4d1ef5cb1a50ed",
+      "sha256": "fe4bd658445dffb87d9187630b78260bfb1be52abe63fb5307fb6b98a5c864e6",
+      "bytes": 446993
+    },
+    {
+      "path": "fotos/81f3d83e5825e7b149d980a9.jpg",
+      "filename": "IMG_6371.HEIC",
+      "profile": "landscape",
+      "source_sha256": "ba43bef46418dc7b59042397957a19ee240a27c509bfde6920a5f35f4401e47b",
+      "sha256": "c5315cfca01f0b5231da462492e74fd30bc90377b0cddb3b2a3b42df1ddc331a",
+      "bytes": 696677
+    },
+    {
+      "path": "fotos/0cb66ec4d39941fa41102608.jpg",
+      "filename": "IMG_6373.HEIC",
+      "profile": "landscape",
+      "source_sha256": "22aaf2baf00461ee71eb223b0229ff34d212d1ef3d2c6f975b99cf42b7954bc1",
+      "sha256": "7eaac0e5ed672263ec476dc1cdc671725435581fe7c447997e815b112d4ade5b",
+      "bytes": 592249
+    },
+    {
+      "path": "fotos/937fa9474b823a8d115fa9f9.jpg",
+      "filename": "IMG_8091.HEIC",
+      "profile": "interior",
+      "source_sha256": "0efff99d625d45f1491dc90d337381fbc7c3c71edfd57481ca165bf85042afba",
+      "sha256": "d0e23122342e3c2ea588c3134f3ff81757772056faa19616dbc1f782e6a73d13",
+      "bytes": 601554
+    },
+    {
+      "path": "fotos/374a6c45fbe0a7bc548015f5.jpg",
+      "filename": "IMG_8094.HEIC",
+      "profile": "temple",
+      "source_sha256": "1d813929f87e529e108fa378dfd5237f7c02fe43f322dd7a3b4a1552fb0bce4a",
+      "sha256": "8a1d924f8514d351e7bedf54bbd968cc0c50436b680396650c7f5c648c53879a",
+      "bytes": 708489
+    },
+    {
+      "path": "fotos/a4c6be290cdb0a10454478ab.jpg",
+      "filename": "IMG_6394.HEIC",
+      "profile": "landscape",
+      "source_sha256": "688b3b9818c9f302134cf417b2def2f667a62c77478b25d05f50f948b3017b9c",
+      "sha256": "5027f195766f5d456f92293089db8c5b38738ce1322902bf077379e57600e413",
+      "bytes": 873459
+    },
+    {
+      "path": "fotos/c12400aa304ba3117371e37b.jpg",
+      "filename": "IMG_6395.HEIC",
+      "profile": "interior",
+      "source_sha256": "1c317c1b4004def2eebed3b75bb3402e588d69accf7740d7ce94120e386c2ede",
+      "sha256": "f2bcd2e7ca764e98957643772dab3b9abd1857498ec8e1a3f3fb80dea1f78360",
+      "bytes": 736957
+    },
+    {
+      "path": "fotos/993a5413bda3c9fe391966ab.jpg",
+      "filename": "IMG_6398.HEIC",
+      "profile": "temple",
+      "source_sha256": "e06bc8a227347dae4dca3b7350102a2937db52893c52030caaaaebf511e16780",
+      "sha256": "290115886df48e922c7876982cd1a206d2597ae5ddc1f715868552645c2391d4",
+      "bytes": 605281
+    },
+    {
+      "path": "fotos/cd7d7b6a49c1f81bff418bea.jpg",
+      "filename": "IMG_6400.HEIC",
+      "profile": "temple",
+      "source_sha256": "9c7c552138a2deee3f880d3e8ec6eb315826295ef9a5ca65383b91095627aa8b",
+      "sha256": "ca31a6d0aa14bb7a24c406f91342856287f08b769cc4d89579ecc8e3637dc319",
+      "bytes": 578607
+    },
+    {
+      "path": "fotos/5e21f31860611f656391b7e0.jpg",
+      "filename": "IMG_6401.HEIC",
+      "profile": "temple",
+      "source_sha256": "0fb2857256771245196b3984653de2598d907eee57d43ccb0c66ea94d3901e59",
+      "sha256": "800fa0e11315fef3b0e8495fe17d49f9d7d564203be6cce04ca0dcab37c3a454",
+      "bytes": 410170
+    },
+    {
+      "path": "fotos/18fa634ce06a4dca7d66c15f.jpg",
+      "filename": "IMG_6402.HEIC",
+      "profile": "temple",
+      "source_sha256": "fa8aa986fd321c64deb78af21f71289e86019d4a3bde551887ebc1454a82b9ed",
+      "sha256": "fe96b0866fe21d43d70e3c3a355cff375308ab94c34ea48973aa70af764728ba",
+      "bytes": 867998
+    },
+    {
+      "path": "fotos/d4c51b658efee2f9e954e042.jpg",
+      "filename": "IMG_6404.HEIC",
+      "profile": "interior",
+      "source_sha256": "0ac6995cc7d751f9b374f72534a266561e7ea3c1f4ff82881c1797da06015dea",
+      "sha256": "220ef9934315eca816962aa10b95a1c707592ad0a3fa5eac96e735d9d063c4af",
+      "bytes": 869969
+    },
+    {
+      "path": "fotos/044a0190f2628df74c47b61b.jpg",
+      "filename": "IMG_6407.HEIC",
+      "profile": "interior",
+      "source_sha256": "766232302f258a29f31994bf60dd9b4275185974dd5d146a054aac3315ee782a",
+      "sha256": "6fb0baeb4f442a9cc097db5fd82f9744937586eb33c034f7b6418e611e76fce6",
+      "bytes": 650178
+    },
+    {
+      "path": "fotos/3448d49ce052ad0c8ee45836.jpg",
+      "filename": "IMG_6411.HEIC",
+      "profile": "landscape",
+      "source_sha256": "b4d3fc8a78e3255c2e0d30cac0e1afc9cf4b214eb333a968e5ae3f2ecc14361c",
+      "sha256": "a06c4ede98fe114286bebc7fc8e4cc892802709358a9c4c9562f577dd23c11a6",
+      "bytes": 773412
+    },
+    {
+      "path": "fotos/7b2edeaec5b6dcc2524517a2.jpg",
+      "filename": "IMG_6412.HEIC",
+      "profile": "temple",
+      "source_sha256": "978dd7cc58c6e08220f12264b7a94aa3fdcbee7d58f806733fb4b4cff242fa70",
+      "sha256": "f398811a3e08779d6f4ae53b2e8490ae212d426eefaa36a19a97e05382075a06",
+      "bytes": 751847
+    },
+    {
+      "path": "fotos/380181693a0d30a3f20fa74c.jpg",
+      "filename": "IMG_6414.HEIC",
+      "profile": "landscape",
+      "source_sha256": "a77796a143bbe88986ffd7dcaabc04aa3efed8d40733e02690dea1c12780ce5d",
+      "sha256": "8c2320f47889804af88bfc485942456b753698be034103f6bfd1b26652b39ae5",
+      "bytes": 750724
+    },
+    {
+      "path": "fotos/d889319e9c9be0bdbe11684d.jpg",
+      "filename": "IMG_6415.HEIC",
+      "profile": "landscape",
+      "source_sha256": "0001db3c0a52d73c043e8a7fe1a42c23763785b0679f092ad9a13892c6579eb5",
+      "sha256": "d554287ac85abd677ca12c1c8b7abce272e64cb0fc103d789b40e84571ece4db",
+      "bytes": 629715
+    },
+    {
+      "path": "fotos/8800d36a8136afdd67304c84.jpg",
+      "filename": "IMG_6418.HEIC",
+      "profile": "landscape",
+      "source_sha256": "76d200e8c56f136ec2fa8eebd33ffeb9c1797b3282e847f08fa84e1bf32b74ff",
+      "sha256": "30e97d82126998fc673db422c1da39a0f716751bf2040a243d5ea62d0ddaad21",
+      "bytes": 701326
+    },
+    {
+      "path": "fotos/7bcaf239ec863f482a0ac157.jpg",
+      "filename": "IMG_6424.HEIC",
+      "profile": "temple",
+      "source_sha256": "c6c160a2899846279aa19da24ddce3ca1c68fbe2455003029b3c96ccd586736c",
+      "sha256": "afb5c0e444e8b5ba0a984bf3780b87e726e38b7c685d7996e57125b429c3551e",
+      "bytes": 818928
+    },
+    {
+      "path": "fotos/7d81c7284d318c697b19c7b9.jpg",
+      "filename": "IMG_6425.HEIC",
+      "profile": "interior",
+      "source_sha256": "c46770792e66bfda57fcda17f60264e5e8aa8ebc701c2cb9c7ae93e1ab215740",
+      "sha256": "9040ad91d27c27a79c4b485b8b9f91f58dcce24f82102255f14563821d20b43e",
+      "bytes": 965999
+    },
+    {
+      "path": "fotos/1cbde0ab1d7cf1ef935e1a1e.jpg",
+      "filename": "IMG_6426.HEIC",
+      "profile": "landscape",
+      "source_sha256": "bfd853486cac5153298a9cf6efe3c073ca2b1b9ed3ca3b0626fdd138a9a76e09",
+      "sha256": "6177f8876569141386802ea1787c9bf7db914ce18be287c87885a89adae66644",
+      "bytes": 806262
+    },
+    {
+      "path": "fotos/4b4043734b970c32f82c6b5b.jpg",
+      "filename": "IMG_6428.HEIC",
+      "profile": "interior",
+      "source_sha256": "0fba29401e7706eaff113b5efce97a268240fbc40455b1560d2aa17fa45642c4",
+      "sha256": "f1276c016de67a2b320a3abfd23f4e850bed754d20210a80997d29ee3ed0c974",
+      "bytes": 802661
+    },
+    {
+      "path": "fotos/ca2885556f81e996d56ae073.jpg",
+      "filename": "IMG_6433.HEIC",
+      "profile": "temple",
+      "source_sha256": "0f3ac262e18f826e8e026c449b311f966c260eb46d5df555ca730776fd972df9",
+      "sha256": "4faadee412d8f6416fe08b1d86e5fed391c84c8dde6901cfb8386c5537f2723e",
+      "bytes": 814107
+    },
+    {
+      "path": "fotos/b1da24d4945231f217511bf2.jpg",
+      "filename": "IMG_6437.HEIC",
+      "profile": "landscape",
+      "source_sha256": "c91369bdc41781c702f3680d3cbde616c5de343508a25b0892303b8c0aefabda",
+      "sha256": "e3061c3f1d37d8f927a63febd4f9add0809f3d1c47f1b9570d6799c7237367ce",
+      "bytes": 1125970
+    },
+    {
+      "path": "fotos/ed99d13c8aea952385329bef.jpg",
+      "filename": "IMG_6438.HEIC",
+      "profile": "temple",
+      "source_sha256": "127f43457161ad8fff058420061e95db8e12be032f4d1663c9652d61aa71ef71",
+      "sha256": "2ec6d8075886a593927bd9f6ece856c94b5476851efbfaa7d88a500831205152",
+      "bytes": 672680
+    },
+    {
+      "path": "fotos/fb26a150f30063b66168bd6f.jpg",
+      "filename": "IMG_6440.HEIC",
+      "profile": "temple",
+      "source_sha256": "24dcc2eb9af51284a8ebd6fa0d15a3e3786db8e7e31be2352812d837f0640117",
+      "sha256": "5b884506f1176d460aca896834e0e9fc632607b6d8df11192a4bb6289fbda989",
+      "bytes": 743233
+    },
+    {
+      "path": "fotos/0115fab75947e6380d44274d.jpg",
+      "filename": "IMG_6446.HEIC",
+      "profile": "landscape",
+      "source_sha256": "a2654cff8d0638abecc3365e060dcce2c472571f97de16f8a2ac6cba7c8b80ad",
+      "sha256": "11186981725df405192d7e313145fb67548dc159799915415de01e5693b3006f",
+      "bytes": 902347
+    },
+    {
+      "path": "fotos/87aaf93cb6ac531a9d012c1f.jpg",
+      "filename": "IMG_6447.HEIC",
+      "profile": "temple",
+      "source_sha256": "833a5adc85da58e94429b15a9fabe3d76f82e49b772f9f6f352cd4e74e3f5f0a",
+      "sha256": "264f933f91323abe7c5454c4a887e1cec7c2b03e8f079a2af7bc8630c193b5ea",
+      "bytes": 654545
+    },
+    {
+      "path": "fotos/cad3318478c6a3efb712afec.jpg",
+      "filename": "IMG_6448.HEIC",
+      "profile": "temple",
+      "source_sha256": "a9d6fd86f0132b5764832059fb9cb6884989c270659022757a018804642064be",
+      "sha256": "3965163c3600b3f85071168ef54b428b6ffaf9a4ceb725d493ffd27d8dbb5e16",
+      "bytes": 530693
+    },
+    {
+      "path": "fotos/f9239b858fe8b418b76a4add.jpg",
+      "filename": "IMG_6450.HEIC",
+      "profile": "temple",
+      "source_sha256": "a3e030f0b9f9fe2cc18dea39c53aa9ec1a02686348619f4e326e86e4d30fd1b2",
+      "sha256": "9802778c7cf7fa9b92a6f8a3b5dc7e92bf1b4793e98144f03f93c65871d0f3df",
+      "bytes": 697518
+    },
+    {
+      "path": "fotos/69affd8c7e0f604262ce7029.jpg",
+      "filename": "IMG_6452.HEIC",
+      "profile": "temple",
+      "source_sha256": "fc97746dd6780b2edf4983c38d0c5a1a38c42e8b351cc6b387e06fc342a31de2",
+      "sha256": "3ffdcd6c291170a044bd8615b88bf862df46abec259e42e3b9e00890f264c462",
+      "bytes": 671401
+    },
+    {
+      "path": "fotos/687d851286a365d596d69c94.jpg",
+      "filename": "IMG_6456.HEIC",
+      "profile": "temple",
+      "source_sha256": "c0c69431f365cc1d35781562cf1a872bcc25f3a79272922664b6de6f42e470bc",
+      "sha256": "2bdd86c08a762c263faae9a9315075fc02982bd0207e3829ab690a7b4a10a232",
+      "bytes": 820207
+    },
+    {
+      "path": "fotos/aa96919b9b9ea4acacfb4e68.jpg",
+      "filename": "IMG_6457.HEIC",
+      "profile": "temple",
+      "source_sha256": "02454cca43951983177387f899a730e4498cd8c2433c5e6e0a425b300345921c",
+      "sha256": "4851afd53af412df3857b671441ab136653f2efca18b622ef2894a0a355b4447",
+      "bytes": 930940
+    },
+    {
+      "path": "fotos/6d821958e806742b5ad6d68b.jpg",
+      "filename": "IMG_6459.HEIC",
+      "profile": "temple",
+      "source_sha256": "d7ac65c6892983017f4172461205f653347b297ee81943f6590336647845f1c7",
+      "sha256": "cc34627d38f40b4107af7814ab1a8f1d2a841202c0105c17a021944de9f47c8f",
+      "bytes": 647994
+    },
+    {
+      "path": "fotos/18c54eceffb81d9b136fe73a.jpg",
+      "filename": "IMG_6460.HEIC",
+      "profile": "temple",
+      "source_sha256": "3302b540fbf3de58899e432069a51af6dce8877387a8463226b66d60e72b426f",
+      "sha256": "8e456e95803220f737f579e30e93b0b5d9b1431f4673017f974224914c096310",
+      "bytes": 719792
+    },
+    {
+      "path": "fotos/a4e0b77ff69b1c9dae9f5fd1.jpg",
+      "filename": "IMG_6470.HEIC",
+      "profile": "temple",
+      "source_sha256": "269f24cb60160455de34cf57e10c1fe3c7ac756903092bc27b626e70153f8e03",
+      "sha256": "d4acef3e3e397b206ef2387ce4e5ca3f42225150f6efa61c4db8fcf1251a803d",
+      "bytes": 820295
+    },
+    {
+      "path": "fotos/57ed7cdb188ee9e0c58394d8.jpg",
+      "filename": "IMG_6472.HEIC",
+      "profile": "landscape",
+      "source_sha256": "d5bb2b652a891c625c12e7fa59a6fdb2586aaf6dfd55ac1dca28b36817c50486",
+      "sha256": "38b56571c3ed2a7d07425a93d4b494f5ff0276cfe084c0db369397732968292b",
+      "bytes": 653897
+    },
+    {
+      "path": "fotos/041307872e64174391231b5f.jpg",
+      "filename": "IMG_6476.HEIC",
+      "profile": "interior",
+      "source_sha256": "8c3f1335298e92206a39f0588dada18898c47f22b9d6d4da519752abd7b2d0b6",
+      "sha256": "3a2d0dd0e9f0556750a73bfc0863e8e8e6419e93c5dd0aed3e0afa6605f8681e",
+      "bytes": 606830
+    },
+    {
+      "path": "fotos/b0ede5bbfdf67337ff65bd28.jpg",
+      "filename": "IMG_6480.HEIC",
+      "profile": "interior",
+      "source_sha256": "bde281523c5bcb030825332c12994749d7daebffefaedeaea70e5f08696bf24b",
+      "sha256": "81360d7e9de7bf71641641fb5aa7d6097382b0f4567aa9715c9c673860dc4dfb",
+      "bytes": 806083
+    },
+    {
+      "path": "fotos/716eceff9df938cdacedbe15.jpg",
+      "filename": "IMG_8245.HEIC",
+      "profile": "interior",
+      "source_sha256": "b5df9abb4fe489609fa668fa3591c165731534f4c64e9ee8d14199174606a762",
+      "sha256": "127ccd2eeae778ee7a4fab5d3d0e77b5841c2280dd9bb0877bce7623cb68a589",
+      "bytes": 198146
+    },
+    {
+      "path": "fotos/3bbb872e253a66d2f984d9f3.jpg",
+      "filename": "IMG_6483.HEIC",
+      "profile": "snow",
+      "source_sha256": "baa3ea2f53c9acfe7549cf4b54c78e4b5e42dcfaaa62df7f2b64ba06bbd30378",
+      "sha256": "0b4254194f5d872f43262567fa5ec7a90969bb288f4031d3868fe4e2fa0e15d2",
+      "bytes": 702390
+    },
+    {
+      "path": "fotos/210f319795a4426b4bf6b0dd.jpg",
+      "filename": "IMG_8247.HEIC",
+      "profile": "snow",
+      "source_sha256": "f2ae0f05dee9ada6af97fdca10118476d91c8864b25418e13a4be9661c8b35f9",
+      "sha256": "d2fe041d5c7f42405657a73361eaf0318fd173fe4854d73f16b26adc3676f1b6",
+      "bytes": 722208
+    },
+    {
+      "path": "fotos/e931b1ad0a4c7cd2b1b9c495.jpg",
+      "filename": "IMG_8250.HEIC",
+      "profile": "snow",
+      "source_sha256": "34c3e5b838d80bb29baa348b608d417a0a95596bf531a5344b0a4714a7feedcd",
+      "sha256": "0a03291a94ca8f35c8f464a6c97411a977cc2c041dbcc49f14e731754fb30a8f",
+      "bytes": 559155
+    },
+    {
+      "path": "fotos/0d9a33db2c7ce2cdf9d88db3.jpg",
+      "filename": "IMG_6486.HEIC",
+      "profile": "interior",
+      "source_sha256": "722f0d338846acdf40684b1ceb5710c7f90c5c0782ec26a807d14ecc21c89fe4",
+      "sha256": "47a54871096db1495c371fe23be0e77c06153464f41a9cb44039694c11e68aae",
+      "bytes": 614670
+    },
+    {
+      "path": "fotos/80cc22e1b82865cd1e438f66.jpg",
+      "filename": "IMG_6488.HEIC",
+      "profile": "landscape",
+      "source_sha256": "4c9f71b562435809d917e2f3bd7ed5bb96688ed10c7fc9f830653e3f33e90308",
+      "sha256": "82c9d4d77c34f12727a89e063a5dabaf2d8a955f0e1c2f09d6756484aa5248ec",
+      "bytes": 579328
+    },
+    {
+      "path": "fotos/af83db3ed354005ee045e222.jpg",
+      "filename": "IMG_8253.HEIC",
+      "profile": "landscape",
+      "source_sha256": "99a02b7d92acde98ef7f83d4598b0e90ccd024d2d0865dcb365e6766355b0ee1",
+      "sha256": "5f53e20337efcd8875006899c44eddd7c1b27cbb4759df9dedd7a874453bd631",
+      "bytes": 557086
+    },
+    {
+      "path": "fotos/455c03a6bf2e1cac93d6852f.jpg",
+      "filename": "IMG_8254.HEIC",
+      "profile": "landscape",
+      "source_sha256": "68532b57ebfb9e179b8a873a0ec4477ce9491813f307f564f11350480dd50ac9",
+      "sha256": "969adb3e6af9ed552b8e952cc6d1d686b96be6f066dc82e4d9b8eb15d837840f",
+      "bytes": 491005
+    },
+    {
+      "path": "fotos/07c03bd69c583144ccbbceaf.jpg",
+      "filename": "IMG_8255.HEIC",
+      "profile": "landscape",
+      "source_sha256": "46ab41d1d4499a18f7fadf00bfd9f7d6666576a75591ce37692751e97a7a66af",
+      "sha256": "f6990e211b3708f994ac5dd03c846875540ac47daa986e974b7b4863e7e961f3",
+      "bytes": 443869
+    },
+    {
+      "path": "fotos/6352be0a5688d0ec48abc21d.jpg",
+      "filename": "IMG_6493.HEIC",
+      "profile": "landscape",
+      "source_sha256": "57f9eaa8267174a36bc125dd21471f7f509d0faccb749e136a706c1aca47d341",
+      "sha256": "7d4259ff83245cf540855175d8f820303bf86cf0940b90980aa7d26c8b2a7236",
+      "bytes": 704319
+    },
+    {
+      "path": "fotos/906c084fe97ad08a7f457f58.jpg",
+      "filename": "IMG_8260.HEIC",
+      "profile": "landscape",
+      "source_sha256": "003dea3802277bef7e0b8d29063741a6ce17e605286474b21de32bfbcca85db2",
+      "sha256": "b9d4534e5451c0f2ac7177f5651742689cedebeed3109405c80499ac8ae537e9",
+      "bytes": 445513
+    },
+    {
+      "path": "fotos/2a2f23bb888111cb5c12db17.jpg",
+      "filename": "IMG_6498.HEIC",
+      "profile": "snow",
+      "source_sha256": "6b5f0dbd07639497db14763bd7b7fd2a99eafdb83cd5fe0903b3d195b0d1cf5f",
+      "sha256": "49447d50fde2f414aabcfefd31d83a0ec0b88f503e8ba39173f8519a1999a5a8",
+      "bytes": 790052
+    },
+    {
+      "path": "fotos/41119003f5a016635f097c83.jpg",
+      "filename": "IMG_8262.HEIC",
+      "profile": "snow",
+      "source_sha256": "f37ae1696dee5403265bfc4fc3f0fd01a64f8d63c8c3d83bfa91da5d5a4d48e7",
+      "sha256": "0f61d40845ebf8ad719d5bbf8d017bf22f07492fbb114dc16e682218122ec19c",
+      "bytes": 580309
+    },
+    {
+      "path": "fotos/2a8d6e58e7d1da5303731ba5.jpg",
+      "filename": "IMG_8264.HEIC",
+      "profile": "snow",
+      "source_sha256": "d52ae020dbc6f32ed61b64c951f554e680ee7f2526b0ef9d2db0dd0e7dc5c069",
+      "sha256": "5f0c5b2d2c13d2c47b2051fa0e804e1eb97242c7ec53111998ffdb8982950cef",
+      "bytes": 473398
+    },
+    {
+      "path": "fotos/47a17cb33665460c94986fc0.jpg",
+      "filename": "IMG_5592.jpeg",
+      "profile": "landscape",
+      "source_sha256": "00baeb8a7d3b132d528cba5a9a2661a375d138ff01fe62aa599f209715d111a9",
+      "sha256": "20f32061c7b8355217b809d95c796e3cc0847bcec47ae266998d423681121e4b",
+      "bytes": 582073
+    },
+    {
+      "path": "fotos/50f4e4c227682e0b7f1d7ad8.jpg",
+      "filename": "IMG_20250705_101421.jpg",
+      "profile": "landscape",
+      "source_sha256": "5d091ecee70621062e2419cb3e73f1bf6c03d23b504f4a0c670d0684b450b6ee",
+      "sha256": "02ab7adec7198ed552b1da14eb07f6b9cef363aed8dd59d192dcd25c1e04d1c7",
+      "bytes": 595607
+    },
+    {
+      "path": "fotos/1c607de2897b57b200831a30.jpg",
+      "filename": "IMG_8269.HEIC",
+      "profile": "interior",
+      "source_sha256": "a8558cf47134d3e4f8974102546bce38f86aae73dfdc8f1f43e1b373ee56cadb",
+      "sha256": "372239ae197c719523ee0a3dcc5c161b229e483b20dd9bb895c3708016df58c3",
+      "bytes": 492279
+    },
+    {
+      "path": "fotos/402be6cf931aac855f6e0707.jpg",
+      "filename": "IMG_8282.HEIC",
+      "profile": "interior",
+      "source_sha256": "e0f80c56088257a2573214362cfb112def4c2342da78d4540554ded218786bf1",
+      "sha256": "9ab0d3afd3b462ab68fe11d32644c7637ca608de7527b3fd5cc89eb1fb619453",
+      "bytes": 450010
+    },
+    {
+      "path": "fotos/529659fad340069fab687b67.jpg",
+      "filename": "IMG_8286.HEIC",
+      "profile": "interior",
+      "source_sha256": "cd4b5447fb8321fe3f6838bf947b2610b430ac17506d6f0d70e4b089b6285406",
+      "sha256": "b00ebb628f8089e665bebce9666e77303fb2009ff6ecf11c6e80748958f3a54d",
+      "bytes": 481472
+    },
+    {
+      "path": "fotos/80c48906700487a5d83c3d5d.jpg",
+      "filename": "IMG_20250705_101724.jpg",
+      "profile": "interior",
+      "source_sha256": "85d9ae531fa3ff7a27873027b622e9bc189135e14deafbfb166a460fe44a42fc",
+      "sha256": "1491d220bf41aa81bf2256bd21543a4adc6a17508b0e0a62cd7511b3183066b0",
+      "bytes": 425177
+    },
+    {
+      "path": "fotos/fc26c8145e1f2aaf5d0c4ef3.jpg",
+      "filename": "IMG_6503.HEIC",
+      "profile": "interior",
+      "source_sha256": "faba0e46787e907f1d35ce4f3da7552019d71aa6a7296e0165ba5c6794743397",
+      "sha256": "99c115d27df648237bba7873587cf56b9c6db622bf4ca71aee77a1af494b57e5",
+      "bytes": 592134
+    },
+    {
+      "path": "fotos/dfd9648e3a352548d84dcd70.jpg",
+      "filename": "IMG_5597.jpeg",
+      "profile": "interior",
+      "source_sha256": "c74681312ba03547ffb5e58cbb1280457f35483e030a768f907c958738b0c4ee",
+      "sha256": "1b6b8311e5968bebcae3061ab5238e4341e7d2c8e3f60ba1406959aac16da31b",
+      "bytes": 413062
+    },
+    {
+      "path": "fotos/37b36c73e52821029d3b60aa.jpg",
+      "filename": "IMG_8289.HEIC",
+      "profile": "interior",
+      "source_sha256": "a9c99473ac7c4ae13e84a08e45be73917b98947207fbe524c220502500c74f52",
+      "sha256": "dc40164965175b496218a20e3f8659259392acc19567ed37dd5681fda8e376b0",
+      "bytes": 521059
+    },
+    {
+      "path": "fotos/4b1e26ddacf21e1cdb080c5e.jpg",
+      "filename": "IMG_6514.HEIC",
+      "profile": "snow",
+      "source_sha256": "d3cb149647b413d304401804af8f3835ac527df8e0bc4478844537368f1fd523",
+      "sha256": "43d8d2e464f7e59674ab8232e15111bffb73830c6069bff91c9a819365b085f5",
+      "bytes": 566597
+    },
+    {
+      "path": "fotos/67c22533d4f59a6497627562.jpg",
+      "filename": "IMG_6522.HEIC",
+      "profile": "interior",
+      "source_sha256": "493ff6efb71175a093bb9dbc896a05ca3f78cc1bd5cef4bdd6ff88d3077af551",
+      "sha256": "93b600a7be7c39ac75680ec21d56ae052d1cd630ae9dcfef29377444fd075cb9",
+      "bytes": 537648
+    },
+    {
+      "path": "fotos/7dccb15089cace5818600fad.jpg",
+      "filename": "IMG_6525.HEIC",
+      "profile": "landscape",
+      "source_sha256": "115bc3654c2ae5c6c3777dbbc2a963b23204753d72577e369ba4f56f1ce02cc5",
+      "sha256": "3924d0f83f773e48bf87654308f7064085733f60178916e363ed75d2fc1755a8",
+      "bytes": 705954
+    },
+    {
+      "path": "fotos/a3205123bf21960e4912999e.jpg",
+      "filename": "IMG_6532.HEIC",
+      "profile": "interior",
+      "source_sha256": "2e0b549c2a7e92f829ac2d905f85bfa60af9f3e99f9ddd8bc9250b94a06d37e9",
+      "sha256": "f442184cabdebb38c6381a16fa196aa08e147a87cd4adb22d42ee908ffd001f8",
+      "bytes": 536138
+    },
+    {
+      "path": "fotos/60fba7fc1e2985e2ae3616a0.jpg",
+      "filename": "IMG_6536.HEIC",
+      "profile": "interior",
+      "source_sha256": "1bb53769a11c0c5760ba9f80c53244c793e0fca8610a7ab8423618ee4ce9052b",
+      "sha256": "fd0b9e3b28a52006ebba542dbdf239b2f04f679b4de3bf8bbe6ac423138f6dec",
+      "bytes": 544845
+    },
+    {
+      "path": "fotos/569161951a30f994f5dd529a.jpg",
+      "filename": "IMG_5598.jpeg",
+      "profile": "interior",
+      "source_sha256": "68b6756ec349846e8c5ad9c52f44728f016a258b12dd42808c41665d6cc00b0b",
+      "sha256": "0506365c6f901604042ff505814b5b1a4c3930ef7fc98d535662c19a545f2ec4",
+      "bytes": 622980
+    },
+    {
+      "path": "fotos/860b9611b86d004e69025c94.jpg",
+      "filename": "IMG_5606.jpeg",
+      "profile": "interior",
+      "source_sha256": "8c22e272b6b58cb617abf2c4b88df47cbefa0e73e2ce5c02e3170552863f4897",
+      "sha256": "15efcc7313c405ec25db03780536071d9956a6dcd6a1052e296a3c6711f60447",
+      "bytes": 535737
+    },
+    {
+      "path": "fotos/aade2ecdad431786807b5928.jpg",
+      "filename": "IMG_8301.HEIC",
+      "profile": "interior",
+      "source_sha256": "40d442f386dd620985c60ee69df8753221b5c5b9cf7b8902a9db3c486688eb79",
+      "sha256": "4184814267cfcaa041d6da62f4f8bcb9f3b67f952641f20727930f0ed40c6b4b",
+      "bytes": 528945
+    },
+    {
+      "path": "fotos/609b365607f8bd889f7d0b1e.jpg",
+      "filename": "IMG_6541.HEIC",
+      "profile": "interior",
+      "source_sha256": "2e35fd8369d4dd6fdc2eec8171d014b09a6e71af3019cc3fb1568a13071095bd",
+      "sha256": "f04b2cf44864502e3dd1652e65161dbf4d87bba65d4c01700b242bce96141c21",
+      "bytes": 689817
+    },
+    {
+      "path": "fotos/4f7673d7ad1786f8fc20e251.jpg",
+      "filename": "IMG_8309.HEIC",
+      "profile": "interior",
+      "source_sha256": "a873b5adc9fcd00602adb4d5d043cda620bb3bbc071651c052363a94764068b0",
+      "sha256": "fbf439dc2adf9af35c10772eb9f35e763c1c713ed10b2dd14df06f42c13e8cdb",
+      "bytes": 594576
+    },
+    {
+      "path": "fotos/200aac243466bc76de758510.jpg",
+      "filename": "IMG_5615.jpeg",
+      "profile": "interior",
+      "source_sha256": "caeaa7b777ddf364050eedf0fc726b7b490d54addb485fb2f4515d9d04e3f2a1",
+      "sha256": "f20b6455548e6ff3aca76d317f2c1dbb0a229ce71930c48f142234f2ceefe60d",
+      "bytes": 743964
+    },
+    {
+      "path": "fotos/f5223af1021a6618f979d833.jpg",
+      "filename": "IMG_8321.HEIC",
+      "profile": "snow",
+      "source_sha256": "9dd37eef548e77735b351b47ad9c4d25f7f612816e8bcf171bb0eb62abdaf903",
+      "sha256": "7cbfff4281f7545989ac61e4b68bcd7d1047f246d1160cb8cad8028831470a35",
+      "bytes": 587165
+    },
+    {
+      "path": "fotos/f32fcded5490d6444afa378f.jpg",
+      "filename": "IMG_8328.HEIC",
+      "profile": "snow",
+      "source_sha256": "0bef3d657ca4b2f3a0565bb02593413e622f1fc01522a2282a29e3abdb11da11",
+      "sha256": "c5a9cc2cd519e867611634535c10d904bf5fdced09d22407b57e0973d10f0f4a",
+      "bytes": 687915
+    },
+    {
+      "path": "fotos/6d52685985322b4dc1f45fcc.jpg",
+      "filename": "IMG_8329.HEIC",
+      "profile": "landscape",
+      "source_sha256": "87fe21d5263cdf7dd99a285e937596a03df77759bf8cf4a3e00eee1a8fbec810",
+      "sha256": "ef8629215aa257169afb08c1bed0936201ac0fc37176a6a99516686a4c2f6926",
+      "bytes": 763254
+    },
+    {
+      "path": "fotos/14767032d1a2f712aa31c0c9.jpg",
+      "filename": "IMG_5617.jpeg",
+      "profile": "interior",
+      "source_sha256": "d937d478209986a68d97081aaf0b861937e15cb012a308e9d952a24ee2436dc2",
+      "sha256": "d5e96a5a486485b17de25c23409a25f8b34cedc3e2c0baddad60bdb5a6f89bcd",
+      "bytes": 836000
+    },
+    {
+      "path": "fotos/ab75f44453827859ef58c4bc.jpg",
+      "filename": "IMG_6554.HEIC",
+      "profile": "interior",
+      "source_sha256": "f8dcee0c5e182783d3c7e936e387e8df9436eba5ece36c0fa6cfe3b0fe254b9e",
+      "sha256": "228b1f001f0946e963efd5058a46a909487cc6929f44d6a974137406481f46a3",
+      "bytes": 787483
+    },
+    {
+      "path": "fotos/08e41bf4606669907a1ce9ee.jpg",
+      "filename": "IMG_6557.HEIC",
+      "profile": "interior",
+      "source_sha256": "95cbf58ef76cb0520a4d18811cb561b68442ebcce60a9e90f209018a9461784e",
+      "sha256": "aab7fee9675111d301981bf796f0db555dba9e938e00f1f088af0840451fff28",
+      "bytes": 1071032
+    },
+    {
+      "path": "fotos/9f018d5bd5cf5fdc18b5bd48.jpg",
+      "filename": "IMG_8363.HEIC",
+      "profile": "interior",
+      "source_sha256": "db515703116b750e8e244fa8822ff2d2c9433b8164840149cb4ed3d1fa799123",
+      "sha256": "98233af9d3e8fad89bd8c3b572387135b90d8c4065e5ee290f346ab47d077d8c",
+      "bytes": 889864
+    },
+    {
+      "path": "fotos/5fd88f97664e9f3ea65ee695.jpg",
+      "filename": "IMG_6561.HEIC",
+      "profile": "beach",
+      "source_sha256": "0aab0562d250d402627df93196aefb3007fc44b037a210e38a70c2944903ed46",
+      "sha256": "395b34ff3d63a57c4f7835bd8c91eaaaa1242b23bc17b2d29e4c2b1bdd08a805",
+      "bytes": 614398
+    },
+    {
+      "path": "fotos/1d0b6c7b00ba11a21fc4798a.jpg",
+      "filename": "IMG_6563.HEIC",
+      "profile": "interior",
+      "source_sha256": "da9d71ca69703870e76705670991723b672762078d8f71265e57a5205a93c852",
+      "sha256": "a573818032418f596c6162c0b0f5ad6a28a652ab13a7f39d05589b57175cef77",
+      "bytes": 675353
+    },
+    {
+      "path": "fotos/c57ab416c23181bfd35ee55e.jpg",
+      "filename": "IMG_6571.HEIC",
+      "profile": "interior",
+      "source_sha256": "e8e21763afa6f3989e292aaed0a6334ff2debd05fc9538671de0801ed45012f8",
+      "sha256": "20af92163296219f838259404c1e5b3e812a265b35f9cd41e918a8e2a7f6e056",
+      "bytes": 569447
+    },
+    {
+      "path": "fotos/eb4cb095dbb20f29af86dfec.jpg",
+      "filename": "IMG_6590.HEIC",
+      "profile": "beach",
+      "source_sha256": "537462f678291d7ed23ddacfb694312fa8c38418c9b8a1ae4ba44da923828bfc",
+      "sha256": "4464c085bd48d1e54b1ba5c02d377467e39647b2cc195549673cfc45ed89031f",
+      "bytes": 904075
+    },
+    {
+      "path": "fotos/b63c975bdcb8d4f3de74ae79.jpg",
+      "filename": "IMG_6575.HEIC",
+      "profile": "beach",
+      "source_sha256": "483f1c20eeeb81db4456ba1b6c40bf4800adc89bae937bf0d9c71271b349e40a",
+      "sha256": "69bc61d891e63b6fa31c146be36ac677735bf0c3614a0320b2ddc3b53d44504f",
+      "bytes": 724385
+    },
+    {
+      "path": "fotos/6145d7a23907246144edc00e.jpg",
+      "filename": "IMG_6580.HEIC",
+      "profile": "beach",
+      "source_sha256": "da5746084fcd8efed3e7571f8fec0ace86dd9b7e68c21f1adaefaaf45d8c60c8",
+      "sha256": "b28ac662d7b4541744889d4fb01ac4180c300749e22db95a6667a753ed6fb867",
+      "bytes": 1065540
+    },
+    {
+      "path": "fotos/4ac3fb530576f2ad07399661.jpg",
+      "filename": "IMG_6583.HEIC",
+      "profile": "beach",
+      "source_sha256": "715035f0159f4a14068bb336167ff2d67d4212eeabda22d7e158af10f268a9d3",
+      "sha256": "0ea03a38eaa18932a173f3c89b6ef5d56a823c3f0e025c958720b43d00a8d3ef",
+      "bytes": 856654
+    },
+    {
+      "path": "fotos/cf80ec1bc9185fc07b9bd18a.jpg",
+      "filename": "IMG_6587.HEIC",
+      "profile": "beach",
+      "source_sha256": "6958ebcbd4d50806e5e31cb1bee3b3261b6a6ddbf0d88a7e1dd4ec534382cb4d",
+      "sha256": "0dd0bc8eb8f8400af87a3182d29c7b7ed187ac3895148eaf9d4714c443b4cbac",
+      "bytes": 695529
+    },
+    {
+      "path": "fotos/985a9c7c5503a59df3252ccb.jpg",
+      "filename": "IMG_6595.HEIC",
+      "profile": "beach",
+      "source_sha256": "635fc8cda019766e98c69337e2afc4f44026e7093030ba55fdda8c9c88a03c20",
+      "sha256": "c17458c202db3af02f2ce81f5fd3d2818e1e98e39edfef7046b3eb60864f3dec",
+      "bytes": 497166
+    },
+    {
+      "path": "fotos/d70d6542899ed76d029c8ee8.jpg",
+      "filename": "IMG_6616.HEIC",
+      "profile": "beach",
+      "source_sha256": "a6789844ebb5d01c097b3443d62806c7e7e6e40c183af61b1042b26ec5e161db",
+      "sha256": "6ee344af113c8d9551536167b6834ca518a5bff7b7f5d8e3a7b3523148fc9cf4",
+      "bytes": 501541
+    },
+    {
+      "path": "fotos/73dc8a6f2854d132278a2e69.jpg",
+      "filename": "IMG_6618.HEIC",
+      "profile": "interior",
+      "source_sha256": "87ddc17a746dca56afeef5294c27aa2c51f47a42ff7855d8e64b70f14ec6ca6d",
+      "sha256": "3688aa23c156028c926a2c60ef0ff04da0b9450b63cdd39be45397c3da466794",
+      "bytes": 444051
+    },
+    {
+      "path": "fotos/ca8b756ef2dfdd4ffbfc1b98.jpg",
+      "filename": "IMG_6620.HEIC",
+      "profile": "interior",
+      "source_sha256": "563e45774472e2fa5ec005d1ffe4823fcca5829dfb1731463e19ce03fa256e11",
+      "sha256": "e5d28e1bad810fadeda8eace0638fc7a07ab2b0a032190af8b7901a30106a6f7",
+      "bytes": 424110
+    },
+    {
+      "path": "fotos/29ce803821096b56de6ac41f.jpg",
+      "filename": "IMG_6639.HEIC",
+      "profile": "beach",
+      "source_sha256": "5d1ef1a4baee22dd308d19b4357a50d7dcb42875143b66b05678c65e24639e26",
+      "sha256": "a840b6824b43a58172532f78ab11f57cfb58cb8d98bcc630fd681d78faee18b3",
+      "bytes": 765041
+    },
+    {
+      "path": "fotos/c117431bc2f277133f17b7c6.jpg",
+      "filename": "IMG_6643.HEIC",
+      "profile": "beach",
+      "source_sha256": "4a6213551c0ee705c4119729f1a911c91e055284aec4bf3c5cff392e6beb926b",
+      "sha256": "b389dc15c29aa11a42e9c4a1ba166385508fea258b576ca93302ad5fd930974e",
+      "bytes": 741276
+    },
+    {
+      "path": "fotos/a5840bbb61780de192df0b9d.jpg",
+      "filename": "IMG_6645.HEIC",
+      "profile": "beach",
+      "source_sha256": "721584fe1cd9630defe88641bdc6b9a43639fdbe224fcce85a862c7ae7483863",
+      "sha256": "815dfa88844a9d4a94d21eaf08a2ea16a2cd6a6b718096eb0c2fb36942d80854",
+      "bytes": 409682
+    },
+    {
+      "path": "fotos/9652e089d3c6ede1b4d8e5ed.jpg",
+      "filename": "IMG_6648.HEIC",
+      "profile": "beach",
+      "source_sha256": "68f97f90cc0bdc1ea05abdb7a6e453108bd25d331a09ba4c0cd75c05cf3c8e0a",
+      "sha256": "a842ee40dfd8fdda870cd6547a41f2cdd7e29200aea5e0bb75a7045db0a63323",
+      "bytes": 182449
+    },
+    {
+      "path": "fotos/f05f9891270cf4996d014f7e.jpg",
+      "filename": "IMG_6653.HEIC",
+      "profile": "beach",
+      "source_sha256": "1e76a39250bb23e02b2d4ee80614dfc9a76477099d9eb3a4f81c42dbb5ecb23a",
+      "sha256": "f2f43e22de112f42680fa2817d47470c16a273f0c52c871a5095f201db6ec574",
+      "bytes": 794963
+    },
+    {
+      "path": "fotos/1f28850d09196d409a3752ac.jpg",
+      "filename": "IMG_6658.HEIC",
+      "profile": "interior",
+      "source_sha256": "d7beceb4cc220a94a1fc5807a8a0fe2038badac9d4dd2c0126b9233ad6d43b5c",
+      "sha256": "25e94be4ff4008605da91d4604fd2728c76e708710c73c13171d1dfdee3a7b1a",
+      "bytes": 683565
+    },
+    {
+      "path": "fotos/c3ce93a5d1a55b8a139aa4f1.jpg",
+      "filename": "IMG_6660.HEIC",
+      "profile": "beach",
+      "source_sha256": "8ad90063ded094d7629c22b61768ffc353141cca8cf027b3552ac899571e1a74",
+      "sha256": "eacf2f306b3678e496630a5251ff3b3fd7a3e2b7daac42e8e47951dc1376abcf",
+      "bytes": 939676
+    },
+    {
+      "path": "fotos/a891363bc097ea2121208982.jpg",
+      "filename": "IMG_6675.HEIC",
+      "profile": "beach",
+      "source_sha256": "082667a96de027d18fa5437a892edb7e470e7157122b81842a845e1fcd1c48c6",
+      "sha256": "28204c94cf921fd6deebe79df717cfd7a7e61fe4599355b882fe8d820b06914d",
+      "bytes": 396630
+    },
+    {
+      "path": "fotos/b54a954f07acfe94a02a176c.jpg",
+      "filename": "IMG_6677.HEIC",
+      "profile": "interior",
+      "source_sha256": "32432c63abf44ebe67ee67dd938cf834f3519791be5a68a46090f4a494a41092",
+      "sha256": "d000224979548d9a6192e15f3c970bce506df29bec85fcf31551a1447a666a6a",
+      "bytes": 470418
+    },
+    {
+      "path": "fotos/50315ec54ade8b675bace239.jpg",
+      "filename": "IMG_6681.HEIC",
+      "profile": "interior",
+      "source_sha256": "a6a23b327e8562a90367912e815dcda2be156dcde2ff0a52216b4917ebe23679",
+      "sha256": "80de60220a59d42526e32c25360866234652f9b228f3d20458233250d95ce20e",
+      "bytes": 372938
+    },
+    {
+      "path": "fotos/68932a8c1422cd1cc9d46726.jpg",
+      "filename": "IMG_6687.HEIC",
+      "profile": "beach",
+      "source_sha256": "04b59b1af786628bd3dbbce6203ee7788363141d7a35a124ac8c7326f7737676",
+      "sha256": "ab984d28f61461681a8d342e564b15f1627980d00b4e224f59aa507fec08e163",
+      "bytes": 481586
+    },
+    {
+      "path": "fotos/d4577e80f7f01d2f189fb550.jpg",
+      "filename": "IMG_6690.HEIC",
+      "profile": "beach",
+      "source_sha256": "478853467f6d83520f79092cd270b888c4a7d13689f0842cb9f5b2c1c7a24289",
+      "sha256": "0caa292ed98629940187ce7ba5b93c9af9fad047ebfca92b76371243052a6124",
+      "bytes": 1011359
+    },
+    {
+      "path": "fotos/a5fdb92e95f6531368f514b4.jpg",
+      "filename": "IMG_6693.HEIC",
+      "profile": "beach",
+      "source_sha256": "8fb24ce67ad0dbb9cec7d157f7b0323f7cfc460b5d1325bd42520d354dbfd811",
+      "sha256": "c4bb7de65dff8a8686fab80ff522a1e6ba1bc224d2bd3924957e40ba700b2ba2",
+      "bytes": 788110
+    },
+    {
+      "path": "fotos/c65988a7146f3cbd8b2b22a3.jpg",
+      "filename": "IMG_6699.HEIC",
+      "profile": "beach",
+      "source_sha256": "2ccfa24c868b31fef49376da24cfdf7cf957fd28e585c58b8a52943ce411c649",
+      "sha256": "d6172558f34f6f60d6c04eeb2f50bba8950bdcaf2d9db2fefc6b7fe9e63d2baa",
+      "bytes": 1030276
+    },
+    {
+      "path": "fotos/b13d676338ea5a33f4f7ddc7.jpg",
+      "filename": "IMG_6700.HEIC",
+      "profile": "beach",
+      "source_sha256": "b750afe88c8bf3cb28bc448243f4e3c727126acd6628be0ea865ed753047a646",
+      "sha256": "cff47f4c006b598e674352f9c4845e8566f37b8cf50a176c2fd6a2f501c611c4",
+      "bytes": 675829
+    },
+    {
+      "path": "fotos/48ff0640b1b527a149aebc7d.jpg",
+      "filename": "IMG_6703.HEIC",
+      "profile": "beach",
+      "source_sha256": "9ff0e2c43e9e8cb99cf2baf43b36ce9f76e876bb467e95e8786a77aa85231a7f",
+      "sha256": "e62d58b9f43b0174e9ef6ea6d660479c45a9d333dfb9abf62cdee4c8e9adc11e",
+      "bytes": 437118
+    },
+    {
+      "path": "fotos/7cb3cd509597c9ea4f7faf13.jpg",
+      "filename": "IMG_6705.HEIC",
+      "profile": "beach",
+      "source_sha256": "030f28c5ccda2ff2b39faac240f68dea2479d396f3c73a74726fd1d30b59f2be",
+      "sha256": "81f8ca789364f222bd8dc9969a60ae13ba28b1d6468507ec01e0361db78fcf3a",
+      "bytes": 597445
+    },
+    {
+      "path": "fotos/d0b9d3eb0d95af52c486f369.jpg",
+      "filename": "IMG_6708.HEIC",
+      "profile": "interior",
+      "source_sha256": "9eb8d0dc962b1d3bcf2327751cc02857188f629d3b9e487b0e66a78480a94415",
+      "sha256": "9a42d9f1613aa956366aa9a9549efd86ccd49c059d7f1a6de48c468153faed0b",
+      "bytes": 569379
+    },
+    {
+      "path": "fotos/2cb8a2d25607f0b7cb6e011e.jpg",
+      "filename": "IMG_6711.HEIC",
+      "profile": "beach",
+      "source_sha256": "ead9aa36f8d74b74c5e82d9b60a50d5d7882f32f6cecbd232340ab0fa56e8fca",
+      "sha256": "18bb1c3a0e99a952fa6004abf27a2c554e95d8f5fdcd0639999621ddda0dc6fb",
+      "bytes": 1039313
+    },
+    {
+      "path": "fotos/17e97bd8498ff84bca6f3652.jpg",
+      "filename": "IMG_6713.HEIC",
+      "profile": "beach",
+      "source_sha256": "ad5d3cd84865a7367a5579ad62f2c955572b18cc584d9745b0adf6c1e218a1c3",
+      "sha256": "eacf286df48482006c73a9a5b2010cc335e70a0061fe425b6d2c0fbbd6341b3a",
+      "bytes": 942760
+    },
+    {
+      "path": "fotos/fc8135f7a4d0a799f5f09c30.jpg",
+      "filename": "IMG_6717.HEIC",
+      "profile": "interior",
+      "source_sha256": "e8ee2010240743a7e6360ff8edec1530a6d3ffdcdcdbf2488ba16ac306fd9554",
+      "sha256": "dbfcd626d2128ef3d160ac7d3924ac3ec0ebe5d5239e307acdaca1394939f589",
+      "bytes": 876730
+    },
+    {
+      "path": "fotos/19d967e6e6b7f3172f255dc9.jpg",
+      "filename": "IMG_6720.HEIC",
+      "profile": "beach",
+      "source_sha256": "d06068a5ff0e8f1a25066c4451ea5ce75e0e6bf50005ef35117943531ea13548",
+      "sha256": "a850f3f8cb89f4163589a83654768023638645bac2160fbd106c332a38cf8b13",
+      "bytes": 630127
+    },
+    {
+      "path": "fotos/8143c68b1db9e5f159c40026.jpg",
+      "filename": "IMG_6721.HEIC",
+      "profile": "interior",
+      "source_sha256": "b4051da4ffe18c70bc1e6704b989b1a578fbe388e4b735759338e1a2ec863ebd",
+      "sha256": "17238fc61f773feb46f6e367f7ab93880711965c4f158af19ffd27fb9fcfb7a2",
+      "bytes": 407609
+    },
+    {
+      "path": "fotos/7e0a0e389181c5b23c224622.jpg",
+      "filename": "IMG_6727.HEIC",
+      "profile": "interior",
+      "source_sha256": "0cc0785146729125d54d15df48af0a3db8dda589ea3cca8aaa89926484425c96",
+      "sha256": "8eb137f4a3fbe41841d1e8187886b7978c1ca8e9025da4d7ec3a1930425c2802",
+      "bytes": 383750
+    },
+    {
+      "path": "fotos/852983e971608c61d905c8ef.jpg",
+      "filename": "IMG_6730.HEIC",
+      "profile": "beach",
+      "source_sha256": "e4b46608e037bacf311d731dab7d1488c86281340218ad44c16fd902460f5e4c",
+      "sha256": "153cf39636ebe8983630d6704c0c852826f29b920c1d91064fc8c30cd8ccfc82",
+      "bytes": 768812
+    },
+    {
+      "path": "fotos/80e17af8648bf8c2a3286ee6.jpg",
+      "filename": "IMG_6732.HEIC",
+      "profile": "beach",
+      "source_sha256": "bee7601fb65b187ef96af5cb31bfeb0987be246a5ddacc5fdc554ed46e4e7df0",
+      "sha256": "e8640dde76f8592cbd1b48d51266b258b3ec8507e553de875d2de94c84f32fdd",
+      "bytes": 613022
+    },
+    {
+      "path": "fotos/02023593cf912c98fae48f3f.jpg",
+      "filename": "IMG_6734.HEIC",
+      "profile": "beach",
+      "source_sha256": "91079707c6fc069b8931cd162d17e03ad16569a85455757f6b42e900f5fd48ac",
+      "sha256": "387ac76f4e49b4181d0f4cf826997ffaa5b7ac7e985cec09d538b09f9720b247",
+      "bytes": 280491
+    },
+    {
+      "path": "fotos/db2f7cc43cc35fae3fc00204.jpg",
+      "filename": "IMG_6737.HEIC",
+      "profile": "beach",
+      "source_sha256": "4b742146cda5131fca140cdd5884bf17e6a05bc5fc680a4dbb1959035bd57857",
+      "sha256": "f5b8ed39e8c2b5ad9c87eb35247ed5bb5ddddb6e6cf0ab9de51fb48cd81c37a1",
+      "bytes": 819494
+    },
+    {
+      "path": "fotos/034f607c7d3551499545d274.jpg",
+      "filename": "IMG_6744.HEIC",
+      "profile": "interior",
+      "source_sha256": "13b41380efa54dfb8c754bd5cbc30c3ea6b2eb717b1e224f1c9ef3ac39f19b4f",
+      "sha256": "e76592aa7057d10d1985ae7a7549491a9cae3cd7153785be6943b5b7737aecb2",
+      "bytes": 772369
+    },
+    {
+      "path": "fotos/a6591bc91a2f630a68bbe62d.jpg",
+      "filename": "IMG_6745.HEIC",
+      "profile": "beach",
+      "source_sha256": "41a7407f2c381aa4df13077b2fea8de427c2babd401e0bd26019f80ca14c8c2a",
+      "sha256": "0fd6efbb58227f4bf04c0de62bc39d24892d3ca3f883166e52501258c1d0eade",
+      "bytes": 1082606
+    },
+    {
+      "path": "fotos/27e94aab8c9fa75768e3b434.jpg",
+      "filename": "IMG_6748.HEIC",
+      "profile": "interior",
+      "source_sha256": "002598eef6fc5f9e23178595f60ff977ab2dedc12f88a7d579d35bac4ac65ccf",
+      "sha256": "7e7a0d9485834aaead5ebdf193849fa2c3fb84b5a7763f1d17183ab6227a1f12",
+      "bytes": 710753
+    },
+    {
+      "path": "fotos/46c4b89aa984f1ae5b5100e4.jpg",
+      "filename": "IMG_6751.HEIC",
+      "profile": "beach",
+      "source_sha256": "92de070d1b80444468a3c8dbc6525981540948df55ac1a07b60e4bb8bf65d6ea",
+      "sha256": "448ee95d2192c5c945f5f15ead69e7b8caaec33e4d088033b3ce5d1b339f52a8",
+      "bytes": 750993
+    },
+    {
+      "path": "fotos/477ca4fcd69dee4a6665ee08.jpg",
+      "filename": "IMG_6753.HEIC",
+      "profile": "landscape",
+      "source_sha256": "f36770ef6f0a1b301227a43c0d29bd824519abc073a58fd1cb8862c0542d5612",
+      "sha256": "c796bc158cf2aeab54e4d49bd3d93641d5d4b365a9ee463cba64d0380379bdef",
+      "bytes": 792544
+    },
+    {
+      "path": "fotos/20d4c515410bcbcbf98fc05e.jpg",
+      "filename": "IMG_6755.HEIC",
+      "profile": "landscape",
+      "source_sha256": "2a917765eabcffe7c0eb4d752319ac520dd9cbc18e81f25c3a25d242ef57dfdc",
+      "sha256": "01ca632621171930d2c6968c2ea5973a9fcad7da5db5636a6137c12f763b3518",
+      "bytes": 879322
+    },
+    {
+      "path": "fotos/a811a8186155b7e948938087.jpg",
+      "filename": "IMG_6759.HEIC",
+      "profile": "interior",
+      "source_sha256": "c3b7cbc38d00fa494ec69269aeb88a1b6e48457c96c1bbdb0bb8b7ab641154a7",
+      "sha256": "6626e4831d2ed27ad62d7cc7f28a7d3868d3cad350dfe66b75cbd5a435de274d",
+      "bytes": 1246652
+    },
+    {
+      "path": "fotos/e0f5cb5614a12d86211cad17.jpg",
+      "filename": "IMG_6767.HEIC",
+      "profile": "landscape",
+      "source_sha256": "712651f7e3d7afb3781123a57e8b513f940b605e1273d44efb5be253775e7dbe",
+      "sha256": "179ada8ea99238f1feb1beda486a76d20c6a5a3b2f7855a44d8ca9f0511d8e23",
+      "bytes": 1200746
+    },
+    {
+      "path": "fotos/d7f92c90067c6bf3bb858194.jpg",
+      "filename": "IMG_6770.HEIC",
+      "profile": "landscape",
+      "source_sha256": "e5db4363aa66fb3d3545aef3ac859f80c3d0dc36167ee05871152d9676a242bf",
+      "sha256": "9b637afa36f27302b5097f04e5815e10a83336180d6e74fe8f3d470518e3a88d",
+      "bytes": 1013348
+    },
+    {
+      "path": "fotos/db4a87cc4c9fa08b773d562e.jpg",
+      "filename": "IMG_6774.HEIC",
+      "profile": "landscape",
+      "source_sha256": "b5927dbbb1883b31553fe3b1c360f54eeee62d89d5a7492eca53e2622f652118",
+      "sha256": "50957dfdc93bdbb6f12ea565d34088135c613572a34253eddbeb6797668285a1",
+      "bytes": 1096255
+    },
+    {
+      "path": "fotos/d9282a708b03ab6da6cc75fc.jpg",
+      "filename": "IMG_6778.HEIC",
+      "profile": "landscape",
+      "source_sha256": "19eaa3958bf242787376356b7125307e924be18caf8068cf379f5efc0ec3c3e6",
+      "sha256": "d5b4b941994886052c59df0ed086f5cd38d819ca9f1ff71508c5c5747b40a761",
+      "bytes": 1275913
+    },
+    {
+      "path": "fotos/6f60f4250579cd65c3ab5a84.jpg",
+      "filename": "IMG_6782.HEIC",
+      "profile": "interior",
+      "source_sha256": "5507993ef55ae8ccbc6337641a326b184d45cb0b09efb06b9ab52ffafc740c3e",
+      "sha256": "09afd084b95e0967e8998c07fb9770198142c06b63befcdebc4557ea4825875c",
+      "bytes": 851091
+    },
+    {
+      "path": "fotos/bd3ad851c8e3cede89810418.jpg",
+      "filename": "IMG_8563.heic",
+      "profile": "interior",
+      "source_sha256": "f9f0bb695794b87c44c2c58c872ee1105ee842a89371757e04b615fa5df0645c",
+      "sha256": "88e2a9a81b71a9787b9991f51bc66153fcce3f998a6b1ec48708acda3ee78355",
+      "bytes": 686609
+    },
+    {
+      "path": "fotos/ceaabd8012b240bf2612a758.jpg",
+      "filename": "7b78f215-4d85-4daf-9302-338e3c0e33bc.jpg",
+      "profile": "interior",
+      "source_sha256": "fba4a0a24a24a2804f564279dbf5c6fe9e604728b3ba106c4f5bdd1379662438",
+      "sha256": "59a6ea0086dcac315e974068cf2fa6d6cac6a0946701f2d2570fd7fdf5108cfb",
+      "bytes": 366756
+    },
+    {
+      "path": "fotos/4f04b29adf1fb906efb87518.jpg",
+      "filename": "8f84e4b5-b888-4c42-9669-74c3f031c021.jpg",
+      "profile": "interior",
+      "source_sha256": "3b50956593f79202f5fbc07fa396df7a1f741bf582d99aafbb8f79d7bf7d618f",
+      "sha256": "e2f94c02fea9b6e46d96a94fb9e1f63a4d202d74951f3dbb6b91674078979a0e",
+      "bytes": 606244
+    }
+  ]
+}
