@@ -2,7 +2,7 @@
 const lang=document.documentElement.lang==='es'?'es':'ca';
 const isEs=lang==='es';
 const chapter=document.body.dataset.chapter;
-const photos=window.TRIP_PHOTOS.filter(p=>!chapter||p.chapter===chapter);
+const photos=window.TRIP_PHOTOS.filter(p=>!chapter||p.chapter===chapter).sort((a,b)=>(a.date||'9999').localeCompare(b.date||'9999'));
 const text=(ca,es)=>isEs?es:ca;
 const localized=(p,key)=>p[key+'_'+lang];
 const el=(tag,value)=>{const node=document.createElement(tag);if(value!==undefined)node.textContent=value;return node};
