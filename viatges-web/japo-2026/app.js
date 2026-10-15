@@ -37,3 +37,12 @@ document.querySelectorAll('[data-map]').forEach(b=>b.onclick=()=>{mapRegion=b.da
 const languageSelect=document.getElementById('language-select');if(languageSelect)languageSelect.onchange=e=>{const ca=document.body.dataset.caPage||'index.html';const target=e.target.value==='es'?ca.replace('.html','-es.html'):ca;window.location.href=target+window.location.hash;};
 
 const stickyHeader=document.querySelector('.region-page .site-header');if(stickyHeader){const setHeaderHeight=()=>document.documentElement.style.setProperty('--site-header-height',stickyHeader.getBoundingClientRect().height+'px');setHeaderHeight();if(typeof ResizeObserver!=='undefined')new ResizeObserver(setHeaderHeight).observe(stickyHeader);window.addEventListener('resize',setHeaderHeight);}
+
+/* Crèdits de les fotografies */
+(function(){
+ const notice='© 2026 Pere Ràfols · '+(document.documentElement.lang==='es'?'Todos los derechos reservados':'Tots els drets reservats');
+ const footer=document.querySelector('footer');
+ if(footer&&!footer.querySelector('.photo-copyright')){const p=document.createElement('p');p.className='photo-copyright';p.textContent=notice;p.style.cssText='font-size:12px;opacity:.75;margin-top:12px';footer.appendChild(p)}
+ const info=document.getElementById('lb-info');
+ if(info&&!info.querySelector('.photo-copyright')){const p=document.createElement('span');p.className='photo-copyright';p.textContent='© Pere Ràfols';p.style.cssText='display:block;font-size:11px;opacity:.7;margin-top:8px;text-align:right';info.appendChild(p)}
+})();
