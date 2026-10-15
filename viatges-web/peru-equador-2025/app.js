@@ -13,6 +13,11 @@ const gallery=document.getElementById('gallery');
 if(gallery){
  document.querySelector('.photo-total').textContent=photos.length+' '+text('fotografies · Toca una foto per ampliar-la.','fotografías · Toca una foto para ampliarla.');
  for(const [i,p] of photos.entries()){
+  if(chapter==='galapagos'&&/^IMG_6595\./i.test(p.filename)){
+   const videoFigure=el('figure');videoFigure.className='video-figure';
+   const video=el('video');video.controls=true;video.playsInline=true;video.preload='metadata';video.src='videos/GX010957-web.mp4';video.setAttribute('aria-label',text('Busseig a Galápagos - León Dormido','Buceo en Galápagos - León Dormido'));video.style.cssText='display:block;width:100%;height:auto;background:#000';
+   const videoCaption=el('figcaption',text('Busseig · Galápagos - León Dormido','Buceo · Galápagos - León Dormido'));videoFigure.append(video,videoCaption);gallery.append(videoFigure);
+  }
   const figure=el('figure');const button=el('button');button.type='button';button.className='photo-button';button.setAttribute('aria-label',text('Amplia: ','Amplía: ')+(localized(p,'caption')||localized(p,'place')||p.filename));
   const img=el('img');img.src=p.src;img.alt=localized(p,'caption')||localized(p,'place')||p.filename;img.width=p.width;img.height=p.height;img.loading='lazy';img.decoding='async';button.append(img);button.addEventListener('click',()=>openPhoto(i));
   const caption=el('figcaption');const place=el('span',localized(p,'place'));place.className='photo-place';caption.append(place);
