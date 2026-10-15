@@ -21,7 +21,7 @@ if(gallery){
   if(chapter==='galapagos'&&/^IMG_6595\./i.test(p.filename)){
    const videoFigure=el('figure');videoFigure.className='video-figure';
    const video=el('video');video.controls=true;video.playsInline=true;video.preload='metadata';video.src='videos/GX010925-small.mp4';video.setAttribute('aria-label',text('Busseig a Galápagos','Buceo en Galápagos'));video.style.cssText='display:block;width:100%;height:auto;background:#000';
-   const videoCaption=el('figcaption',text('Busseig · Galápagos','Buceo · Galápagos'));videoFigure.append(video,videoCaption);gallery.append(videoFigure);
+   const videoCaption=el('figcaption',text('Busseig · Galápagos - León Dormido','Buceo · Galápagos - León Dormido'));videoFigure.append(video,videoCaption);gallery.append(videoFigure);
   }
   if(chapter==='galapagos'&&i===1){
    const videoFigure=el('figure');videoFigure.className='video-figure';
