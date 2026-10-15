@@ -69,3 +69,12 @@ if(window.L&&located.length){
  map.fitBounds(L.latLngBounds(located.map(({p})=>[p.latitude,p.longitude])),{padding:[25,25],maxZoom:12});
  mapStatus.textContent=text('Es mostren les fotografies amb coordenades del viatge. Les fotos sense geolocalització continuen a la galeria.','Se muestran las fotografías con coordenadas del viaje. Las fotos sin geolocalización siguen en la galería.');
 }else{mapStatus.textContent=text('El mapa no està disponible. Pots obrir les coordenades de cada fotografia des del visor.','El mapa no está disponible. Puedes abrir las coordenadas de cada fotografía desde el visor.');}
+
+/* Crèdits de les fotografies */
+(function(){
+ const notice='© 2026 Pere Ràfols · '+(document.documentElement.lang==='es'?'Todos los derechos reservados':'Tots els drets reservats');
+ const footer=document.querySelector('footer');
+ if(footer&&!footer.querySelector('.photo-copyright')){const p=document.createElement('p');p.className='photo-copyright';p.textContent=notice;p.style.cssText='font-size:12px;opacity:.75;margin-top:12px';footer.appendChild(p)}
+ const info=document.getElementById('photo-info');
+ if(info&&!info.querySelector('.photo-copyright')){const p=document.createElement('span');p.className='photo-copyright';p.textContent='© Pere Ràfols';p.style.cssText='display:block;font-size:11px;opacity:.7;margin-top:8px;text-align:right';info.appendChild(p)}
+})();
