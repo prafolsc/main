@@ -18,6 +18,11 @@ if(gallery){
   const caption=el('figcaption');const place=el('span',localized(p,'place'));place.className='photo-place';caption.append(place);
   if(localized(p,'caption')){const c=el('span',localized(p,'caption'));c.className='photo-caption';caption.append(c);}
   const meta=el('div');meta.className='photo-meta';meta.append(el('span',date(p)),el('span',p.filename));caption.append(meta);figure.append(button,caption);gallery.append(figure);
+  if(chapter==='galapagos'&&/^IMG_6595\./i.test(p.filename)){
+   const videoFigure=el('figure');videoFigure.className='video-figure';
+   const video=el('video');video.controls=true;video.playsInline=true;video.preload='metadata';video.src='videos/GX010925-small.mp4';video.setAttribute('aria-label',text('Busseig a Galápagos','Buceo en Galápagos'));video.style.cssText='display:block;width:100%;height:auto;background:#000';
+   const videoCaption=el('figcaption',text('Busseig · Galápagos','Buceo · Galápagos'));videoFigure.append(video,videoCaption);gallery.append(videoFigure);
+  }
   if(chapter==='galapagos'&&i===1){
    const videoFigure=el('figure');videoFigure.className='video-figure';
    const video=el('video');video.controls=true;video.playsInline=true;video.preload='metadata';video.src='videos/GX010904-web.mp4';video.setAttribute('aria-label',text('Busseig amb lleons marins a Galápagos','Buceo con leones marinos en Galápagos'));video.style.cssText='display:block;width:100%;height:auto;background:#000';
