@@ -61,12 +61,17 @@ const located=photos.map((p,i)=>({p,i})).filter(({p})=>Number.isFinite(p.latitud
 if(window.L&&located.length){
  const map=L.map('trip-map',{scrollWheelZoom:false});
  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',maxZoom:18}).addTo(map);
+ const daySelect=document.getElementById('map-day');const dayStops=document.getElementById('map-day-stops');
+ const allMarkers=[];const dates=[...new Set(located.map(({p})=>p.date?.slice(0,10)).filter(Boolean))].sort();
+ if(daySelect){for(const d of dates){const option=document.createElement('option');option.value=d;option.textContent=new Intl.DateTimeFormat(isEs?'es-ES':'ca-ES',{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'}).format(new Date(d+'T12:00:00Z'));daySelect.append(option);}}
+ function renderDay(){if(!daySelect)return;const day=daySelect.value;const entries=day?located.filter(({p})=>p.date?.startsWith(day)):located;for(const item of allMarkers){if(!day||item.entries.some(({p})=>p.date?.startsWith(day)))item.marker.addTo(map);else map.removeLayer(item.marker)}if(entries.length)map.fitBounds(L.latLngBounds(entries.map(({p})=>[p.latitude,p.longitude])),{padding:[25,25],maxZoom:12});dayStops.replaceChildren();const unique=new Map();for(const entry of entries){const key=(localized(entry.p,'place')||'').trim()||entry.p.chapter;if(!unique.has(key))unique.set(key,entry)}for(const [name,entry] of unique){const b=document.createElement('button');b.type='button';b.textContent=name;b.addEventListener('click',()=>{map.setView([entry.p.latitude,entry.p.longitude],Math.max(map.getZoom(),11));const marker=allMarkers.find(m=>m.entries.some(x=>x.i===entry.i));if(marker)marker.marker.openPopup()});dayStops.append(b)}if(!unique.size)dayStops.textContent=text('Sense fotografies geolocalitzades aquest dia.','Sin fotografías geolocalizadas este día.');}
+ if(daySelect)daySelect.addEventListener('change',renderDay);
  const groups=new Map();for(const entry of located){const key=Math.round(entry.p.latitude*150)+','+Math.round(entry.p.longitude*150);if(!groups.has(key))groups.set(key,[]);groups.get(key).push(entry);}
  for(const entries of groups.values()){
   const {p,i}=entries[0];const popup=el('div');const b=el('button');b.type='button';const img=el('img');img.src=p.src;img.alt=localized(p,'place');img.loading='lazy';b.append(img,el('strong',localized(p,'place')),el('div',entries.length+' '+text('fotografies','fotografías')));b.addEventListener('click',()=>openPhoto(i));popup.append(b);
-  L.circleMarker([p.latitude,p.longitude],{radius:7,color:'#faf2e5',weight:2,fillColor:'#a84730',fillOpacity:.9}).addTo(map).bindPopup(popup);
+  const marker=L.circleMarker([p.latitude,p.longitude],{radius:7,color:'#faf2e5',weight:2,fillColor:'#a84730',fillOpacity:.9}).addTo(map).bindPopup(popup);allMarkers.push({marker,entries});
  }
- map.fitBounds(L.latLngBounds(located.map(({p})=>[p.latitude,p.longitude])),{padding:[25,25],maxZoom:12});
+ renderDay();
  mapStatus.textContent=text('Es mostren les fotografies amb coordenades del viatge. Les fotos sense geolocalització continuen a la galeria.','Se muestran las fotografías con coordenadas del viaje. Las fotos sin geolocalización siguen en la galería.');
 }else{mapStatus.textContent=text('El mapa no està disponible. Pots obrir les coordenades de cada fotografia des del visor.','El mapa no está disponible. Puedes abrir las coordenadas de cada fotografía desde el visor.');}
 
