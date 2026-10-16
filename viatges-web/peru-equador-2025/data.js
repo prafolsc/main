@@ -729,8 +729,8 @@ window.TRIP_PHOTOS=[
     "chapter": "lima",
     "width": 1600,
     "height": 1200,
-    "caption_ca": "Museu a la sanguchería de Miraflores, a Lima. El nostre primer sopar al Perú.",
-    "caption_es": "Museo en la sanbucheria de Miraflores en Lima. Nuestra primera cena en Perú.",
+    "caption_ca": "Museu a la sanguchería Paco Yonque de Miraflores, a Lima. El nostre primer sopar al Perú.",
+    "caption_es": "Museo en la sanbucheria Paco Yonque de Miraflores en Lima. Nuestra primera cena en Perú.",
     "place_ca": "Lima",
     "place_es": "Lima"
   },
