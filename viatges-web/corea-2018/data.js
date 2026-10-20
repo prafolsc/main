@@ -7002,6 +7002,74 @@ window.TRIP_PHOTOS = [
     "place_es": "Onna · buceo con tiburones ballena",
     "location_approximate": false,
     "display_after": "P8260033.jpg"
+  },
+  {
+    "id": "a5a9e80792a16b8e1bb67935451f69efa4793cbd09d0e065049b3a734fcb2baf",
+    "filename": "GOPR3204.JPG",
+    "date": "",
+    "latitude": null,
+    "longitude": null,
+    "src": "fotos/GOPR3204.webp",
+    "chapter": "okinawa",
+    "width": 1400,
+    "height": 1050,
+    "caption_ca": "",
+    "caption_es": "",
+    "place_ca": "USS Emmons · Okinawa",
+    "place_es": "USS Emmons · Okinawa",
+    "location_approximate": false,
+    "display_after": "DSC02821.jpg"
+  },
+  {
+    "id": "42175012be046d6ca4993e8afc941dcb1d506699ad094b46c61f83d93f3b3351",
+    "filename": "GOPR3140.JPG",
+    "date": "",
+    "latitude": null,
+    "longitude": null,
+    "src": "fotos/GOPR3140.webp",
+    "chapter": "okinawa",
+    "width": 1400,
+    "height": 1050,
+    "caption_ca": "Passant per el forat que va obrir el kamikaze japonés",
+    "caption_es": "Pasando por el agujero que abrió el kamikaze japonés",
+    "place_ca": "USS Emmons · Okinawa",
+    "place_es": "USS Emmons · Okinawa",
+    "location_approximate": false,
+    "display_after": "GOPR3204.JPG"
+  },
+  {
+    "id": "5f92d61d81543ce6289bd5424d0ec31a31d94360e2b0468942aaf65a8ad7bea6",
+    "filename": "GOPR3138.JPG",
+    "date": "",
+    "latitude": null,
+    "longitude": null,
+    "src": "fotos/GOPR3138.webp",
+    "chapter": "okinawa",
+    "width": 1400,
+    "height": 1050,
+    "caption_ca": "El forat",
+    "caption_es": "El agujero",
+    "place_ca": "USS Emmons · Okinawa",
+    "place_es": "USS Emmons · Okinawa",
+    "location_approximate": false,
+    "display_after": "GOPR3140.JPG"
+  },
+  {
+    "id": "2f4a75f4657c08a10d49ed335855465a8107a97e56cb95cad6d3f2c96591b360",
+    "filename": "GOPR3177.JPG",
+    "date": "",
+    "latitude": null,
+    "longitude": null,
+    "src": "fotos/GOPR3177.webp",
+    "chapter": "okinawa",
+    "width": 1400,
+    "height": 1050,
+    "caption_ca": "La placa amb els noms de la tripulació que va quedar atrapada i va morir al enfonsar-se. Cada any els americans hi porten flors. El USS Emmons es legalment territori americà.",
+    "caption_es": "La placa con los nombres de la tripulación que quedó atrapada y murió al hundirse. Cada año los estadounidenses llevan flores. El USS Emmons es legalmente territorio estadounidense.",
+    "place_ca": "USS Emmons · Okinawa",
+    "place_es": "USS Emmons · Okinawa",
+    "location_approximate": false,
+    "display_after": "GOPR3138.JPG"
   }
 ];
 
@@ -7049,4 +7117,5 @@ window.TRIP_VIDEOS = [
     "caption_es": "Buceo con tiburones ballena."
   }
 ];
+
 

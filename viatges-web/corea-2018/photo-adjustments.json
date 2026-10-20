@@ -3329,6 +3329,42 @@
       "source_format": "JPEG",
       "sha256": "4bcacb0a487a0de081d81d31f6365463ddf17c6d66c7d6f17a0761fc962d8a96",
       "bytes": 153094
+    },
+    {
+      "path": "fotos/GOPR3204.webp",
+      "filename": "GOPR3204.JPG",
+      "profile": "diving",
+      "source_sha256": "a5a9e80792a16b8e1bb67935451f69efa4793cbd09d0e065049b3a734fcb2baf",
+      "source_format": "JPEG",
+      "sha256": "552845654e29fcbda4f486d542bffd7bde15850e80adfe0554d3fa815c87a7a7",
+      "bytes": 347670
+    },
+    {
+      "path": "fotos/GOPR3140.webp",
+      "filename": "GOPR3140.JPG",
+      "profile": "diving",
+      "source_sha256": "42175012be046d6ca4993e8afc941dcb1d506699ad094b46c61f83d93f3b3351",
+      "source_format": "JPEG",
+      "sha256": "6fec6ba38917cf7a2a37a3c57e1e3b667e947600b8de932434991ec96a099290",
+      "bytes": 251670
+    },
+    {
+      "path": "fotos/GOPR3138.webp",
+      "filename": "GOPR3138.JPG",
+      "profile": "diving",
+      "source_sha256": "5f92d61d81543ce6289bd5424d0ec31a31d94360e2b0468942aaf65a8ad7bea6",
+      "source_format": "JPEG",
+      "sha256": "275d276071b27f7fc6c8ccc09853c09afa966c4824cdf038b33fb376b5ef8375",
+      "bytes": 317140
+    },
+    {
+      "path": "fotos/GOPR3177.webp",
+      "filename": "GOPR3177.JPG",
+      "profile": "diving",
+      "source_sha256": "2f4a75f4657c08a10d49ed335855465a8107a97e56cb95cad6d3f2c96591b360",
+      "source_format": "JPEG",
+      "sha256": "0c6dc09baec245c4f2146b3ea4407659f7a75fd9d057b451aa09ac2d3f842a91",
+      "bytes": 317908
     }
   ]
 }
