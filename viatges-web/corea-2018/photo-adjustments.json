@@ -3336,8 +3336,14 @@
       "profile": "diving",
       "source_sha256": "a5a9e80792a16b8e1bb67935451f69efa4793cbd09d0e065049b3a734fcb2baf",
       "source_format": "JPEG",
-      "sha256": "552845654e29fcbda4f486d542bffd7bde15850e80adfe0554d3fa815c87a7a7",
-      "bytes": 347670
+      "sha256": "e2aa8a27fb98841c1e4f352e40efdde4a3a99d402d20168c5c31df6d80460d34",
+      "bytes": 148778,
+      "previous_sha256": "552845654e29fcbda4f486d542bffd7bde15850e80adfe0554d3fa815c87a7a7",
+      "color_correction": {
+        "method": "AI-assisted underwater white balance and cyan-green cast correction",
+        "tool": "image_gen",
+        "approved_reference": "GOPR3204 preview approved by user on 2026-10-20"
+      }
     },
     {
       "path": "fotos/GOPR3140.webp",
@@ -3345,8 +3351,14 @@
       "profile": "diving",
       "source_sha256": "42175012be046d6ca4993e8afc941dcb1d506699ad094b46c61f83d93f3b3351",
       "source_format": "JPEG",
-      "sha256": "6fec6ba38917cf7a2a37a3c57e1e3b667e947600b8de932434991ec96a099290",
-      "bytes": 251670
+      "sha256": "07f97833ac8a0086d6acb504638235305363ec1361226b255196402ae936f15c",
+      "bytes": 101964,
+      "previous_sha256": "6fec6ba38917cf7a2a37a3c57e1e3b667e947600b8de932434991ec96a099290",
+      "color_correction": {
+        "method": "AI-assisted underwater white balance and cyan-green cast correction",
+        "tool": "image_gen",
+        "approved_reference": "GOPR3204 preview approved by user on 2026-10-20"
+      }
     },
     {
       "path": "fotos/GOPR3138.webp",
@@ -3354,8 +3366,14 @@
       "profile": "diving",
       "source_sha256": "5f92d61d81543ce6289bd5424d0ec31a31d94360e2b0468942aaf65a8ad7bea6",
       "source_format": "JPEG",
-      "sha256": "275d276071b27f7fc6c8ccc09853c09afa966c4824cdf038b33fb376b5ef8375",
-      "bytes": 317140
+      "sha256": "3d27fe07470b7de50b606b2ec9abc3273a30837b6fbbf8d580024b16c875aca0",
+      "bytes": 160590,
+      "previous_sha256": "275d276071b27f7fc6c8ccc09853c09afa966c4824cdf038b33fb376b5ef8375",
+      "color_correction": {
+        "method": "AI-assisted underwater white balance and cyan-green cast correction",
+        "tool": "image_gen",
+        "approved_reference": "GOPR3204 preview approved by user on 2026-10-20"
+      }
     },
     {
       "path": "fotos/GOPR3177.webp",
@@ -3363,8 +3381,14 @@
       "profile": "diving",
       "source_sha256": "2f4a75f4657c08a10d49ed335855465a8107a97e56cb95cad6d3f2c96591b360",
       "source_format": "JPEG",
-      "sha256": "0c6dc09baec245c4f2146b3ea4407659f7a75fd9d057b451aa09ac2d3f842a91",
-      "bytes": 317908
+      "sha256": "6e1d1f7eed3ca43dc3551013ff9502f80150cf6e85bb8d58bf986f2e65e173e9",
+      "bytes": 176342,
+      "previous_sha256": "0c6dc09baec245c4f2146b3ea4407659f7a75fd9d057b451aa09ac2d3f842a91",
+      "color_correction": {
+        "method": "AI-assisted underwater white balance and cyan-green cast correction",
+        "tool": "image_gen",
+        "approved_reference": "GOPR3204 preview approved by user on 2026-10-20"
+      }
     }
   ]
 }
