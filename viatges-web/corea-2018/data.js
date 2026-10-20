@@ -4279,8 +4279,8 @@ window.TRIP_PHOTOS = [
     "height": 933,
     "caption_ca": "L’USS Emmons és a 45 m de profunditat. Va ser enfonsat el 6 d’abril de 1945 mentre operava prop de l’illa, després de rebre l’impacte consecutiu de cinc avions kamikazes.",
     "caption_es": "El USS Emmons está a 45 m de profundidad. Fue hundido el 6 de abril de 1945 mientras operaba cerca de la isla, tras recibir el impacto consecutivo de cinco aviones kamikazes.",
-    "place_ca": "Okinawa (Japó)",
-    "place_es": "Okinawa (Japón)",
+    "place_ca": "USS Emmons · Okinawa",
+    "place_es": "USS Emmons · Okinawa",
     "location_approximate": false
   },
   {
@@ -4296,8 +4296,8 @@ window.TRIP_PHOTOS = [
     "height": 933,
     "caption_ca": "Fotografies cortesia dels companys japonesos de la immersió.",
     "caption_es": "Fotografías cortesía de los compañeros japoneses de la inmersión.",
-    "place_ca": "Okinawa (Japó)",
-    "place_es": "Okinawa (Japón)",
+    "place_ca": "USS Emmons · Okinawa",
+    "place_es": "USS Emmons · Okinawa",
     "location_approximate": false
   },
   {
@@ -4313,8 +4313,8 @@ window.TRIP_PHOTOS = [
     "height": 933,
     "caption_ca": "",
     "caption_es": "",
-    "place_ca": "Okinawa (Japó)",
-    "place_es": "Okinawa (Japón)",
+    "place_ca": "USS Emmons · Okinawa",
+    "place_es": "USS Emmons · Okinawa",
     "location_approximate": false
   },
   {
@@ -4330,8 +4330,8 @@ window.TRIP_PHOTOS = [
     "height": 933,
     "caption_ca": "",
     "caption_es": "",
-    "place_ca": "Okinawa (Japó)",
-    "place_es": "Okinawa (Japón)",
+    "place_ca": "USS Emmons · Okinawa",
+    "place_es": "USS Emmons · Okinawa",
     "location_approximate": false
   },
   {
@@ -4347,8 +4347,8 @@ window.TRIP_PHOTOS = [
     "height": 1400,
     "caption_ca": "",
     "caption_es": "",
-    "place_ca": "Okinawa (Japó)",
-    "place_es": "Okinawa (Japón)",
+    "place_ca": "USS Emmons · Okinawa",
+    "place_es": "USS Emmons · Okinawa",
     "location_approximate": false
   },
   {
@@ -4364,8 +4364,8 @@ window.TRIP_PHOTOS = [
     "height": 933,
     "caption_ca": "",
     "caption_es": "",
-    "place_ca": "Okinawa (Japó)",
-    "place_es": "Okinawa (Japón)",
+    "place_ca": "USS Emmons · Okinawa",
+    "place_es": "USS Emmons · Okinawa",
     "location_approximate": false
   },
   {
@@ -4381,8 +4381,8 @@ window.TRIP_PHOTOS = [
     "height": 933,
     "caption_ca": "",
     "caption_es": "",
-    "place_ca": "Okinawa (Japó)",
-    "place_es": "Okinawa (Japón)",
+    "place_ca": "USS Emmons · Okinawa",
+    "place_es": "USS Emmons · Okinawa",
     "location_approximate": false
   },
   {
@@ -4398,8 +4398,8 @@ window.TRIP_PHOTOS = [
     "height": 933,
     "caption_ca": "",
     "caption_es": "",
-    "place_ca": "Okinawa (Japó)",
-    "place_es": "Okinawa (Japón)",
+    "place_ca": "USS Emmons · Okinawa",
+    "place_es": "USS Emmons · Okinawa",
     "location_approximate": false
   },
   {
@@ -4415,8 +4415,8 @@ window.TRIP_PHOTOS = [
     "height": 933,
     "caption_ca": "Artilleria antiaèria.",
     "caption_es": "Artillería antiaérea.",
-    "place_ca": "Okinawa (Japó)",
-    "place_es": "Okinawa (Japón)",
+    "place_ca": "USS Emmons · Okinawa",
+    "place_es": "USS Emmons · Okinawa",
     "location_approximate": false
   },
   {
@@ -4432,8 +4432,8 @@ window.TRIP_PHOTOS = [
     "height": 933,
     "caption_ca": "",
     "caption_es": "",
-    "place_ca": "Okinawa (Japó)",
-    "place_es": "Okinawa (Japón)",
+    "place_ca": "USS Emmons · Okinawa",
+    "place_es": "USS Emmons · Okinawa",
     "location_approximate": false
   },
   {
@@ -4449,8 +4449,8 @@ window.TRIP_PHOTOS = [
     "height": 933,
     "caption_ca": "",
     "caption_es": "",
-    "place_ca": "Okinawa (Japó)",
-    "place_es": "Okinawa (Japón)",
+    "place_ca": "USS Emmons · Okinawa",
+    "place_es": "USS Emmons · Okinawa",
     "location_approximate": false
   },
   {
@@ -4466,8 +4466,8 @@ window.TRIP_PHOTOS = [
     "height": 933,
     "caption_ca": "",
     "caption_es": "",
-    "place_ca": "Okinawa (Japó)",
-    "place_es": "Okinawa (Japón)",
+    "place_ca": "USS Emmons · Okinawa",
+    "place_es": "USS Emmons · Okinawa",
     "location_approximate": false
   },
   {
@@ -4483,8 +4483,8 @@ window.TRIP_PHOTOS = [
     "height": 933,
     "caption_ca": "",
     "caption_es": "",
-    "place_ca": "Okinawa (Japó)",
-    "place_es": "Okinawa (Japón)",
+    "place_ca": "USS Emmons · Okinawa",
+    "place_es": "USS Emmons · Okinawa",
     "location_approximate": false
   },
   {
@@ -4500,8 +4500,8 @@ window.TRIP_PHOTOS = [
     "height": 933,
     "caption_ca": "",
     "caption_es": "",
-    "place_ca": "Okinawa (Japó)",
-    "place_es": "Okinawa (Japón)",
+    "place_ca": "USS Emmons · Okinawa",
+    "place_es": "USS Emmons · Okinawa",
     "location_approximate": false
   },
   {
@@ -4534,8 +4534,8 @@ window.TRIP_PHOTOS = [
     "height": 933,
     "caption_ca": "",
     "caption_es": "",
-    "place_ca": "Okinawa (Japó)",
-    "place_es": "Okinawa (Japón)",
+    "place_ca": "USS Emmons · Okinawa",
+    "place_es": "USS Emmons · Okinawa",
     "location_approximate": false
   },
   {
@@ -4551,8 +4551,8 @@ window.TRIP_PHOTOS = [
     "height": 933,
     "caption_ca": "",
     "caption_es": "",
-    "place_ca": "Okinawa (Japó)",
-    "place_es": "Okinawa (Japón)",
+    "place_ca": "USS Emmons · Okinawa",
+    "place_es": "USS Emmons · Okinawa",
     "location_approximate": false
   },
   {
@@ -4568,8 +4568,8 @@ window.TRIP_PHOTOS = [
     "height": 1400,
     "caption_ca": "",
     "caption_es": "",
-    "place_ca": "Okinawa (Japó)",
-    "place_es": "Okinawa (Japón)",
+    "place_ca": "USS Emmons · Okinawa",
+    "place_es": "USS Emmons · Okinawa",
     "location_approximate": false
   },
   {
@@ -4585,8 +4585,8 @@ window.TRIP_PHOTOS = [
     "height": 1400,
     "caption_ca": "",
     "caption_es": "",
-    "place_ca": "Okinawa (Japó)",
-    "place_es": "Okinawa (Japón)",
+    "place_ca": "USS Emmons · Okinawa",
+    "place_es": "USS Emmons · Okinawa",
     "location_approximate": false
   },
   {
@@ -4602,8 +4602,8 @@ window.TRIP_PHOTOS = [
     "height": 933,
     "caption_ca": "",
     "caption_es": "",
-    "place_ca": "Okinawa (Japó)",
-    "place_es": "Okinawa (Japón)",
+    "place_ca": "USS Emmons · Okinawa",
+    "place_es": "USS Emmons · Okinawa",
     "location_approximate": false
   },
   {
@@ -4619,8 +4619,8 @@ window.TRIP_PHOTOS = [
     "height": 933,
     "caption_ca": "No s’hi pot penetrar perquè es considera un cementiri: hi va morir tota la tripulació. Però es creua el forat que va fer el kamikaze per enfonsar-lo.",
     "caption_es": "No se puede penetrar porque se considera un cementerio: murió toda la tripulación. Pero se cruza el agujero que hizo el kamikaze para hundirlo.",
-    "place_ca": "Okinawa (Japó)",
-    "place_es": "Okinawa (Japón)",
+    "place_ca": "USS Emmons · Okinawa",
+    "place_es": "USS Emmons · Okinawa",
     "location_approximate": false
   },
   {
@@ -4636,8 +4636,8 @@ window.TRIP_PHOTOS = [
     "height": 1400,
     "caption_ca": "",
     "caption_es": "",
-    "place_ca": "Okinawa (Japó)",
-    "place_es": "Okinawa (Japón)",
+    "place_ca": "USS Emmons · Okinawa",
+    "place_es": "USS Emmons · Okinawa",
     "location_approximate": false
   },
   {
@@ -4653,8 +4653,8 @@ window.TRIP_PHOTOS = [
     "height": 933,
     "caption_ca": "",
     "caption_es": "",
-    "place_ca": "Okinawa (Japó)",
-    "place_es": "Okinawa (Japón)",
+    "place_ca": "USS Emmons · Okinawa",
+    "place_es": "USS Emmons · Okinawa",
     "location_approximate": false
   },
   {
@@ -4670,8 +4670,8 @@ window.TRIP_PHOTOS = [
     "height": 933,
     "caption_ca": "",
     "caption_es": "",
-    "place_ca": "Okinawa (Japó)",
-    "place_es": "Okinawa (Japón)",
+    "place_ca": "USS Emmons · Okinawa",
+    "place_es": "USS Emmons · Okinawa",
     "location_approximate": false
   },
   {
@@ -4687,8 +4687,8 @@ window.TRIP_PHOTOS = [
     "height": 933,
     "caption_ca": "",
     "caption_es": "",
-    "place_ca": "Okinawa (Japó)",
-    "place_es": "Okinawa (Japón)",
+    "place_ca": "USS Emmons · Okinawa",
+    "place_es": "USS Emmons · Okinawa",
     "location_approximate": false
   },
   {
@@ -4704,8 +4704,8 @@ window.TRIP_PHOTOS = [
     "height": 1400,
     "caption_ca": "Quatre immersions en dos dies diferents.",
     "caption_es": "Cuatro inmersiones en dos días distintos.",
-    "place_ca": "Okinawa (Japó)",
-    "place_es": "Okinawa (Japón)",
+    "place_ca": "USS Emmons · Okinawa",
+    "place_es": "USS Emmons · Okinawa",
     "location_approximate": false
   },
   {
@@ -4721,8 +4721,8 @@ window.TRIP_PHOTOS = [
     "height": 1400,
     "caption_ca": "",
     "caption_es": "",
-    "place_ca": "Okinawa (Japó)",
-    "place_es": "Okinawa (Japón)",
+    "place_ca": "USS Emmons · Okinawa",
+    "place_es": "USS Emmons · Okinawa",
     "location_approximate": false
   },
   {
@@ -4738,8 +4738,8 @@ window.TRIP_PHOTOS = [
     "height": 933,
     "caption_ca": "",
     "caption_es": "",
-    "place_ca": "Okinawa (Japó)",
-    "place_es": "Okinawa (Japón)",
+    "place_ca": "USS Emmons · Okinawa",
+    "place_es": "USS Emmons · Okinawa",
     "location_approximate": false
   },
   {
@@ -4755,8 +4755,8 @@ window.TRIP_PHOTOS = [
     "height": 933,
     "caption_ca": "El grup: la guia, un americà i nosaltres dos.",
     "caption_es": "El grupo: la guía, un americano y nosotros dos.",
-    "place_ca": "Okinawa (Japó)",
-    "place_es": "Okinawa (Japón)",
+    "place_ca": "USS Emmons · Okinawa",
+    "place_es": "USS Emmons · Okinawa",
     "location_approximate": false
   },
   {
@@ -4772,8 +4772,8 @@ window.TRIP_PHOTOS = [
     "height": 933,
     "caption_ca": "Una ampolla de «cortesia» per si s’acaba l’aire: per estar 15 minuts a baix hem hagut de fer una parada de descompressió.",
     "caption_es": "Una botella de «cortesía» por si se acaba el aire: para estar 15 minutos abajo hemos tenido que hacer una parada de descompresión.",
-    "place_ca": "Okinawa (Japó)",
-    "place_es": "Okinawa (Japón)",
+    "place_ca": "USS Emmons · Okinawa",
+    "place_es": "USS Emmons · Okinawa",
     "location_approximate": false
   },
   {
@@ -4789,8 +4789,8 @@ window.TRIP_PHOTOS = [
     "height": 933,
     "caption_ca": "La guia, la que és més lluny, porta una ampolla extra per si de cas.",
     "caption_es": "La guía, la que está más lejos, lleva una botella extra por si acaso.",
-    "place_ca": "Okinawa (Japó)",
-    "place_es": "Okinawa (Japón)",
+    "place_ca": "USS Emmons · Okinawa",
+    "place_es": "USS Emmons · Okinawa",
     "location_approximate": false
   },
   {
