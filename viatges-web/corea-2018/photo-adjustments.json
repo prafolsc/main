@@ -3291,8 +3291,14 @@
       "profile": "interior",
       "source_sha256": "dfb94784b1a2f18f1e1cfc43b570add59f724cbe6dd09f46be90511c5abe945f",
       "source_format": "JPEG",
-      "sha256": "ece3c64e426bf530433bfea7de060367090652341c4f95e5a97afcb2c184b866",
-      "bytes": 319230
+      "sha256": "44bf8aba2362dbb1c18f16505e9403c3fc4973a3d5b1719480bc01109a28cc99",
+      "bytes": 119546,
+      "previous_sha256": "ece3c64e426bf530433bfea7de060367090652341c4f95e5a97afcb2c184b866",
+      "lighting_correction": {
+        "method": "AI-assisted selective recovery of shadows on faces",
+        "tool": "image_gen",
+        "approved_by_user": "2026-10-20"
+      }
     },
     {
       "path": "fotos/P8260004.webp",

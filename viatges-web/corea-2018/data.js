@@ -6873,7 +6873,7 @@ window.TRIP_PHOTOS = [
     "date": "2018-08-26",
     "latitude": null,
     "longitude": null,
-    "src": "fotos/P8260001.webp",
+    "src": "fotos/P8260001.webp?v=faces-20261020",
     "chapter": "okinawa",
     "width": 1400,
     "height": 933,
