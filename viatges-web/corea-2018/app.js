@@ -193,8 +193,8 @@ if (window.L && (located.length || route.length)) {
     if (!groups.has(key)) groups.set(key, []);
     groups.get(key).push(entry);
   }
-  for (const entries of groups.values()) {
-    const p = entries[0].p;
+  // Build popup images on demand, once the popup is visible.
+  function photoPopup(entries) {
     const popup = el('div');
     popup.className = 'map-photo-list';
     for (const entry of entries) {
@@ -202,23 +202,53 @@ if (window.L && (located.length || route.length)) {
       button.type = 'button';
       const img = el('img');
       img.src = entry.p.src;
-      img.alt = localized(entry.p, 'place');
-      img.loading = 'lazy';
+      img.alt = localized(entry.p, 'place') || entry.p.filename;
+      img.loading = 'eager';
+      img.decoding = 'async';
       button.append(img, el('strong', localized(entry.p, 'place')), el('small', date(entry.p)));
       button.addEventListener('click', () => openPhoto(entry.i));
       popup.append(button);
     }
+    return popup;
+  }
+  function stagePhotos(stop) {
+    const sameChapter = photos.map((p, i) => ({p, i})).filter(({p}) => p.chapter === stop.chapter);
+    const sameDay = sameChapter.filter(({p}) => p.date.startsWith(stop.date));
+    const candidates = sameDay.length ? sameDay : sameChapter;
+    const distance = ({p}) => {
+      if (!Number.isFinite(p.latitude) || !Number.isFinite(p.longitude)) return Infinity;
+      const x = (p.longitude - stop.lon) * Math.cos(stop.lat * Math.PI / 180);
+      return (p.latitude - stop.lat) ** 2 + x ** 2;
+    };
+    return {
+      sameDay: sameDay.length > 0,
+      entries: candidates.sort((a, b) => distance(a) - distance(b) || a.i - b.i).slice(0, 6)
+    };
+  }
+  for (const entries of groups.values()) {
+    const p = entries[0].p;
     const marker = L.circleMarker([p.latitude, p.longitude], {
       radius: 6, color: '#f8f4eb', weight: 2, fillColor: chapterColor(p.chapter), fillOpacity: .9
-    }).bindPopup(popup);
+    }).bindPopup(() => photoPopup(daySelect.value
+      ? entries.filter(({p}) => p.date.startsWith(daySelect.value))
+      : entries));
     photoMarkers.push({marker, entries});
   }
-  for (const [i, stop] of route.entries()) {
-    const popup = el('div');
-    popup.append(el('strong', localized(stop, 'name')), el('p', formatDate(stop.date)));
+  for (const stop of route) {
     const marker = L.circleMarker([stop.lat, stop.lon], {
       radius: 9, color: '#fff', weight: 2, fillColor: chapterColor(stop.chapter), fillOpacity: 1
-    }).bindPopup(popup);
+    }).bindPopup(() => {
+      const popup = el('div');
+      popup.append(el('strong', localized(stop, 'name')), el('p', formatDate(stop.date)));
+      const related = stagePhotos(stop);
+      if (related.entries.length) {
+        popup.append(el('small', related.sameDay
+          ? text('Fotografies del mateix dia, ordenades per proximitat', 'Fotografías del mismo día, ordenadas por proximidad')
+          : text('Fotografies del capítol', 'Fotografías del capítulo')));
+        popup.append(photoPopup(related.entries));
+      }
+      return popup;
+    });
     stageMarkers.push({marker, stop});
   }
   const dates = [...new Set([...located.map(({p}) => p.date.slice(0, 10)), ...route.map(s => s.date)])].sort();
