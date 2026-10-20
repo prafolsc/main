@@ -5010,8 +5010,8 @@ window.TRIP_PHOTOS = [
     "height": 933,
     "caption_ca": "Busseig amb taurons balena. Els tenen a un parell de milles de la costa en un reixat com el de les tonyines de l’Ametlla. Presumptament són taurons balena ferits en xarxes de pescadors i els tenen aquí per recuperar-los… ehem.",
     "caption_es": "Buceo con tiburones ballena. Los tienen a un par de millas de la costa en un recinto como el de los atunes de L’Ametlla. Presuntamente son tiburones ballena heridos en redes de pescadores y los tienen aquí para recuperarlos… ejem.",
-    "place_ca": "Onna",
-    "place_es": "Onna",
+    "place_ca": "Onna · busseig amb taurons balena",
+    "place_es": "Onna · buceo con tiburones ballena",
     "location_approximate": false
   },
   {
@@ -5027,8 +5027,8 @@ window.TRIP_PHOTOS = [
     "height": 933,
     "caption_ca": "L’experiència és inoblidable, però et queda mala consciència per contribuir al negoci. Bussejadors no n’hi van gaires, però snorkelers, una pila.",
     "caption_es": "La experiencia es inolvidable, pero te queda mala conciencia por contribuir al negocio. Buceadores no van muchos, pero gente que hace esnórquel, un montón.",
-    "place_ca": "Onna",
-    "place_es": "Onna",
+    "place_ca": "Onna · busseig amb taurons balena",
+    "place_es": "Onna · buceo con tiburones ballena",
     "location_approximate": false
   },
   {
@@ -5044,8 +5044,8 @@ window.TRIP_PHOTOS = [
     "height": 933,
     "caption_ca": "La Vicky saludant el tauró.",
     "caption_es": "Vicky saludando al tiburón.",
-    "place_ca": "Okinawa (Japó)",
-    "place_es": "Okinawa (Japón)",
+    "place_ca": "Onna · busseig amb taurons balena",
+    "place_es": "Onna · buceo con tiburones ballena",
     "location_approximate": false
   },
   {
@@ -5061,8 +5061,8 @@ window.TRIP_PHOTOS = [
     "height": 933,
     "caption_ca": "Posant per a la foto. En Naoaki, del centre de busseig Isles, és un bon fotògraf i un home orquestra: el centre de busseig és ell.",
     "caption_es": "Posando para la foto. Naoaki, del centro de buceo Isles, es un buen fotógrafo y un hombre orquesta: el centro de buceo es él.",
-    "place_ca": "Okinawa (Japó)",
-    "place_es": "Okinawa (Japón)",
+    "place_ca": "Onna · busseig amb taurons balena",
+    "place_es": "Onna · buceo con tiburones ballena",
     "location_approximate": false
   },
   {
@@ -5078,8 +5078,8 @@ window.TRIP_PHOTOS = [
     "height": 933,
     "caption_ca": "Tots dos des de dalt.",
     "caption_es": "Los dos desde arriba.",
-    "place_ca": "Okinawa (Japó)",
-    "place_es": "Okinawa (Japón)",
+    "place_ca": "Onna · busseig amb taurons balena",
+    "place_es": "Onna · buceo con tiburones ballena",
     "location_approximate": false
   },
   {
