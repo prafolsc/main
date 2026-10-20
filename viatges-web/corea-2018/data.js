@@ -4539,23 +4539,6 @@ window.TRIP_PHOTOS = [
     "location_approximate": false
   },
   {
-    "id": "fd3502ceee47383652dff81f9fcc9e0e9f121041f254f5d54508ff3bd8531460",
-    "review_id": 935,
-    "filename": "DSC02815.jpg",
-    "date": "2018-08-24 11:52:41",
-    "latitude": null,
-    "longitude": null,
-    "src": "fotos/DSC02815.webp",
-    "chapter": "okinawa",
-    "width": 933,
-    "height": 1400,
-    "caption_ca": "",
-    "caption_es": "",
-    "place_ca": "USS Emmons · Okinawa",
-    "place_es": "USS Emmons · Okinawa",
-    "location_approximate": false
-  },
-  {
     "id": "016aba74770416cee5d1de46b53f8281cf24732fc919a4d5eb2976f18453b465",
     "review_id": 938,
     "filename": "DSC02818.jpg",
