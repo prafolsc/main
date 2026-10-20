@@ -19,16 +19,24 @@ const selector = document.getElementById('language-select');
 selector.addEventListener('change', () => {
   window.location.href = document.body.dataset.page + (selector.value === 'es' ? '-es' : '') + '.html' + window.location.hash;
 });
+const videos = (window.TRIP_VIDEOS || []).filter(v => !chapter || v.chapter === chapter);
+const galleryItems = photos.flatMap((p, photoIndex) => [
+  {kind: 'photo', p, photoIndex},
+  ...videos.filter(v => v.after === p.filename).map(v => ({kind: 'video', p: v}))
+]);
 const gallery = document.getElementById('gallery');
 if (gallery) {
-  document.querySelector('.photo-total').textContent = photos.length + ' ' + text('fotografies · Toca una foto per ampliar-la.', 'fotografías · Toca una foto para ampliarla.');
-  // Rows preserve the exact chronological sequence; no dense grid or visual reordering.
+  document.querySelector('.photo-total').textContent = photos.length + ' ' + text('fotografies', 'fotografías')
+    + (videos.length ? ' · ' + videos.length + ' ' + text('vídeos', 'vídeos') : '')
+    + text(' · Toca una foto per ampliar-la.', ' · Toca una foto para ampliarla.');
+  // Preserve photo order and insert each video after its requested anchor photo.
   let row;
   let rowEnd = 0;
   let rowNumber = 0;
-  for (const [i, p] of photos.entries()) {
+  for (const [i, item] of galleryItems.entries()) {
+    const p = item.p;
     if (i === rowEnd) {
-      const remaining = photos.length - i;
+      const remaining = galleryItems.length - i;
       const stage = rowNumber % 5;
       const landscape = p.width / p.height >= 1.5;
       let count = (stage === 0 || stage === 4) && landscape ? 1 : stage === 2 ? 3 : 2;
@@ -41,19 +49,34 @@ if (gallery) {
       gallery.append(row);
     }
     const figure = el('figure');
-    const button = el('button');
-    button.type = 'button';
-    button.className = 'photo-button';
-    button.setAttribute('aria-label', text('Amplia: ', 'Amplía: ') + (localized(p, 'place') || p.filename));
-    const img = el('img');
-    img.src = p.src;
-    img.alt = localized(p, 'caption') || localized(p, 'place') || p.filename;
-    img.width = p.width;
-    img.height = p.height;
-    img.loading = 'lazy';
-    img.decoding = 'async';
-    button.append(img);
-    button.addEventListener('click', () => openPhoto(i));
+    let media;
+    if (item.kind === 'video') {
+      media = el('video');
+      media.className = 'gallery-video';
+      media.src = p.src;
+      media.poster = p.poster;
+      media.controls = true;
+      media.playsInline = true;
+      media.preload = 'none';
+      media.width = p.width;
+      media.height = p.height;
+      media.setAttribute('aria-label', localized(p, 'place') + ' · ' + p.filename);
+      media.append(document.createTextNode(text('El navegador no pot reproduir aquest vídeo.', 'El navegador no puede reproducir este vídeo.')));
+    } else {
+      media = el('button');
+      media.type = 'button';
+      media.className = 'photo-button';
+      media.setAttribute('aria-label', text('Amplia: ', 'Amplía: ') + (localized(p, 'place') || p.filename));
+      const img = el('img');
+      img.src = p.src;
+      img.alt = localized(p, 'caption') || localized(p, 'place') || p.filename;
+      img.width = p.width;
+      img.height = p.height;
+      img.loading = 'lazy';
+      img.decoding = 'async';
+      media.append(img);
+      media.addEventListener('click', () => openPhoto(item.photoIndex));
+    }
     const caption = el('figcaption');
     const place = el('span', localized(p, 'place'));
     place.className = 'photo-place';
@@ -67,7 +90,7 @@ if (gallery) {
     meta.className = 'photo-meta';
     meta.append(el('span', date(p)), el('span', p.filename));
     caption.append(meta);
-    figure.append(button, caption);
+    figure.append(media, caption);
     row.append(figure);
   }
 }
@@ -308,4 +331,5 @@ if (window.L && (located.length || route.length)) {
   mapStatus.textContent = text('El mapa no està disponible. Pots obrir el mapa extern o les coordenades des del visor de les fotos.', 'El mapa no está disponible. Puedes abrir el mapa externo o las coordenadas desde el visor de las fotos.');
   for (const stop of route) dayStops.append(el('p', localized(stop, 'name') + ' · ' + formatDate(stop.date)));
 }
+
 

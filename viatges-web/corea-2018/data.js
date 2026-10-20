@@ -6919,3 +6919,48 @@ window.TRIP_PHOTOS = [
     "location_approximate": false
   }
 ];
+
+window.TRIP_VIDEOS = [
+  {
+    "filename": "P8260023.MOV",
+    "chapter": "okinawa",
+    "after": "P8260014(1).JPG",
+    "src": "videos/P8260023.mp4",
+    "poster": "videos/P8260023.webp",
+    "width": 960,
+    "height": 540,
+    "date": "2018-08-26 09:31:52",
+    "place_ca": "Okinawa · busseig amb taurons balena",
+    "place_es": "Okinawa · buceo con tiburones ballena",
+    "caption_ca": "Busseig amb taurons balena.",
+    "caption_es": "Buceo con tiburones ballena."
+  },
+  {
+    "filename": "P8260025.MOV",
+    "chapter": "okinawa",
+    "after": "P8260017.JPG",
+    "src": "videos/P8260025.mp4",
+    "poster": "videos/P8260025.webp",
+    "width": 960,
+    "height": 540,
+    "date": "2018-08-26 09:36:05",
+    "place_ca": "Okinawa · busseig amb taurons balena",
+    "place_es": "Okinawa · buceo con tiburones ballena",
+    "caption_ca": "Busseig amb taurons balena.",
+    "caption_es": "Buceo con tiburones ballena."
+  },
+  {
+    "filename": "P8260037.MOV",
+    "chapter": "okinawa",
+    "after": "P8260019.JPG",
+    "src": "videos/P8260037.mp4",
+    "poster": "videos/P8260037.webp",
+    "width": 960,
+    "height": 540,
+    "date": "2018-08-26 09:42:50",
+    "place_ca": "Okinawa · busseig amb taurons balena",
+    "place_es": "Okinawa · buceo con tiburones ballena",
+    "caption_ca": "Busseig amb taurons balena.",
+    "caption_es": "Buceo con tiburones ballena."
+  }
+];

@@ -136,3 +136,7 @@ footer { background: var(--ink); color: #edf3f1; }
 
 /* Chapter colors match photo and stage markers on every map. */
 .map-legend{display:flex;flex-wrap:wrap;gap:10px 22px;padding:16px 0;font-size:13px}.map-legend>span{display:flex;align-items:center;gap:8px}.map-legend i{display:inline-block;width:13px;height:13px;border-radius:50%;border:1px solid #ffffff;box-shadow:0 0 0 1px #332b2640}
+
+
+/* Videos share the gallery rows with their neighbouring photographs. */
+.gallery-video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#14262d;object-fit:contain}.gallery-solo .gallery-video{border-left:4px solid var(--rust)}
