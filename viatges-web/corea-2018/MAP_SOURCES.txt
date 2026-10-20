@@ -4,3 +4,8 @@ Terms: https://www.naturalearthdata.com/about/terms-of-use/
 Cropped to 118–146°E, 20–46°N, coordinates rounded to four decimals.
 Detailed online layer: OpenStreetMap, https://operations.osmfoundation.org/policies/tiles/
 No OSM tiles are downloaded for this package.
+
+Detailed online map: OpenStreetMap German style / FOSSGIS, with Latin transliterations where available.
+https://tile.openstreetmap.de/{z}/{x}/{y}.png
+https://openstreetmap.de/germanstyle/
+Chapter colors identify photo and itinerary markers; no connecting route lines.

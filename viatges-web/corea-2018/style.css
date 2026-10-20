@@ -132,3 +132,7 @@ footer { background: var(--ink); color: #edf3f1; }
 .gallery-solo .photo-caption{padding:16px 20px}
 #photo-info>p:not(.lightbox-meta){background:#2c4249;border-left:3px solid #7cb6ad;padding:12px 15px;border-radius:0 4px 4px 0;font-family:Georgia,serif;line-height:1.7}
 @media(max-width:650px){.hero h1.notebook-title{font-size:clamp(54px,10vw,76px)}.notebook-title .notebook-year{font-size:.28em;margin-top:18px}.photo-caption{padding:10px 12px}}
+
+
+/* Chapter colors match photo and stage markers on every map. */
+.map-legend{display:flex;flex-wrap:wrap;gap:10px 22px;padding:16px 0;font-size:13px}.map-legend>span{display:flex;align-items:center;gap:8px}.map-legend i{display:inline-block;width:13px;height:13px;border-radius:50%;border:1px solid #ffffff;box-shadow:0 0 0 1px #332b2640}

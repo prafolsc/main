@@ -122,6 +122,15 @@ const located = photos.map((p, i) => ({p, i})).filter(({p}) =>
   Number.isFinite(p.latitude) && Number.isFinite(p.longitude) &&
   p.latitude >= 25 && p.latitude <= 39 && p.longitude >= 125 && p.longitude <= 131
 );
+const chapterStyles = {
+  seul: {color: '#2864a0', ca: 'Seül', es: 'Seúl'},
+  gyeongju: {color: '#a86414', ca: 'Gyeongju', es: 'Gyeongju'},
+  busan: {color: '#b23f54', ca: 'Busan', es: 'Busan'},
+  centre: {color: '#477a35', ca: 'Andong i Suwon', es: 'Andong y Suwon'},
+  dmz: {color: '#8054a2', ca: 'Zona desmilitaritzada', es: 'Zona desmilitarizada'},
+  okinawa: {color: '#087f83', ca: 'Okinawa', es: 'Okinawa'}
+};
+const chapterColor = key => chapterStyles[key].color;
 const route = window.TRIP_ROUTE.filter(stop => !chapter || stop.chapter === chapter);
 const daySelect = document.getElementById('map-day');
 const dayStops = document.getElementById('map-day-stops');
@@ -149,8 +158,8 @@ if (window.L && (located.length || route.length)) {
   let basicMap = window.location.protocol === 'file:' || !window.location.hostname;
   if (basicMap) basicLabels.addTo(map);
   else {
-    const detailed = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    const detailed = L.tileLayer('https://tile.openstreetmap.de/{z}/{x}/{y}.png', {
+      attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> · <a href="https://www.fossgis.de/">FOSSGIS</a>',
       maxZoom: 18, referrerPolicy: 'strict-origin-when-cross-origin'
     });
     detailed.on('tileerror', () => {
@@ -162,12 +171,25 @@ if (window.L && (located.length || route.length)) {
     });
     detailed.addTo(map);
   }
+  const legend = el('div');
+  legend.className = 'map-legend';
+  legend.setAttribute('aria-label', text('Capítols del mapa', 'Capítulos del mapa'));
+  const shownChapters = new Set([...located.map(({p}) => p.chapter), ...route.map(stop => stop.chapter)]);
+  for (const [key, style] of Object.entries(chapterStyles)) {
+    if (!shownChapters.has(key)) continue;
+    const item = el('span');
+    const dot = el('i');
+    dot.style.backgroundColor = style.color;
+    dot.setAttribute('aria-hidden', 'true');
+    item.append(dot, document.createTextNode(style[lang]));
+    legend.append(item);
+  }
+  document.getElementById('trip-map').insertAdjacentElement('afterend', legend);
   const photoMarkers = [];
   const stageMarkers = [];
-  const routeLines = [];
   const groups = new Map();
   for (const entry of located) {
-    const key = Math.round(entry.p.latitude * 150) + ',' + Math.round(entry.p.longitude * 150);
+    const key = entry.p.chapter + ',' + Math.round(entry.p.latitude * 150) + ',' + Math.round(entry.p.longitude * 150);
     if (!groups.has(key)) groups.set(key, []);
     groups.get(key).push(entry);
   }
@@ -187,7 +209,7 @@ if (window.L && (located.length || route.length)) {
       popup.append(button);
     }
     const marker = L.circleMarker([p.latitude, p.longitude], {
-      radius: 6, color: '#f8f4eb', weight: 2, fillColor: '#bf3935', fillOpacity: .85
+      radius: 6, color: '#f8f4eb', weight: 2, fillColor: chapterColor(p.chapter), fillOpacity: .9
     }).bindPopup(popup);
     photoMarkers.push({marker, entries});
   }
@@ -195,21 +217,9 @@ if (window.L && (located.length || route.length)) {
     const popup = el('div');
     popup.append(el('strong', localized(stop, 'name')), el('p', formatDate(stop.date)));
     const marker = L.circleMarker([stop.lat, stop.lon], {
-      radius: 9, color: '#155e62', weight: 2, fillColor: '#f8f4eb', fillOpacity: 1
+      radius: 9, color: '#fff', weight: 2, fillColor: chapterColor(stop.chapter), fillOpacity: 1
     }).bindPopup(popup);
     stageMarkers.push({marker, stop});
-    if (i > 0) {
-      const prev = route[i - 1];
-      // Chapter maps must not connect distant visits as if they were consecutive road legs.
-      if (!chapter || stop.date === prev.date || (stop.chapter === 'centre' && prev.chapter === 'centre') || chapter === 'okinawa') {
-        const flight = stop.arrival === 'flight' || Math.abs(stop.lat - prev.lat) > 7;
-        const line = L.polyline([[prev.lat, prev.lon], [stop.lat, stop.lon]], {
-          color: flight ? '#155e62' : '#bf3935', weight: 3, opacity: .65,
-          dashArray: flight ? '7 9' : null
-        });
-        routeLines.push({line, from: prev, to: stop});
-      }
-    }
   }
   const dates = [...new Set([...located.map(({p}) => p.date.slice(0, 10)), ...route.map(s => s.date)])].sort();
   for (const d of dates) {
@@ -229,13 +239,7 @@ if (window.L && (located.length || route.length)) {
     for (const item of stageMarkers) {
       if (!day || item.stop.date === day) item.marker.addTo(map); else map.removeLayer(item.marker);
     }
-    for (const item of routeLines) {
-      if (!day || item.to.date === day) item.line.addTo(map); else map.removeLayer(item.line);
-    }
     const bounds = [...entries.map(({p}) => [p.latitude, p.longitude]), ...stages.map(s => [s.lat, s.lon])];
-    if (day) {
-      for (const item of routeLines) if (item.to.date === day) bounds.push([item.from.lat, item.from.lon]);
-    }
     if (bounds.length) map.fitBounds(L.latLngBounds(bounds), {padding: [25, 25], maxZoom: 12});
     dayStops.replaceChildren();
     if (!day) {
@@ -274,3 +278,4 @@ if (window.L && (located.length || route.length)) {
   mapStatus.textContent = text('El mapa no està disponible. Pots obrir el mapa extern o les coordenades des del visor de les fotos.', 'El mapa no está disponible. Puedes abrir el mapa externo o las coordenadas desde el visor de las fotos.');
   for (const stop of route) dayStops.append(el('p', localized(stop, 'name') + ' · ' + formatDate(stop.date)));
 }
+
