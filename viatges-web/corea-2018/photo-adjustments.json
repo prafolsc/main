@@ -2274,8 +2274,14 @@
       "filename": "DSC02845.jpg",
       "profile": "diving",
       "source_sha256": "02cb90ff27d74f69bf95f22fcfed4e06ade9653c7c88b883c64f3c0059d977fc",
-      "sha256": "50d942047fd979e6780ca4103a8823a748a622ca6f66ab6003a19bc02632b954",
-      "bytes": 99070
+      "sha256": "e771acc7486f44b9f82e205b54cad23bceb3d135c81f5d12e265edc180f6a8a7",
+      "bytes": 76752,
+      "previous_sha256": "50d942047fd979e6780ca4103a8823a748a622ca6f66ab6003a19bc02632b954",
+      "framing_correction": {
+        "method": "AI-assisted tighter framing and local contrast enhancement",
+        "tool": "image_gen",
+        "approved_by_user": "2026-10-20"
+      }
     },
     {
       "path": "fotos/DSC02851.webp",
