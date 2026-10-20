@@ -3284,6 +3284,51 @@
       "source_sha256": "8799a335a7256df458db0ea20390b541e202b885bd1cea7a8a3cba733eea06ba",
       "sha256": "2afa0298e75c79d1e3e62478f7e4877177ef77c4cf957b1c32fa1fbd735fcbd0",
       "bytes": 206970
+    },
+    {
+      "path": "fotos/P8260001.webp",
+      "filename": "P8260001.jpg",
+      "profile": "interior",
+      "source_sha256": "dfb94784b1a2f18f1e1cfc43b570add59f724cbe6dd09f46be90511c5abe945f",
+      "source_format": "JPEG",
+      "sha256": "ece3c64e426bf530433bfea7de060367090652341c4f95e5a97afcb2c184b866",
+      "bytes": 319230
+    },
+    {
+      "path": "fotos/P8260004.webp",
+      "filename": "P8260004.JPG",
+      "profile": "diving",
+      "source_sha256": "1ecfc494e7175fbf4cc14f5dcaee4a4db21f4b54eda2a098f3fac1421ae533d8",
+      "source_format": "JPEG",
+      "sha256": "9340b2a69151607db42011727d7a08e372dbb9a99ed020c29f7b5b24c24a43a3",
+      "bytes": 280680
+    },
+    {
+      "path": "fotos/P8260009.webp",
+      "filename": "P8260009.JPG",
+      "profile": "diving",
+      "source_sha256": "968201fac8dcddb91f8d1d53e3a266cfb5144171f37115e9d1e6304966598b13",
+      "source_format": "JPEG",
+      "sha256": "0a2884849338f6b29b123c3b542b56cd4729abbf2b0a89ae8f861391697c2656",
+      "bytes": 191098
+    },
+    {
+      "path": "fotos/P8260028.webp",
+      "filename": "P8260028.JPG",
+      "profile": "diving",
+      "source_sha256": "caa329cdacff4062f8053c9bb640be6e8743868e9a02a448974a7878142ef758",
+      "source_format": "JPEG",
+      "sha256": "f6222fbeedd544936dd290e846e6c8fbb30aea3d01fc2cf38623636c8a02d9a1",
+      "bytes": 189326
+    },
+    {
+      "path": "fotos/P8260029.webp",
+      "filename": "P8260029.JPG",
+      "profile": "diving",
+      "source_sha256": "6d21f7bdee6e47f225e05fbc256dda287c6bd389bf94625342472f2382c8bea0",
+      "source_format": "JPEG",
+      "sha256": "4bcacb0a487a0de081d81d31f6365463ddf17c6d66c7d6f17a0761fc962d8a96",
+      "bytes": 153094
     }
   ]
 }

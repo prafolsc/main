@@ -4,6 +4,15 @@ const isEs = lang === 'es';
 const chapter = document.body.dataset.chapter;
 const photos = window.TRIP_PHOTOS.filter(p => !chapter || p.chapter === chapter)
   .sort((a, b) => a.date.localeCompare(b.date) || a.filename.localeCompare(b.filename));
+// Explicit placements preserve the requested order without inventing capture times.
+const placedPhotos = photos.filter(p => p.display_before || p.display_after);
+for (const p of placedPhotos) photos.splice(photos.indexOf(p), 1);
+for (const p of placedPhotos) {
+  const anchorName = p.display_before || p.display_after;
+  const anchorIndex = photos.findIndex(candidate => candidate.filename === anchorName);
+  if (anchorIndex < 0) photos.push(p);
+  else photos.splice(anchorIndex + (p.display_after ? 1 : 0), 0, p);
+}
 const text = (ca, es) => isEs ? es : ca;
 const localized = (p, key) => p[key + '_' + lang] || '';
 const el = (tag, value) => {
@@ -331,5 +340,6 @@ if (window.L && (located.length || route.length)) {
   mapStatus.textContent = text('El mapa no està disponible. Pots obrir el mapa extern o les coordenades des del visor de les fotos.', 'El mapa no está disponible. Puedes abrir el mapa externo o las coordenadas desde el visor de las fotos.');
   for (const stop of route) dayStops.append(el('p', localized(stop, 'name') + ' · ' + formatDate(stop.date)));
 }
+
 
 

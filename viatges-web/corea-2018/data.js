@@ -6917,6 +6917,91 @@ window.TRIP_PHOTOS = [
     "place_ca": "Seül",
     "place_es": "Seúl",
     "location_approximate": false
+  },
+  {
+    "id": "dfb94784b1a2f18f1e1cfc43b570add59f724cbe6dd09f46be90511c5abe945f",
+    "filename": "P8260001.jpg",
+    "date": "2018-08-26",
+    "latitude": null,
+    "longitude": null,
+    "src": "fotos/P8260001.webp",
+    "chapter": "okinawa",
+    "width": 1400,
+    "height": 933,
+    "caption_ca": "",
+    "caption_es": "",
+    "place_ca": "Onna · busseig amb taurons balena",
+    "place_es": "Onna · buceo con tiburones ballena",
+    "location_approximate": false,
+    "display_before": "P8260014(1).JPG"
+  },
+  {
+    "id": "1ecfc494e7175fbf4cc14f5dcaee4a4db21f4b54eda2a098f3fac1421ae533d8",
+    "filename": "P8260004.JPG",
+    "date": "2018-08-26",
+    "latitude": null,
+    "longitude": null,
+    "src": "fotos/P8260004.webp",
+    "chapter": "okinawa",
+    "width": 1400,
+    "height": 933,
+    "caption_ca": "",
+    "caption_es": "",
+    "place_ca": "Onna · busseig amb taurons balena",
+    "place_es": "Onna · buceo con tiburones ballena",
+    "location_approximate": false,
+    "display_after": "P8260014(1).JPG"
+  },
+  {
+    "id": "968201fac8dcddb91f8d1d53e3a266cfb5144171f37115e9d1e6304966598b13",
+    "filename": "P8260009.JPG",
+    "date": "2018-08-26",
+    "latitude": null,
+    "longitude": null,
+    "src": "fotos/P8260009.webp",
+    "chapter": "okinawa",
+    "width": 1400,
+    "height": 933,
+    "caption_ca": "",
+    "caption_es": "",
+    "place_ca": "Onna · busseig amb taurons balena",
+    "place_es": "Onna · buceo con tiburones ballena",
+    "location_approximate": false,
+    "display_after": "P8260017.JPG"
+  },
+  {
+    "id": "caa329cdacff4062f8053c9bb640be6e8743868e9a02a448974a7878142ef758",
+    "filename": "P8260028.JPG",
+    "date": "2018-08-26",
+    "latitude": null,
+    "longitude": null,
+    "src": "fotos/P8260028.webp",
+    "chapter": "okinawa",
+    "width": 1400,
+    "height": 933,
+    "caption_ca": "",
+    "caption_es": "",
+    "place_ca": "Onna · busseig amb taurons balena",
+    "place_es": "Onna · buceo con tiburones ballena",
+    "location_approximate": false,
+    "display_after": "P8260019.JPG"
+  },
+  {
+    "id": "6d21f7bdee6e47f225e05fbc256dda287c6bd389bf94625342472f2382c8bea0",
+    "filename": "P8260029.JPG",
+    "date": "2018-08-26",
+    "latitude": null,
+    "longitude": null,
+    "src": "fotos/P8260029.webp",
+    "chapter": "okinawa",
+    "width": 1400,
+    "height": 933,
+    "caption_ca": "",
+    "caption_es": "",
+    "place_ca": "Onna · busseig amb taurons balena",
+    "place_es": "Onna · buceo con tiburones ballena",
+    "location_approximate": false,
+    "display_after": "P8260033.jpg"
   }
 ];
 
@@ -6964,3 +7049,4 @@ window.TRIP_VIDEOS = [
     "caption_es": "Buceo con tiburones ballena."
   }
 ];
+
