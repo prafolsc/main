@@ -88,60 +88,84 @@ document.addEventListener('keydown',e=>{
 
 
 function initCoverMap(){
- const data=window.PLACES_DATA||window.__placesData;
- const select=document.getElementById('placeSelect');
  const mapel=document.getElementById('map');
- const google=document.getElementById('placeGoogle');
- const fallback=document.getElementById('mapfallback');
- if(!data||!select||!mapel)return;
+ const select=document.getElementById('map-day');
+ if(!mapel||!select)return;
  const labels=lang==='es'?titlesES:titlesCA;
- document.getElementById('placeLabel').textContent=t('Selecciona un lloc','Selecciona un lugar');
- select.options[0].textContent=t('Tot el recorregut','Todo el recorrido');
- select.length=1;
- const choices=[];
- data.centers.forEach((c,i)=>{
-   const group=document.createElement('optgroup');group.label=labels[i];
-   const opt=document.createElement('option');opt.value=String(choices.length);opt.textContent=labels[i];
-   choices.push({name:labels[i],lat:c[0],lon:c[1],chapter:i});group.append(opt);
-   data.places.filter(p=>p.chapter===i).sort((a,b)=>b.count-a.count).forEach(p=>{
-     const op=document.createElement('option');op.value=String(choices.length);op.textContent=p.name;
-     choices.push(p);group.append(op);
-   });select.append(group);
- });
- if(typeof L==='undefined'){
-   mapel.innerHTML='<p class="map-unavailable">'+t('No es pot carregar el mapa interactiu. Obre el mapa a Google Maps.','No se puede cargar el mapa interactivo. Abre el mapa en Google Maps.')+'</p>';
-   select.onchange=()=>{let p=choices[Number(select.value)];if(p)google.href='https://www.google.com/maps?q='+p.lat+','+p.lon;};
-   return;
+ const colors=['#2864a0','#a86414','#b23f54','#477a35','#8054a2','#087f83'];
+ const photos=window.COVER_MAP_PHOTOS||[];
+ const located=photos.filter(p=>Number.isFinite(p.lat)&&Number.isFinite(p.lon));
+ const stops=document.getElementById('map-day-stops');
+ const status=document.getElementById('mapfallback');
+ const google=document.getElementById('placeGoogle');
+ const node=(tag,text)=>{const e=document.createElement(tag);if(text)e.textContent=text;return e;};
+ const date=d=>new Intl.DateTimeFormat(lang==='es'?'es-ES':'ca-ES',{day:'numeric',month:'long',year:'numeric',timeZone:'UTC'}).format(new Date(d+'T12:00:00Z'));
+ document.getElementById('mapStages').textContent=t('LES ETAPES','LAS ETAPAS');
+ document.getElementById('mapDayLabel').textContent=t('Explorar per dia','Explorar por día');
+ select.options[0].textContent=t('Tots els dies','Todos los días');
+ google.textContent=t('Veure a Google Maps ↗','Ver en Google Maps ↗');
+ for(const d of [...new Set(located.map(p=>p.date))].sort()){
+  const option=node('option',date(d));option.value=d;select.append(option);
  }
- const map=L.map(mapel,{scrollWheelZoom:false});
- L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}',{
-   maxZoom:19,
-   attribution:'Tiles © Esri · Esri, HERE, Garmin, USGS, GIS User Community'
- }).addTo(map);
+ const legend=document.getElementById('mapLegend');
+ legend.setAttribute('aria-label',t('Capítols del mapa','Capítulos del mapa'));
+ labels.forEach((label,i)=>{const item=node('span');const dot=node('i');dot.style.backgroundColor=colors[i];dot.setAttribute('aria-hidden','true');item.append(dot,document.createTextNode(label));legend.append(item);});
+ let map=null;
+ const groups=new Map();
+ for(const p of located){
+  const key=p.chapter+','+Math.round(p.lat*150)+','+Math.round(p.lon*150);
+  if(!groups.has(key))groups.set(key,[]);
+  groups.get(key).push(p);
+ }
  const markers=[];
- data.centers.forEach((c,i)=>{
-   const marker=L.circleMarker(c,{radius:8,color:'#a54d35',fillColor:'#c87a5a',fillOpacity:.9,weight:2})
-     .addTo(map).bindPopup('<a href="'+linkFor(i)+'">'+labels[i]+'</a>');
-   markers.push(marker);
- });
- const bounds=data.centers.map(c=>[c[0],c[1]]);
- map.fitBounds(bounds,{padding:[30,30],maxZoom:5});
- select.addEventListener('change',()=>{
-   if(select.value===''){
-     map.fitBounds(bounds,{padding:[30,30],maxZoom:5});
-     google.href='https://www.google.com/maps?q=Taiwan';
-     fallback.textContent=t('Selecciona un lloc per ampliar-lo al mapa.','Selecciona un lugar para ampliarlo en el mapa.');
-   }else{
-     const p=choices[Number(select.value)];
-     if(!p)return;
-     map.setView([p.lat,p.lon],p.chapter===2?10:12);
-     google.href='https://www.google.com/maps?q='+p.lat+','+p.lon;
-     fallback.textContent=p.name;
-   }
- });
- google.href='https://www.google.com/maps?q=Taiwan';
- fallback.textContent=t('Selecciona un lloc per ampliar-lo al mapa.','Selecciona un lugar para ampliarlo en el mapa.');
- setTimeout(()=>map.invalidateSize(),100);
+ function popup(entries){
+  const box=node('div');box.className='cover-map-popup';
+  const p=entries[0];box.append(node('strong',p.name||labels[p.chapter]),node('small',labels[p.chapter]+' · '+date(p.date)));
+  const gallery=node('div');gallery.className='cover-map-photos';
+  for(const photo of entries.slice(0,6)){
+   const a=node('a');a.href=photo.src;a.target='_blank';a.rel='noopener';a.title=photo.filename;
+   const img=node('img');img.src=photo.src;img.alt=photo.name||photo.filename;img.loading='eager';a.append(img);gallery.append(a);
+  }
+  box.append(gallery);
+  const chapter=node('a',t('Veure el capítol','Ver el capítulo'));chapter.href=linkFor(p.chapter);box.append(chapter);
+  return box;
+ }
+ if(typeof L!=='undefined'&&located.length){
+  map=L.map(mapel,{scrollWheelZoom:false});
+  L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}',{maxZoom:19,attribution:'Tiles © Esri · Esri, HERE, Garmin, USGS, GIS User Community'}).addTo(map);
+  for(const entries of groups.values()){
+   const p=entries[0];
+   const marker=L.circleMarker([p.lat,p.lon],{radius:6,color:'#fff',weight:2,fillColor:colors[p.chapter],fillOpacity:.9})
+    .bindPopup(()=>popup(select.value?entries.filter(p=>p.date===select.value):entries));
+   markers.push({marker,entries});
+  }
+ }else mapel.innerHTML='<p class="map-unavailable">'+t('No es pot carregar el mapa interactiu. Pots obrir els llocs a Google Maps.','No se puede cargar el mapa interactivo. Puedes abrir los lugares en Google Maps.')+'</p>';
+ function renderDay(){
+  const day=select.value;
+  const entries=day?located.filter(p=>p.date===day):located;
+  if(map){
+   map.closePopup();
+   markers.forEach(item=>{if(!day||item.entries.some(p=>p.date===day))item.marker.addTo(map);else map.removeLayer(item.marker);});
+   if(entries.length)map.fitBounds(L.latLngBounds(entries.map(p=>[p.lat,p.lon])),{padding:[25,25],maxZoom:12});
+  }
+  stops.replaceChildren();
+  const places=new Map();
+  for(const p of entries){const key=(day?'':p.date+',')+p.chapter+','+(p.name||labels[p.chapter]).trim();if(!places.has(key))places.set(key,p);}
+  for(const p of [...places.values()].sort((a,b)=>a.date.localeCompare(b.date))){
+   const button=node('button');button.type='button';button.style.setProperty('--stop-color',colors[p.chapter]);
+   button.append(node('strong',p.name||labels[p.chapter]),node('small',date(p.date)+' · '+labels[p.chapter]));
+   button.addEventListener('click',()=>{
+    google.href='https://www.google.com/maps?q='+p.lat+','+p.lon;
+    if(map){map.setView([p.lat,p.lon],13);markers.find(item=>item.entries.includes(p)).marker.openPopup();}
+    else window.open(google.href,'_blank','noopener');
+   });stops.append(button);
+  }
+  google.href=day&&entries.length?'https://www.google.com/maps?q='+entries[0].lat+','+entries[0].lon:'https://www.google.com/maps?q=Taiwan';
+  status.textContent=entries.length+' '+t('fotografies geolocalitzades. Les fotos sense GPS continuen a la galeria.','fotografías geolocalizadas. Las fotos sin GPS siguen en la galería.');
+ }
+ select.addEventListener('change',renderDay);renderDay();
+ if(map)setTimeout(()=>map.invalidateSize(),100);
 }
 
 document.addEventListener('DOMContentLoaded',()=>{const a=document.getElementById('diaries');if(a){a.textContent=t('Diaris de viatge','Diarios de viaje');a.href=lang==='es'?'../index-es.html':'../index.html';}document.getElementById('brand').href='index.html'+(lang==='es'?'?lang=es':'');document.getElementById('home').href='index.html'+(lang==='es'?'?lang=es':'');});
+

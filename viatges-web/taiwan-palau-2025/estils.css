@@ -129,3 +129,22 @@ footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-s
 #map .map-selected{font-weight:700;fill:#a54d35}
 #map .map-dot{cursor:pointer}
 #map .map-dot:focus{outline:none;stroke:#111;stroke-width:3}
+
+/* Cover map: chapter colors and the same day explorer layout as Korea. */
+.cover-map-layout{display:grid;grid-template-columns:minmax(0,1fr) 290px;gap:24px;align-items:start}
+.cover-map-main{min-width:0}.cover-map-main #map{height:460px}
+.cover-day-explorer{background:#e3ece8;border-top:3px solid #284f55;padding:22px;max-height:510px;overflow:auto}
+.cover-day-explorer .kicker{color:#284f55;font-size:12px;letter-spacing:.16em}
+.cover-day-explorer label{display:block;font-family:"Helvetica Neue",Arial,sans-serif;font-weight:650;letter-spacing:-.04em;font-size:25px;margin:10px 0 12px}
+.cover-day-explorer select{width:100%;padding:10px;background:#f7faf7;border:1px solid var(--line);color:var(--ink);border-radius:0;font-size:16px}
+.cover-map-stops{margin-top:18px}.cover-map-stops button{display:block;width:100%;text-align:left;background:transparent;border:0;border-bottom:1px solid var(--line);padding:11px 0 11px 13px;color:var(--ink);cursor:pointer;position:relative;font:inherit}
+.cover-map-stops button:before{content:"";position:absolute;left:0;top:17px;width:7px;height:7px;border-radius:50%;background:var(--stop-color)}
+.cover-map-stops strong{display:block;font-size:12px;line-height:1.5}.cover-map-stops small{display:block;color:#526b73;font-size:11px;line-height:1.6;margin-top:3px}
+.cover-map-stops button:hover strong{text-decoration:underline}.cover-day-explorer select:focus-visible,.cover-map-stops button:focus-visible{outline:3px solid #284f55;outline-offset:3px}
+.cover-map-legend{display:flex;flex-wrap:wrap;gap:10px 22px;padding:16px 0;font-size:13px;color:#526b73}.cover-map-legend>span{display:flex;align-items:center;gap:8px}.cover-map-legend i{display:inline-block;width:13px;height:13px;border-radius:50%;border:1px solid #fff;box-shadow:0 0 0 1px #332b2640}
+.cover-map-external{font-size:13px;color:var(--accent)}.cover-map-main .mapfallback{margin:0 0 12px}
+.cover-map-popup{min-width:180px;max-width:240px}.cover-map-popup>small{display:block;margin:6px 0;color:#526b73}.cover-map-popup>a{display:block;margin-top:10px}
+.cover-map-photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:5px;max-height:210px;overflow:auto}.cover-map-photos img{display:block;width:100%;height:78px;object-fit:cover}
+@media(max-width:850px){.cover-map-layout{grid-template-columns:1fr}.cover-day-explorer{max-height:330px}}
+@media(max-width:650px){.cover-map-main #map{height:350px}}
+
