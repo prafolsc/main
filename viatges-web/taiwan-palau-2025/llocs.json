@@ -125,7 +125,7 @@
       "name": "Jiufen",
       "lat": 25.1088,
       "lon": 121.843483,
-      "count": 11
+      "count": 13
     },
     {
       "chapter": 1,
@@ -146,14 +146,14 @@
       "name": "Shifen",
       "lat": 25.042961,
       "lon": 121.776856,
-      "count": 4
+      "count": 5
     },
     {
       "chapter": 1,
       "name": "Ping Xi",
       "lat": 25.020906,
       "lon": 121.739394,
-      "count": 4
+      "count": 5
     },
     {
       "chapter": 1,
@@ -437,34 +437,6 @@
     },
     {
       "chapter": 4,
-      "name": "Taipei i nord-est de Taiwan",
-      "lat": 25.108397,
-      "lon": 121.843522,
-      "count": 6
-    },
-    {
-      "chapter": 4,
-      "name": "Jiufen",
-      "lat": 25.107533,
-      "lon": 121.842239,
-      "count": 1
-    },
-    {
-      "chapter": 4,
-      "name": "Shifen",
-      "lat": 25.0423,
-      "lon": 121.776375,
-      "count": 1
-    },
-    {
-      "chapter": 4,
-      "name": "Ping Xi",
-      "lat": 25.0201,
-      "lon": 121.739656,
-      "count": 1
-    },
-    {
-      "chapter": 4,
       "name": "Taipei - The ten buildings",
       "lat": 25.063008,
       "lon": 121.509292,
@@ -476,6 +448,13 @@
       "lat": 25.036822,
       "lon": 121.5,
       "count": 9
+    },
+    {
+      "chapter": 4,
+      "name": "Taipei i nord-est de Taiwan",
+      "lat": 25.037247,
+      "lon": 121.500014,
+      "count": 5
     },
     {
       "chapter": 4,
