@@ -2,8 +2,9 @@
 // La portada, el contacte i /assets/ són públics; el Worker només rep les
 // rutes llistades a "run_worker_first" (wrangler.jsonc).
 //
-// La contrasenya és el secret SITE_PASSWORD (Cloudflare → Worker → Settings →
-// Variables and Secrets). No s'escriu mai al codi.
+// La contrasenya és la variable SITE_PASSWORD. No s'escriu mai al codi.
+// Qui no té la galeta d'accés veu una pàgina amb un camp de contrasenya
+// (català i castellà); en enviar-la bé es desa una galeta de 30 dies.
 
 // Carpetes protegides (afegeix-hi els viatges nous, i també a wrangler.jsonc).
 const PROTECTED = [
@@ -24,6 +25,23 @@ const PUBLIC_FILES = new Set([
   '/taiwan-palau-2025/fotos/0172.jpg',
 ]);
 
+// Textos de la pàgina d'accés. Edita'ls lliurement (només text, sense HTML).
+const TEXTS = {
+  title: 'Accés privat · Acceso privado',
+  ca: {
+    intro: 'Aquest diari de viatge és privat. Introdueix la contrasenya que t’han facilitat per veure’l.',
+    label: 'Contrasenya',
+    button: 'Entrar', // és el mateix en castellà; només es mostra aquest
+    error: 'Contrasenya incorrecta. Torna-ho a provar.',
+  },
+  es: {
+    intro: 'Este diario de viaje es privado. Introduce la contraseña que te han facilitado para verlo.',
+    label: 'Contraseña',
+    error: 'Contraseña incorrecta. Inténtalo de nuevo.',
+  },
+  home: { href: '/', label: '← Diaris de viatge' },
+};
+
 const COOKIE_NAME = 'acces';
 const COOKIE_MAX_AGE = 60 * 60 * 24 * 30; // 30 dies
 
@@ -36,29 +54,87 @@ function isProtected(pathname) {
   return PROTECTED.some((p) => pathname === p || pathname.startsWith(p + '/'));
 }
 
-// Decodifica "Authorization: Basic ..." i en retorna la contrasenya (o null).
-function passwordFromBasicAuth(header) {
-  const [scheme, encoded] = (header || '').split(' ');
-  if (scheme !== 'Basic' || !encoded) return null;
-  try {
-    const bytes = Uint8Array.from(atob(encoded), (c) => c.charCodeAt(0));
-    const decoded = new TextDecoder().decode(bytes);
-    return decoded.split(':').slice(1).join(':'); // el nom d'usuari s'ignora
-  } catch {
-    return null;
-  }
+function escapeHtml(s) {
+  return s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+}
+
+function loginPage(failed) {
+  const t = TEXTS;
+  const err = failed
+    ? `<p class="err" role="alert">${escapeHtml(t.ca.error)}<br>${escapeHtml(t.es.error)}</p>`
+    : '';
+  const html = `<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>${escapeHtml(t.title)}</title>
+<style>
+  :root { color-scheme: light dark; --bg:#f6f5f2; --card:#fff; --fg:#1d1d1b; --muted:#6a6a66; --line:#d9d7d1; --accent:#1d1d1b; --accent-fg:#fff; --err:#b3261e; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#161615; --card:#1f1f1d; --fg:#ecebe7; --muted:#a3a29c; --line:#3a3a37; --accent:#ecebe7; --accent-fg:#161615; --err:#f2877f; } }
+  * { box-sizing: border-box; }
+  body { margin:0; min-height:100vh; display:grid; place-items:center; padding:16px; background:var(--bg); color:var(--fg); font:16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  main { width:100%; max-width:400px; background:var(--card); border:1px solid var(--line); border-radius:12px; padding:28px 24px; }
+  h1 { margin:0 0 14px; font-size:1.15rem; font-weight:600; }
+  p { margin:0 0 10px; }
+  .es { color:var(--muted); }
+  form { margin-top:20px; }
+  label { display:block; margin-bottom:6px; font-size:.9rem; color:var(--muted); }
+  input[type=password] { width:100%; padding:10px 12px; font:inherit; color:var(--fg); background:transparent; border:1px solid var(--line); border-radius:8px; }
+  input[type=password]:focus-visible, button:focus-visible, a:focus-visible { outline:2px solid var(--accent); outline-offset:2px; }
+  button { margin-top:12px; width:100%; padding:10px 12px; font:inherit; font-weight:600; color:var(--accent-fg); background:var(--accent); border:0; border-radius:8px; cursor:pointer; }
+  .err { margin-top:14px; color:var(--err); font-size:.9rem; }
+  .back { display:inline-block; margin-top:18px; font-size:.9rem; color:var(--muted); }
+  .u { position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden; }
+</style>
+</head>
+<body>
+<main>
+  <h1>${escapeHtml(t.title)}</h1>
+  <p>${escapeHtml(t.ca.intro)}</p>
+  <p class="es" lang="es">${escapeHtml(t.es.intro)}</p>
+  <form method="post" action="">
+    <input class="u" type="text" name="usuari" value="viatges" autocomplete="username" tabindex="-1" aria-hidden="true">
+    <label for="clau">${escapeHtml(t.ca.label)} · ${escapeHtml(t.es.label)}</label>
+    <input id="clau" type="password" name="clau" autocomplete="current-password" required autofocus>
+    <button type="submit">${escapeHtml(t.ca.button)}</button>
+  </form>
+  ${err}
+  <a class="back" href="${escapeHtml(t.home.href)}">${escapeHtml(t.home.label)}</a>
+</main>
+</body>
+</html>`;
+  return new Response(html, {
+    status: 401,
+    headers: {
+      'Content-Type': 'text/html; charset=utf-8',
+      'Cache-Control': 'no-store',
+      'X-Robots-Tag': 'noindex',
+      'Content-Security-Policy': "default-src 'none'; style-src 'unsafe-inline'; form-action 'self'; base-uri 'none'",
+    },
+  });
+}
+
+// Respostes protegides: no indexar i no deixar-les en caches compartides.
+function withHeaders(res) {
+  const out = new Response(res.body, res);
+  out.headers.set('X-Robots-Tag', 'noindex');
+  out.headers.set('Cache-Control', 'private');
+  return out;
 }
 
 export default {
   async fetch(request, env) {
-    const { pathname } = new URL(request.url);
+    const url = new URL(request.url);
+    const { pathname } = url;
 
     // Fora de les carpetes protegides, o miniatures públiques: servir tal qual.
     if (!isProtected(pathname) || PUBLIC_FILES.has(pathname)) {
       return env.ASSETS.fetch(request);
     }
 
-    // Si falta el secret, millor tancar que deixar-ho obert per error.
+    // Si falta la variable, millor tancar que deixar-ho obert per error.
     if (!env.SITE_PASSWORD) {
       return new Response('Accés no configurat', { status: 503 });
     }
@@ -71,33 +147,29 @@ export default {
       return withHeaders(await env.ASSETS.fetch(request));
     }
 
-    // 2) Ha escrit la contrasenya al quadre del navegador?
-    const pass = passwordFromBasicAuth(request.headers.get('Authorization'));
-    if (pass !== null && (await sha256('prafols:' + pass)) === token) {
-      const res = withHeaders(await env.ASSETS.fetch(request));
-      res.headers.append(
-        'Set-Cookie',
-        `${COOKIE_NAME}=${token}; Path=/; Max-Age=${COOKIE_MAX_AGE}; Secure; HttpOnly; SameSite=Lax`
-      );
-      return res;
+    // 2) Ha enviat el formulari amb la contrasenya?
+    if (request.method === 'POST') {
+      let pass = '';
+      try {
+        pass = String((await request.formData()).get('clau') || '');
+      } catch {
+        // cos il·legible: es tracta com a contrasenya buida
+      }
+      if ((await sha256('prafols:' + pass)) === token) {
+        // Redirecció a la mateixa adreça (ara com a GET) amb la galeta desada.
+        return new Response(null, {
+          status: 303,
+          headers: {
+            Location: url.pathname + url.search,
+            'Set-Cookie': `${COOKIE_NAME}=${token}; Path=/; Max-Age=${COOKIE_MAX_AGE}; Secure; HttpOnly; SameSite=Lax`,
+            'Cache-Control': 'no-store',
+          },
+        });
+      }
+      return loginPage(true);
     }
 
-    // 3) Demanar la contrasenya.
-    return new Response('Cal contrasenya', {
-      status: 401,
-      headers: {
-        'WWW-Authenticate': 'Basic realm="Viatges", charset="UTF-8"',
-        'X-Robots-Tag': 'noindex',
-        'Cache-Control': 'no-store',
-      },
-    });
+    // 3) Mostrar la pàgina d'accés.
+    return loginPage(false);
   },
 };
-
-// Respostes protegides: no indexar i no deixar-les en caches compartides.
-function withHeaders(res) {
-  const out = new Response(res.body, res);
-  out.headers.set('X-Robots-Tag', 'noindex');
-  out.headers.set('Cache-Control', 'private');
-  return out;
-}
