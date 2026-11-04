@@ -1,0 +1,17 @@
+{
+  "name": "main",
+  "main": "src/worker.js",
+  "compatibility_date": "2026-10-01",
+  "assets": {
+    "directory": "./viatges-web",
+    "binding": "ASSETS",
+    // Només aquestes rutes passen pel Worker; la resta es serveix directament.
+    "run_worker_first": [
+      "/japo-2026*",
+      "/feroe-dinamarca-2026*",
+      "/peru-equador-2025*",
+      "/corea-2018*",
+      "/taiwan-palau-2025*"
+    ]
+  }
+}
