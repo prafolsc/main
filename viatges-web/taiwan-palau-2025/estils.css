@@ -29,7 +29,7 @@ h2{font:400 clamp(1.9rem,3vw,3rem) Georgia,serif;letter-spacing:-.04em;margin:24
 .photo.wide{grid-column:span 8}.photo.half{grid-column:span 6}.photo.heroimage{grid-column:span 12}
 .photo button{display:block;width:100%;padding:0;border:0;background:none;cursor:zoom-in;text-align:left}
 .photo img{width:100%;height:auto;display:block;object-fit:contain;background:#ecebe5}
-.photo figcaption{padding:10px 2px 0;line-height:1.5;font-size:.87rem;color:#52615d}
+.photo figcaption{padding:16px 17px 20px;background:#fffaf1;border-bottom:1px solid var(--line);line-height:1.6;font-size:15px;color:var(--ink)}
 .photo .date{font-size:.74rem;color:#8b938c;margin-top:4px}
 .photo figcaption a{color:var(--accent);text-decoration:none}
 .photo.heroimage img{max-height:780px;object-fit:contain}
@@ -44,8 +44,8 @@ footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-s
 .map-controls{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:12px 0 15px}
 .map-controls label{font-weight:650}.map-controls select{min-width:min(360px,100%);max-width:100%}
 .map-controls a{color:var(--accent);font-size:.9rem;text-decoration:none}
-.photo-place{font-weight:700;color:var(--ink);font-size:.94rem;margin-bottom:5px}
-.photo-comment{color:#52615d;line-height:1.5}
+.photo-place{display:block;font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:750;color:var(--sea);margin-bottom:9px}
+.photo-comment{display:block;color:var(--ink);font-size:15px;line-height:1.6}
 .photo-maplink{display:inline-block;margin-top:6px;font-size:.79rem;color:var(--accent)}
 #viewer .caption{width:100%;max-width:1000px;max-height:25vh;overflow-y:auto}
 .viewer-place{font-size:1.12rem;font-weight:700;margin-bottom:5px}
