@@ -19,7 +19,19 @@ function mapFor(el,pts,zoom){
  function init(){
    if(typeof L==='undefined'){el.innerHTML=`<p style="padding:24px">${t('No es pot carregar el mapa interactiu. Fes servir l’enllaç inferior.','No se puede cargar el mapa interactivo. Usa el enlace inferior.')}</p>`;return;}
    let m=L.map(el,{scrollWheelZoom:false});L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}',{attribution:'Tiles © Esri · Esri, HERE, Garmin, USGS, GIS User Community',maxZoom:19}).addTo(m);
-   pts.forEach(p=>L.circleMarker([p[0],p[1]],{radius:5,color:'#a54d35',fillColor:'#c87a5a',fillOpacity:.75,weight:1}).addTo(m).bindPopup(p[2]||''));
+   pts.forEach(p=>{
+     const marker=L.circleMarker([p[0],p[1]],{radius:5,color:'#a54d35',fillColor:'#c87a5a',fillOpacity:.75,weight:1}).addTo(m);
+     const photos=[...document.querySelectorAll('.photo button')].filter(b=>b.dataset.lat&&b.dataset.lon&&Math.abs(Number(b.dataset.lat)-p[0])<0.00002&&Math.abs(Number(b.dataset.lon)-p[1])<0.00002);
+     const popup=document.createElement('div');popup.className='cover-map-popup';
+     const title=document.createElement('strong');title.textContent=p[2]||photos[0]?.dataset.place||'';popup.append(title);
+     if(photos.length){
+       const gallery=document.createElement('div');gallery.className='cover-map-photos';
+       photos.slice(0,4).forEach(b=>{const a=document.createElement('a');a.href=b.dataset.img;a.target='_blank';a.rel='noopener';const img=document.createElement('img');img.src=b.dataset.img;img.alt=b.dataset.comment||b.dataset.place||'';img.loading='lazy';a.append(img);gallery.append(a);});
+       popup.append(gallery);
+       const caption=document.createElement('small');caption.textContent=photos[0].dataset.comment||photos[0].dataset.place||'';popup.append(caption);
+     }
+     marker.bindPopup(popup);
+   });
    if(pts.length===1)m.setView(mid,zoom||8);else m.fitBounds(bounds,{padding:[25,25],maxZoom:zoom||11});
  }
  if(typeof L!=='undefined')init();else{
