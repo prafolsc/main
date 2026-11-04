@@ -28,12 +28,27 @@ La web existent està publicada a Cloudflare Workers amb els dominis `prafols.co
 - Repositori: `prafolsc/main`.
 - Branca de producció: `main`.
 - Directori dels fitxers estàtics: `viatges-web/`.
-- Es conserva la configuració de publicació existent a Cloudflare.
+- Nom del Worker: `main`. Configuració a `wrangler.jsonc`.
+- Deploy command (a *Settings → Build*): `npx wrangler deploy --var "SITE_PASSWORD:$SITE_PASSWORD"`.
 
-La portada és a `/`, el Japó a `/japo-2026/`, Dinamarca–Fèroe a `/feroe-dinamarca-2026/`, Perú–Equador a `/peru-equador-2025/` i Corea–Okinawa a `/corea-2018/`.
+La portada és a `/`, el Japó a `/japo-2026/`, Dinamarca–Fèroe a `/feroe-dinamarca-2026/`, Perú–Equador a `/peru-equador-2025/`, Taiwan–Palau a `/taiwan-palau-2025/` i Corea–Okinawa a `/corea-2018/`.
+
+## Accés amb contrasenya
+
+Les carpetes dels viatges estan protegides amb una contrasenya única compartida; la portada, el contacte i `assets/` són públics. No hi ha usuaris: qui no té la galeta d'accés veu una pàgina amb només el camp de contrasenya, en català i castellà. En enviar la clau correcta es desa una galeta de 30 dies vàlida per a tots els viatges.
+
+- `src/worker.js`: el Worker que comprova l'accés. Les carpetes protegides són a la llista `PROTECTED`, les miniatures de la portada que han de ser visibles sense clau a `PUBLIC_FILES`, i els textos de la pàgina d'accés a l'objecte `TEXTS`.
+- `wrangler.jsonc`: `run_worker_first` indica quines rutes passen pel Worker; la resta es serveix directament.
+- La contrasenya és la **Build variable** `SITE_PASSWORD` (*Settings → Build → Variables and secrets*). No s'escriu mai al repositori, que és públic. La deploy command la passa al Worker amb `--var`, i queda com a variable de text visible al panell del Worker.
+- Si falta la variable, les carpetes protegides responen amb un 503 («Accés no configurat»): queden tancades, no obertes.
+- Per canviar la contrasenya, edita `SITE_PASSWORD` a *Build* i torna a desplegar; les galetes antigues deixen de valer.
+- Per provar-ho, fes servir una finestra privada. Per esborrar la galeta en una finestra normal, elimina la galeta `acces` del domini.
 
 ## Afegir un viatge
 
-Crea una carpeta dins de `viatges-web/` (per exemple, `nou-viatge-2027/`) amb el seu `index.html`, imatges i fitxers auxiliars. Afegeix l'enllaç a les dues portades generals.
+1. Crea una carpeta dins de `viatges-web/` (per exemple, `nou-viatge-2027/`) amb el seu `index.html`, imatges i fitxers auxiliars.
+2. Afegeix l'enllaç a les dues portades generals (`index.html` i `index-es.html`).
+3. **Protegeix-la:** afegeix `/nou-viatge-2027` a la llista `PROTECTED` de `src/worker.js` i `"/nou-viatge-2027*"` a `run_worker_first` de `wrangler.jsonc`. Si te n'oblides, el viatge quedarà públic.
+4. Si la portada fa servir una foto del viatge com a miniatura, afegeix-ne la ruta a `PUBLIC_FILES` de `src/worker.js`; si no, la miniatura es veurà trencada per als visitants sense clau.
 
 S'ha conservat també la còpia anterior que ja existia dins del directori de Dinamarca–Fèroe (`viaje-web/`), juntament amb tots els fitxers originals del repositori.
