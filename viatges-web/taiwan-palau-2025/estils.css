@@ -148,3 +148,11 @@ footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-s
 @media(max-width:850px){.cover-map-layout{grid-template-columns:1fr}.cover-day-explorer{max-height:330px}}
 @media(max-width:650px){.cover-map-main #map{height:350px}}
 
+
+
+/* Peus de foto: lloc en vermell i comentari ressaltat. */
+.photo .photo-place{color:#b33a32;font-size:9px;letter-spacing:.13em;margin-bottom:8px}
+.photo .photo-comment{background:#f0e5df;border-left:3px solid #b33a32;padding:10px 13px;margin-top:5px;color:#263b36}
+/* Visor ampliat: jerarquia clara entre lloc i comentari. */
+#viewer .viewer-place{font-size:clamp(.82rem,1.15vw,1rem);font-weight:650;letter-spacing:.08em;text-transform:uppercase;color:#e18a7e;margin-bottom:9px}
+#viewer .viewer-comment{font-size:clamp(1.02rem,1.45vw,1.25rem);line-height:1.65;color:#fff;background:#1b3a30;border-left:4px solid #d56b5d;padding:11px 15px;margin-top:2px}
