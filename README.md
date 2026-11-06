@@ -42,6 +42,7 @@ Les carpetes dels viatges estan protegides amb una contrasenya única compartida
 - La contrasenya és la **Build variable** `SITE_PASSWORD` (*Settings → Build → Variables and secrets*). No s'escriu mai al repositori, que és públic. La deploy command la passa al Worker amb `--var`, i queda com a variable de text visible al panell del Worker.
 - Si falta la variable, les carpetes protegides responen amb un 503 («Accés no configurat»): queden tancades, no obertes.
 - Per canviar la contrasenya, edita `SITE_PASSWORD` a *Build* i torna a desplegar; les galetes antigues deixen de valer.
+- Si el navegador no desa la galeta (típic dels navegadors integrats d'Instagram o Facebook), després d'una clau correcta es mostra un avís en català i castellà que recomana obrir l'enllaç amb Safari, Chrome o un altre navegador. Per detectar-ho, la redirecció posterior a la clau afegeix un paràmetre temporal `_acces=1` que s'elimina de l'adreça quan la galeta funciona.
 - Per provar-ho, fes servir una finestra privada. Per esborrar la galeta en una finestra normal, elimina la galeta `acces` del domini.
 
 ## Afegir un viatge

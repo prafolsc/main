@@ -33,17 +33,33 @@ const TEXTS = {
     label: 'Contrasenya',
     button: 'Entrar', // és el mateix en castellà; només es mostra aquest
     error: 'Contrasenya incorrecta. Torna-ho a provar.',
+    // Contrasenya correcta, però el navegador no ha desat la galeta
+    // (típic dels navegadors integrats d'Instagram, Facebook, etc.).
+    cookies: 'La contrasenya és correcta, però aquest navegador no permet desar l’accés. Obre aquest enllaç amb Safari, Chrome o un altre navegador.',
   },
   es: {
     intro: 'Este diario de viaje es privado. Introduce la contraseña que te han facilitado para verlo.',
     label: 'Contraseña',
     error: 'Contraseña incorrecta. Inténtalo de nuevo.',
+    cookies: 'La contraseña es correcta, pero este navegador no permite guardar el acceso. Abre este enlace con Safari, Chrome u otro navegador.',
   },
   home: { href: '/', label: '← Diaris de viatge' },
 };
 
 const COOKIE_NAME = 'acces';
 const COOKIE_MAX_AGE = 60 * 60 * 24 * 30; // 30 dies
+
+// Paràmetre temporal que s'afegeix a l'adreça just després d'entrar la clau
+// correcta. Si en tornar-hi no hi ha galeta, vol dir que el navegador no l'ha
+// desada, i es mostra un avís en lloc de repetir el formulari sense explicació.
+// Quan la galeta sí que hi és, el paràmetre s'elimina de l'adreça.
+const MARK = '_acces';
+
+function withoutMark(url) {
+  const u = new URL(url);
+  u.searchParams.delete(MARK);
+  return u;
+}
 
 async function sha256(text) {
   const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(text));
@@ -58,10 +74,13 @@ function escapeHtml(s) {
   return s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
 }
 
-function loginPage(failed) {
+// state: null (primer cop), 'bad' (clau errònia) o 'cookies' (clau correcta
+// però el navegador no desa la galeta).
+function loginPage(state) {
   const t = TEXTS;
-  const err = failed
-    ? `<p class="err" role="alert">${escapeHtml(t.ca.error)}<br>${escapeHtml(t.es.error)}</p>`
+  const key = state === 'cookies' ? 'cookies' : 'error';
+  const err = state
+    ? `<p class="err" role="alert">${escapeHtml(t.ca[key])}<br>${escapeHtml(t.es[key])}</p>`
     : '';
   const html = `<!doctype html>
 <html lang="ca">
@@ -144,6 +163,14 @@ export default {
     // 1) Ja té la galeta d'accés?
     const cookies = (request.headers.get('Cookie') || '').split(/;\s*/);
     if (cookies.includes(`${COOKIE_NAME}=${token}`)) {
+      if (url.searchParams.has(MARK)) {
+        // La galeta funciona: treu el paràmetre temporal de l'adreça.
+        const clean = withoutMark(url);
+        return new Response(null, {
+          status: 303,
+          headers: { Location: clean.pathname + clean.search, 'Cache-Control': 'no-store' },
+        });
+      }
       return withHeaders(await env.ASSETS.fetch(request));
     }
 
@@ -156,20 +183,24 @@ export default {
         // cos il·legible: es tracta com a contrasenya buida
       }
       if ((await sha256('prafols:' + pass)) === token) {
-        // Redirecció a la mateixa adreça (ara com a GET) amb la galeta desada.
+        // Redirecció a la mateixa adreça (ara com a GET) amb la galeta desada
+        // i el paràmetre temporal que permet detectar si el navegador l'ha desada.
+        const next = withoutMark(url);
+        next.searchParams.set(MARK, '1');
         return new Response(null, {
           status: 303,
           headers: {
-            Location: url.pathname + url.search,
+            Location: next.pathname + next.search,
             'Set-Cookie': `${COOKIE_NAME}=${token}; Path=/; Max-Age=${COOKIE_MAX_AGE}; Secure; HttpOnly; SameSite=Lax`,
             'Cache-Control': 'no-store',
           },
         });
       }
-      return loginPage(true);
+      return loginPage('bad');
     }
 
-    // 3) Mostrar la pàgina d'accés.
-    return loginPage(false);
+    // 3) Mostrar la pàgina d'accés. Si ve de la redirecció posterior a una clau
+    // correcta i encara no hi ha galeta, el navegador no l'ha desada.
+    return loginPage(url.searchParams.has(MARK) ? 'cookies' : null);
   },
 };
