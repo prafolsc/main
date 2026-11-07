@@ -44,7 +44,7 @@ footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-s
 .map-controls{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin:12px 0 15px}
 .map-controls label{font-weight:650}.map-controls select{min-width:min(360px,100%);max-width:100%}
 .map-controls a{color:var(--accent);font-size:.9rem;text-decoration:none}
-.photo-place{display:block;font-size:10px;letter-spacing:.12em;text-transform:uppercase;font-weight:750;color:var(--sea);margin-bottom:9px}
+.photo-place{display:block;font-size:11px;letter-spacing:.10em;text-transform:uppercase;font-weight:750;color:var(--sea);margin-bottom:9px}
 .photo-comment{display:block;color:var(--ink);font-size:15px;line-height:1.6}
 .photo-maplink{display:inline-block;margin-top:6px;font-size:.79rem;color:var(--accent)}
 #viewer .caption{width:100%;max-width:1000px;max-height:25vh;overflow-y:auto}
@@ -151,7 +151,7 @@ footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-s
 
 
 /* Peus de foto: lloc en vermell i comentari ressaltat. */
-.photo .photo-place{color:#b33a32;font-size:9px;letter-spacing:.13em;margin-bottom:8px}
+.photo .photo-place{color:#b33a32;font-size:10px;letter-spacing:.11em;margin-bottom:8px}
 .photo .photo-comment{background:#f0e5df;border-left:3px solid #b33a32;padding:10px 13px;margin-top:5px;color:#263b36}
 /* Visor ampliat: jerarquia clara entre lloc i comentari. */
 #viewer .viewer-place{font-size:clamp(.82rem,1.15vw,1rem);font-weight:650;letter-spacing:.08em;text-transform:uppercase;color:#e18a7e;margin-bottom:9px}
