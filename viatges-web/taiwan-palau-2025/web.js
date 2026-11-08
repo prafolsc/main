@@ -9,6 +9,9 @@ const titlesES=['Hong Kong','Sur y este de Taiwán','Palaos','Oeste de Taiwán',
 const slugs=['hong-kong','sud-est-taiwan','palau','oest-taiwan','taipei','beijing'];
 function linkFor(i){return slugs[i]+'.html'+(lang==='es'?'?lang=es':'');}
 function setLang(v){let u=new URL(location.href);if(v==='ca')u.searchParams.delete('lang');else u.searchParams.set('lang','es');location.href=u.href;}
+function localizedComment(button){return lang==='es'?(button.dataset.commentEs||button.dataset.comment||''):(button.dataset.comment||'');}
+function applyLocalizedComments(){document.querySelectorAll('.photo button').forEach(button=>{const node=button.closest('figure')?.querySelector('.photo-comment');if(node)node.textContent=localizedComment(button);});}
+document.addEventListener('DOMContentLoaded',applyLocalizedComments);
 function mapFor(el,pts,zoom){
  if(!el||!pts.length)return;
  const dateSelect=document.getElementById('chapter-date');
@@ -66,9 +69,9 @@ function viewerOpenDetails(button){
  const v=document.getElementById('viewer');
  window.currentPhotoButton=button;
  v.querySelector('img').src=d.img;
- v.querySelector('img').alt=d.comment||d.place||d.filename||'';
+ v.querySelector('img').alt=localizedComment(button)||d.place||d.filename||'';
  v.querySelector('.viewer-place').textContent=d.place||'';
- v.querySelector('.viewer-comment').textContent=d.comment||'';
+ v.querySelector('.viewer-comment').textContent=localizedComment(button);
  const meta=v.querySelector('.viewer-meta');meta.replaceChildren();
  if(d.date){
    const date=document.createElement('span');
