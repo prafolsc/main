@@ -151,7 +151,7 @@ footer{border-top:1px solid var(--line);padding:26px 0;color:var(--muted);font-s
 
 
 /* Peus de foto: lloc en vermell i comentari ressaltat. */
-.photo .photo-place{color:#b33a32;font-size:10px;letter-spacing:.11em;margin-bottom:8px}
+.photo .photo-place{color:#b33a32;font-size:12px;letter-spacing:.11em;margin-bottom:8px}
 .photo .photo-comment{background:#f0e5df;border-left:3px solid #b33a32;padding:10px 13px;margin-top:5px;color:#263b36}
 /* Visor ampliat: jerarquia clara entre lloc i comentari. */
 #viewer .viewer-place{font-size:clamp(.82rem,1.15vw,1rem);font-weight:650;letter-spacing:.08em;text-transform:uppercase;color:#e18a7e;margin-bottom:9px}
